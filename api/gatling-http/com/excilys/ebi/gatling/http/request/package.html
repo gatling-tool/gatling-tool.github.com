@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.excilys.ebi.gatling.http.request</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../../lib/package_big.png" />
+        <p id="owner"><a name="com" class="extype" href="../../../../../package.html">com</a>.<a name="com.excilys" class="extype" href="../../../../package.html">excilys</a>.<a name="com.excilys.ebi" class="extype" href="../../../package.html">ebi</a>.<a name="com.excilys.ebi.gatling" class="extype" href="../../package.html">gatling</a>.<a name="com.excilys.ebi.gatling.http" class="extype" href="../package.html">http</a></p>
+        <h1>request</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <span class="name">request</span>
+        
+        
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.excilys.ebi.gatling.http.request.ContextParam" data-isabs="false">
+      <a id="ContextParam:ContextParam"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="ContextParam.html"><span class="name">ContextParam</span></a>
+        
+        <span class="params">(<span name="string">string: String</span>)</span><span class="result"> extends Param with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This parameter is to be extracted from the context of the scenario
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.FilePathBody" data-isabs="false">
+      <a id="FilePathBody:FilePathBody"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="FilePathBody.html"><span class="name">FilePathBody</span></a>
+        
+        <span class="params">(<span name="filePath">filePath: String</span>)</span><span class="result"> extends HttpRequestBody with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Wraps a body that is in a file
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.HttpRequest" data-isabs="false">
+      <a id="HttpRequest:HttpRequest"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="HttpRequest.html"><span class="name">HttpRequest</span></a>
+        
+        <span class="result"> extends Request with Logging</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class wraps an HTTP Request
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.HttpRequestBody" data-isabs="true">
+      <a id="HttpRequestBody:HttpRequestBody"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="HttpRequestBody.html"><span class="name">HttpRequestBody</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Class used for polymorphism only
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.Param" data-isabs="true">
+      <a id="Param:Param"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Param.html"><span class="name">Param</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This trait represent a request parameter entered by the user
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.StringBody" data-isabs="false">
+      <a id="StringBody:StringBody"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="StringBody.html"><span class="name">StringBody</span></a>
+        
+        <span class="params">(<span name="string">string: String</span>)</span><span class="result"> extends HttpRequestBody with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Wraps a body represented by a string
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.StringParam" data-isabs="false">
+      <a id="StringParam:StringParam"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="StringParam.html"><span class="name">StringParam</span></a>
+        
+        <span class="params">(<span name="string">string: String</span>)</span><span class="result"> extends Param with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This parameter is a string, it will be used as is
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.TemplateBody" data-isabs="false">
+      <a id="TemplateBody:TemplateBody"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="TemplateBody.html"><span class="name">TemplateBody</span></a>
+        
+        <span class="params">(<span name="tplPath">tplPath: String</span>, <span name="values">values: Map[String, Param]</span>)</span><span class="result"> extends HttpRequestBody with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Wraps a body that requires template compilation
+</p>
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.excilys.ebi.gatling.http.request.HttpPhase" data-isabs="false">
+      <a id="HttpPhase:HttpPhase"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="HttpPhase$.html"><span class="name">HttpPhase</span></a>
+        
+        <span class="result"> extends Enumeration</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Enumeration of the various phases that are available in Http Response treatment
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.MIMEType" data-isabs="false">
+      <a id="MIMEType:MIMEType"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="MIMEType$.html"><span class="name">MIMEType</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">The MIME types used in Gatling HTTP
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder" data-isabs="false">
+      <a id="builder:builder"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="builder/package.html"><span class="name">builder</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

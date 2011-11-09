@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.excilys.ebi.gatling.http.request.builder</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../../../lib/package_big.png" />
+        <p id="owner"><a name="com" class="extype" href="../../../../../../package.html">com</a>.<a name="com.excilys" class="extype" href="../../../../../package.html">excilys</a>.<a name="com.excilys.ebi" class="extype" href="../../../../package.html">ebi</a>.<a name="com.excilys.ebi.gatling" class="extype" href="../../../package.html">gatling</a>.<a name="com.excilys.ebi.gatling.http" class="extype" href="../../package.html">http</a>.<a name="com.excilys.ebi.gatling.http.request" class="extype" href="../package.html">request</a></p>
+        <h1>builder</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <span class="name">builder</span>
+        
+        
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder" data-isabs="true">
+      <a id="AbstractHttpRequestBuilder:AbstractHttpRequestBuilder[B]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="AbstractHttpRequestBuilder.html"><span class="name">AbstractHttpRequestBuilder</span></a>
+        <span class="tparams">[<span name="B">B &lt;: AbstractHttpRequestBuilder[B]</span>]</span>
+        <span class="result"> extends Logging</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class serves as model for all HttpRequestBuilders
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestWithBodyAndParamsBuilder" data-isabs="true">
+      <a id="AbstractHttpRequestWithBodyAndParamsBuilder:AbstractHttpRequestWithBodyAndParamsBuilder[B]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="AbstractHttpRequestWithBodyAndParamsBuilder.html"><span class="name">AbstractHttpRequestWithBodyAndParamsBuilder</span></a>
+        <span class="tparams">[<span name="B">B &lt;: AbstractHttpRequestWithBodyAndParamsBuilder[B]</span>]</span>
+        <span class="result"> extends AbstractHttpRequestWithBodyBuilder[B]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class serves as model to HTTP request with a body and parameters
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestWithBodyBuilder" data-isabs="true">
+      <a id="AbstractHttpRequestWithBodyBuilder:AbstractHttpRequestWithBodyBuilder[B]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="AbstractHttpRequestWithBodyBuilder.html"><span class="name">AbstractHttpRequestWithBodyBuilder</span></a>
+        <span class="tparams">[<span name="B">B &lt;: AbstractHttpRequestWithBodyBuilder[B]</span>]</span>
+        <span class="result"> extends AbstractHttpRequestBuilder[B]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class serves as model to HTTP request with a body
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.DeleteHttpRequestBuilder" data-isabs="false">
+      <a id="DeleteHttpRequestBuilder:DeleteHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="DeleteHttpRequestBuilder.html"><span class="name">DeleteHttpRequestBuilder</span></a>
+        
+        <span class="result"> extends AbstractHttpRequestWithBodyBuilder[DeleteHttpRequestBuilder]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class defines an HTTP request with word DELETE in the DSL
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.GetHttpRequestBuilder" data-isabs="false">
+      <a id="GetHttpRequestBuilder:GetHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="GetHttpRequestBuilder.html"><span class="name">GetHttpRequestBuilder</span></a>
+        
+        <span class="result"> extends AbstractHttpRequestBuilder[GetHttpRequestBuilder]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class defines an HTTP request with word GET in the DSL
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.PostHttpRequestBuilder" data-isabs="false">
+      <a id="PostHttpRequestBuilder:PostHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="PostHttpRequestBuilder.html"><span class="name">PostHttpRequestBuilder</span></a>
+        
+        <span class="result"> extends AbstractHttpRequestWithBodyAndParamsBuilder[PostHttpRequestBuilder]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class defines an HTTP request with word POST in the DSL
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.PutHttpRequestBuilder" data-isabs="false">
+      <a id="PutHttpRequestBuilder:PutHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="PutHttpRequestBuilder.html"><span class="name">PutHttpRequestBuilder</span></a>
+        
+        <span class="result"> extends AbstractHttpRequestWithBodyBuilder[PutHttpRequestBuilder]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class defines an HTTP request with word PUT in the DSL
+</p>
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder" data-isabs="false">
+      <a id="AbstractHttpRequestBuilder:AbstractHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="AbstractHttpRequestBuilder$.html"><span class="name">AbstractHttpRequestBuilder</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">AbstractHttpRequestBuilder class companion
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
