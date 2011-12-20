@@ -246,32 +246,32 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder#simpleActionBuilder" data-isabs="false">
-      <a id="simpleActionBuilder((Context, Action) ⇒ Unit):SimpleActionBuilder"></a>
+      <a id="simpleActionBuilder((Session, Action) ⇒ Unit):SimpleActionBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">simpleActionBuilder</span>
         
-        <span class="params">(<span name="contextFunction">contextFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a></span>
+        <span class="params">(<span name="sessionFunction">sessionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Function used to create a simple action builder
 </p><div class="fullcomment"><div class="comment cmt"><p>Function used to create a simple action builder
-</p></div><dl class="paramcmts block"><dt class="param">contextFunction</dt><dd class="cmt"><p>the function that will be executed by the built simple action
+</p></div><dl class="paramcmts block"><dt class="param">sessionFunction</dt><dd class="cmt"><p>the function that will be executed by the built simple action
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder#simpleActionBuilder" data-isabs="false">
-      <a id="simpleActionBuilder((Context) ⇒ Unit):SimpleActionBuilder"></a>
+      <a id="simpleActionBuilder((Session) ⇒ Unit):SimpleActionBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">simpleActionBuilder</span>
         
-        <span class="params">(<span name="contextFunction">contextFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a></span>
+        <span class="params">(<span name="sessionFunction">sessionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Function used to create a simple action builder
 </p><div class="fullcomment"><div class="comment cmt"><p>Function used to create a simple action builder
-</p></div><dl class="paramcmts block"><dt class="param">contextFunction</dt><dd class="cmt"><p>the function that will be executed by the built simple action
+</p></div><dl class="paramcmts block"><dt class="param">sessionFunction</dt><dd class="cmt"><p>the function that will be executed by the built simple action
 </p></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
@@ -285,32 +285,32 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder#toSimpleActionBuilder" data-isabs="false">
-      <a id="toSimpleActionBuilder((Context) ⇒ Unit):SimpleActionBuilder"></a>
+      <a id="toSimpleActionBuilder((Session) ⇒ Unit):SimpleActionBuilder"></a>
       <h4 class="signature">
       <span class="kind">implicit def</span>
       <span class="symbol"> 
         <span class="name">toSimpleActionBuilder</span>
         
-        <span class="params">(<span name="contextFunction">contextFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a></span>
+        <span class="params">(<span name="sessionFunction">sessionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Implicit converter from Context =&gt; Unit to a simple action builder containing this function
-</p><div class="fullcomment"><div class="comment cmt"><p>Implicit converter from Context =&gt; Unit to a simple action builder containing this function
-</p></div><dl class="paramcmts block"><dt class="param">contextFunction</dt><dd class="cmt"><p>the function that has to be wrapped into a simple action builder
+      <p class="shortcomment cmt">Implicit converter from Session =&gt; Unit to a simple action builder containing this function
+</p><div class="fullcomment"><div class="comment cmt"><p>Implicit converter from Session =&gt; Unit to a simple action builder containing this function
+</p></div><dl class="paramcmts block"><dt class="param">sessionFunction</dt><dd class="cmt"><p>the function that has to be wrapped into a simple action builder
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder#toSimpleActionBuilder" data-isabs="false">
-      <a id="toSimpleActionBuilder((Context, Action) ⇒ Unit):SimpleActionBuilder"></a>
+      <a id="toSimpleActionBuilder((Session, Action) ⇒ Unit):SimpleActionBuilder"></a>
       <h4 class="signature">
       <span class="kind">implicit def</span>
       <span class="symbol"> 
         <span class="name">toSimpleActionBuilder</span>
         
-        <span class="params">(<span name="contextFunction">contextFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a></span>
+        <span class="params">(<span name="sessionFunction">sessionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Implicit converter from (Context, Action) =&gt; Unit to a simple action builder containing this function
-</p><div class="fullcomment"><div class="comment cmt"><p>Implicit converter from (Context, Action) =&gt; Unit to a simple action builder containing this function
-</p></div><dl class="paramcmts block"><dt class="param">contextFunction</dt><dd class="cmt"><p>the function that has to be wrapped into a simple action builder</p></dd><dt>returns</dt><dd class="cmt"><p>a simple action builder
+      <p class="shortcomment cmt">Implicit converter from (Session, Action) =&gt; Unit to a simple action builder containing this function
+</p><div class="fullcomment"><div class="comment cmt"><p>Implicit converter from (Session, Action) =&gt; Unit to a simple action builder containing this function
+</p></div><dl class="paramcmts block"><dt class="param">sessionFunction</dt><dd class="cmt"><p>the function that has to be wrapped into a simple action builder</p></dd><dt>returns</dt><dd class="cmt"><p>a simple action builder
 </p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
       <a id="toString():String"></a>

@@ -202,143 +202,31 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#header" data-isabs="false">
-      <a id="header(String):HttpHeaderCheckBuilder"></a>
+      <a id="header(String):HttpHeaderCheckBuilder with CheckBuilderFind[HttpCheckBuilder[HttpHeaderCheckBuilder]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">header</span>
         
-        <span class="params">(<span name="headerName">headerName: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
+        <span class="params">(<span name="headerName">headerName: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a> with <span name="com.excilys.ebi.gatling.core.check.CheckBuilderFind" class="extype">CheckBuilderFind</span>[<a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a>[<a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a>]]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Will capture the value of the header in the context
-</p><div class="fullcomment"><div class="comment cmt"><p>Will capture the value of the header in the context
+      <p class="shortcomment cmt">Will check the value of the header in the session
+</p><div class="fullcomment"><div class="comment cmt"><p>Will check the value of the header in the session
 </p></div><dl class="paramcmts block"><dt class="param">headerName</dt><dd class="cmt"><p>the name of the header
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#header" data-isabs="false">
-      <a id="header((Context) ⇒ String):HttpHeaderCheckBuilder"></a>
+      <a id="header((Session) ⇒ String):HttpHeaderCheckBuilder with CheckBuilderFind[HttpCheckBuilder[HttpHeaderCheckBuilder]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">header</span>
         
-        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
+        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a> with <span name="com.excilys.ebi.gatling.core.check.CheckBuilderFind" class="extype">CheckBuilderFind</span>[<a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a>[<a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a>]]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Will capture the value of the header in the context
-</p><div class="fullcomment"><div class="comment cmt"><p>Will capture the value of the header in the context
-</p></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function returning the name of the header
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#headerEquals" data-isabs="false">
-      <a id="headerEquals(String,String):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">headerEquals</span>
-        
-        <span class="params">(<span name="headerName">headerName: String</span>, <span name="expected">expected: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Will check that the specified header's value is equal to the user defined one
-</p><div class="fullcomment"><div class="comment cmt"><p>Will check that the specified header's value is equal to the user defined one
-</p></div><dl class="paramcmts block"><dt class="param">headerName</dt><dd class="cmt"><p>the name of the header</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value of the header
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#headerEquals" data-isabs="false">
-      <a id="headerEquals((Context) ⇒ String,String):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">headerEquals</span>
-        
-        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>, <span name="expected">expected: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Will check that the specified header's value is equal to the user defined one
-</p><div class="fullcomment"><div class="comment cmt"><p>Will check that the specified header's value is equal to the user defined one
-</p></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function returning the name of the header</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value of the header
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#headerExists" data-isabs="false">
-      <a id="headerExists(String):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">headerExists</span>
-        
-        <span class="params">(<span name="headerName">headerName: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Will check that the specified header exists
-</p><div class="fullcomment"><div class="comment cmt"><p>Will check that the specified header exists
-</p></div><dl class="paramcmts block"><dt class="param">headerName</dt><dd class="cmt"><p>the name of the header
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#headerExists" data-isabs="false">
-      <a id="headerExists((Context) ⇒ String):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">headerExists</span>
-        
-        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Will check that the specified header exists
-</p><div class="fullcomment"><div class="comment cmt"><p>Will check that the specified header exists
-</p></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function returning the name of the header
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#headerNotEquals" data-isabs="false">
-      <a id="headerNotEquals(String,String):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">headerNotEquals</span>
-        
-        <span class="params">(<span name="headerName">headerName: String</span>, <span name="expected">expected: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Will check that the specified header's value is different from the user defined one
-</p><div class="fullcomment"><div class="comment cmt"><p>Will check that the specified header's value is different from the user defined one
-</p></div><dl class="paramcmts block"><dt class="param">headerName</dt><dd class="cmt"><p>the name of the header</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value of the header
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#headerNotEquals" data-isabs="false">
-      <a id="headerNotEquals((Context) ⇒ String,String):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">headerNotEquals</span>
-        
-        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>, <span name="expected">expected: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Will check that the specified header's value is different from the user defined one
-</p><div class="fullcomment"><div class="comment cmt"><p>Will check that the specified header's value is different from the user defined one
-</p></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function returning the name of the header</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value of the header
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#headerNotExists" data-isabs="false">
-      <a id="headerNotExists(String):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">headerNotExists</span>
-        
-        <span class="params">(<span name="headerName">headerName: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Will check that the specified header is not present
-</p><div class="fullcomment"><div class="comment cmt"><p>Will check that the specified header is not present
-</p></div><dl class="paramcmts block"><dt class="param">headerName</dt><dd class="cmt"><p>the name of the header
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#headerNotExists" data-isabs="false">
-      <a id="headerNotExists((Context) ⇒ String):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">headerNotExists</span>
-        
-        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="HttpHeaderCheckBuilder.html">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Will check that the specified header is not present
-</p><div class="fullcomment"><div class="comment cmt"><p>Will check that the specified header is not present
+      <p class="shortcomment cmt">Will check the value of the header in the session
+</p><div class="fullcomment"><div class="comment cmt"><p>Will check the value of the header in the session
 </p></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function returning the name of the header
 </p></dd></dl></div>
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">

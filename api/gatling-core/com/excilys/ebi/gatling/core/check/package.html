@@ -60,17 +60,72 @@
       <p class="comment cmt">This class represents a Check
 </p>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.CheckBuilder" data-isabs="true">
-      <a id="CheckBuilder:CheckBuilder[WHERE]"></a>
+      <a id="CheckBuilder:CheckBuilder[B, WHERE]"></a>
       <h4 class="signature">
       <span class="kind">class</span>
       <span class="symbol"> 
         <a href="CheckBuilder.html"><span class="name">CheckBuilder</span></a>
-        <span class="tparams">[<span name="WHERE">WHERE</span>]</span>
+        <span class="tparams">[<span name="B">B &lt;: CheckBuilder[B, WHERE]</span>, <span name="WHERE">WHERE</span>]</span>
         <span class="result"> extends Logging</span>
       </span>
       </h4>
       <p class="comment cmt">This class serves as model for all check builders
 </p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.CheckBuilderFind" data-isabs="true">
+      <a id="CheckBuilderFind:CheckBuilderFind[B]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="CheckBuilderFind.html"><span class="name">CheckBuilderFind</span></a>
+        <span class="tparams">[<span name="B">B &lt;: com.excilys.ebi.gatling.core.check.CheckBuilder[B, _]</span>]</span>
+        <span class="result"> extends CheckBuilderVerifyOne[B]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.CheckBuilderSave" data-isabs="true">
+      <a id="CheckBuilderSave:CheckBuilderSave[B]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="CheckBuilderSave.html"><span class="name">CheckBuilderSave</span></a>
+        <span class="tparams">[<span name="B">B &lt;: com.excilys.ebi.gatling.core.check.CheckBuilder[B, _]</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.CheckBuilderVerify" data-isabs="true">
+      <a id="CheckBuilderVerify:CheckBuilderVerify[B]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="CheckBuilderVerify.html"><span class="name">CheckBuilderVerify</span></a>
+        <span class="tparams">[<span name="B">B &lt;: com.excilys.ebi.gatling.core.check.CheckBuilder[B, _]</span>]</span>
+        <span class="result"> extends CheckBuilderSave[B]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.CheckBuilderVerifyAll" data-isabs="true">
+      <a id="CheckBuilderVerifyAll:CheckBuilderVerifyAll[B]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="CheckBuilderVerifyAll.html"><span class="name">CheckBuilderVerifyAll</span></a>
+        <span class="tparams">[<span name="B">B &lt;: com.excilys.ebi.gatling.core.check.CheckBuilder[B, _]</span>]</span>
+        <span class="result"> extends CheckBuilderVerify[B]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.CheckBuilderVerifyOne" data-isabs="true">
+      <a id="CheckBuilderVerifyOne:CheckBuilderVerifyOne[B]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="CheckBuilderVerifyOne.html"><span class="name">CheckBuilderVerifyOne</span></a>
+        <span class="tparams">[<span name="B">B &lt;: com.excilys.ebi.gatling.core.check.CheckBuilder[B, _]</span>]</span>
+        <span class="result"> extends CheckBuilderVerify[B]</span>
+      </span>
+      </h4>
+      
     </li></ol>
             </div>
         
@@ -78,7 +133,18 @@
 
         <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="com.excilys.ebi.gatling.core.check.extractor" data-isabs="false">
+              <ol><li visbl="pub" name="com.excilys.ebi.gatling.core.check.CheckBuilder" data-isabs="false">
+      <a id="CheckBuilder:CheckBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="CheckBuilder$.html"><span class="name">CheckBuilder</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.extractor" data-isabs="false">
       <a id="extractor:extractor"></a>
       <h4 class="signature">
       <span class="kind">package</span>

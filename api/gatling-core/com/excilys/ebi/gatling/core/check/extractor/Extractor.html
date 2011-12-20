@@ -35,7 +35,7 @@ Typically, we can think of Regular Expressions.
           <div class="superTypes hiddenContent"><a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../../log/Logging.html">Logging</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="com.excilys.ebi.gatling.core.check.extractor.RegExpExtractor" class="extype" href="RegExpExtractor.html">RegExpExtractor</a>, <a name="com.excilys.ebi.gatling.core.check.extractor.XPathExtractor" class="extype" href="XPathExtractor.html">XPathExtractor</a></div>
+          <div class="subClasses hiddenContent"><a name="com.excilys.ebi.gatling.core.check.extractor.MultiRegexExtractor" class="extype" href="MultiRegexExtractor.html">MultiRegexExtractor</a>, <a name="com.excilys.ebi.gatling.core.check.extractor.MultiXPathExtractor" class="extype" href="MultiXPathExtractor.html">MultiXPathExtractor</a>, <a name="com.excilys.ebi.gatling.core.check.extractor.RegexExtractor" class="extype" href="RegexExtractor.html">RegexExtractor</a>, <a name="com.excilys.ebi.gatling.core.check.extractor.XPathExtractor" class="extype" href="XPathExtractor.html">XPathExtractor</a></div>
         </div></div>
         
 
@@ -80,13 +80,13 @@ Typically, we can think of Regular Expressions.
         <div class="values members" id="values">
               <h3>Abstract Value Members</h3>
               <ol><li visbl="pub" name="com.excilys.ebi.gatling.core.check.extractor.Extractor#extract" data-isabs="true">
-      <a id="extract(String):Option[String]"></a>
+      <a id="extract(String):List[String]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">extract</span>
         
-        <span class="params">(<span name="expression">expression: String</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[String]</span>
+        <span class="params">(<span name="expression">expression: String</span>)</span><span class="result">: List[String]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">this method does the actual extraction of what is designed by the expression

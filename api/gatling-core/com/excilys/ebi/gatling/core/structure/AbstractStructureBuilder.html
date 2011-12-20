@@ -77,46 +77,10 @@
 
         
         
-        <div class="values members" id="values">
-              <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="com.excilys.ebi.gatling.core.structure.AbstractStructureBuilder#build" data-isabs="true">
-      <a id="build:Any"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">build</span>
         
-        <span class="result">: <span name="scala.Any" class="extype">Any</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li><li visbl="prt" name="com.excilys.ebi.gatling.core.structure.AbstractStructureBuilder#getInstance" data-isabs="true">
-      <a id="getInstance:B"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">getInstance</span>
-        
-        <span class="result">: B</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected abstract </dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.structure.AbstractStructureBuilder#newInstance" data-isabs="true">
-      <a id="newInstance(List[AbstractActionBuilder]):B"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">newInstance</span>
-        
-        <span class="params">(<span name="actionBuilders">actionBuilders: List[<a name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="extype" href="../action/builder/AbstractActionBuilder.html">AbstractActionBuilder</a>]</span>)</span><span class="result">: B</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li></ol>
-            </div>
 
         <div class="values members" id="values">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -216,14 +180,14 @@
       <span class="symbol"> 
         <span class="name">doIf</span>
         
-        <span class="params">(<span name="contextKey">contextKey: String</span>, <span name="value">value: String</span>, <span name="thenNext">thenNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>, <span name="elseNext">elseNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>)</span><span class="result">: B</span>
+        <span class="params">(<span name="sessionKey">sessionKey: String</span>, <span name="value">value: String</span>, <span name="thenNext">thenNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>, <span name="elseNext">elseNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>)</span><span class="result">: B</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Method used to add a conditional execution in the scenario with a fall back
 action if condition is not satisfied
 </p><div class="fullcomment"><div class="comment cmt"><p>Method used to add a conditional execution in the scenario with a fall back
 action if condition is not satisfied
-</p></div><dl class="paramcmts block"><dt class="param">contextKey</dt><dd class="cmt"><p>the key of the context value to be tested for equality</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value to which the context value must be equals</p></dd><dt class="param">thenNext</dt><dd class="cmt"><p>the chain to be executed if the condition is satisfied</p></dd><dt class="param">elseNext</dt><dd class="cmt"><p>the chain to be executed if the condition is not satisfied</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with a conditional execution added to its actions
+</p></div><dl class="paramcmts block"><dt class="param">sessionKey</dt><dd class="cmt"><p>the key of the session value to be tested for equality</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value to which the session value must be equals</p></dd><dt class="param">thenNext</dt><dd class="cmt"><p>the chain to be executed if the condition is satisfied</p></dd><dt class="param">elseNext</dt><dd class="cmt"><p>the chain to be executed if the condition is not satisfied</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with a conditional execution added to its actions
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.structure.AbstractStructureBuilder#doIf" data-isabs="false">
       <a id="doIf(String,String,ChainBuilder):B"></a>
@@ -232,21 +196,21 @@ action if condition is not satisfied
       <span class="symbol"> 
         <span class="name">doIf</span>
         
-        <span class="params">(<span name="contextKey">contextKey: String</span>, <span name="value">value: String</span>, <span name="thenNext">thenNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>)</span><span class="result">: B</span>
+        <span class="params">(<span name="sessionKey">sessionKey: String</span>, <span name="value">value: String</span>, <span name="thenNext">thenNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>)</span><span class="result">: B</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Method used to add a conditional execution in the scenario
 </p><div class="fullcomment"><div class="comment cmt"><p>Method used to add a conditional execution in the scenario
-</p></div><dl class="paramcmts block"><dt class="param">contextKey</dt><dd class="cmt"><p>the key of the context value to be tested for equality</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value to which the context value must be equals</p></dd><dt class="param">thenNext</dt><dd class="cmt"><p>the chain to be executed if the condition is satisfied</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with a conditional execution added to its actions
+</p></div><dl class="paramcmts block"><dt class="param">sessionKey</dt><dd class="cmt"><p>the key of the session value to be tested for equality</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value to which the session value must be equals</p></dd><dt class="param">thenNext</dt><dd class="cmt"><p>the chain to be executed if the condition is satisfied</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with a conditional execution added to its actions
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.structure.AbstractStructureBuilder#doIf" data-isabs="false">
-      <a id="doIf((Context) ⇒ Boolean,ChainBuilder,ChainBuilder):B"></a>
+      <a id="doIf((Session) ⇒ Boolean,ChainBuilder,ChainBuilder):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">doIf</span>
         
-        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../context/Context.html">Context</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>, <span name="thenNext">thenNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>, <span name="elseNext">elseNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>)</span><span class="result">: B</span>
+        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../session/Session.html">Session</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>, <span name="thenNext">thenNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>, <span name="elseNext">elseNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>)</span><span class="result">: B</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Method used to add a conditional execution in the scenario with a fall back
@@ -256,32 +220,18 @@ action if condition is not satisfied
 </p></div><dl class="paramcmts block"><dt class="param">conditionFunction</dt><dd class="cmt"><p>the function that will determine if the condition is satisfied or not</p></dd><dt class="param">thenNext</dt><dd class="cmt"><p>the chain to be executed if the condition is satisfied</p></dd><dt class="param">elseNext</dt><dd class="cmt"><p>the chain to be executed if the condition is not satisfied</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with a conditional execution added to its actions
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.structure.AbstractStructureBuilder#doIf" data-isabs="false">
-      <a id="doIf((Context) ⇒ Boolean,ChainBuilder):B"></a>
+      <a id="doIf((Session) ⇒ Boolean,ChainBuilder):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">doIf</span>
         
-        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../context/Context.html">Context</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>, <span name="thenNext">thenNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>)</span><span class="result">: B</span>
+        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../session/Session.html">Session</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>, <span name="thenNext">thenNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="ChainBuilder.html">ChainBuilder</a></span>)</span><span class="result">: B</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Method used to add a conditional execution in the scenario
 </p><div class="fullcomment"><div class="comment cmt"><p>Method used to add a conditional execution in the scenario
 </p></div><dl class="paramcmts block"><dt class="param">conditionFunction</dt><dd class="cmt"><p>the function that will determine if the condition is satisfied or not</p></dd><dt class="param">thenNext</dt><dd class="cmt"><p>the chain to be executed if the condition is satisfied</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with a conditional execution added to its actions
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.structure.AbstractStructureBuilder#endGroup" data-isabs="false">
-      <a id="endGroup(String):B"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">endGroup</span>
-        
-        <span class="params">(<span name="groupName">groupName: String</span>)</span><span class="result">: B</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Method used to specify that all succeeding actions will not belong to the specified group
-</p><div class="fullcomment"><div class="comment cmt"><p>Method used to specify that all succeeding actions will not belong to the specified group
-</p></div><dl class="paramcmts block"><dt class="param">groupName</dt><dd class="cmt"><p>the name of the group</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with a group tag added to its actions
 </p></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
@@ -318,6 +268,20 @@ action if condition is not satisfied
       <p class="shortcomment cmt">Method used to execute an action
 </p><div class="fullcomment"><div class="comment cmt"><p>Method used to execute an action
 </p></div><dl class="paramcmts block"><dt class="param">actionBuilder</dt><dd class="cmt"><p>the action builder representing the action to be executed
+</p></dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.structure.AbstractStructureBuilder#feed" data-isabs="false">
+      <a id="feed(Feeder):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">feed</span>
+        
+        <span class="params">(<span name="feeder">feeder: <a name="com.excilys.ebi.gatling.core.feeder.Feeder" class="extype" href="../feeder/Feeder.html">Feeder</a></span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Method used to load data from a feeder in the current scenario
+</p><div class="fullcomment"><div class="comment cmt"><p>Method used to load data from a feeder in the current scenario
+</p></div><dl class="paramcmts block"><dt class="param">feeder</dt><dd class="cmt"><p>the feeder from which the values will be loaded
 </p></dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
@@ -493,20 +457,6 @@ action if condition is not satisfied
       <p class="shortcomment cmt">Method used to define a pause of X seconds
 </p><div class="fullcomment"><div class="comment cmt"><p>Method used to define a pause of X seconds
 </p></div><dl class="paramcmts block"><dt class="param">delayValue</dt><dd class="cmt"><p>the time, in seconds, for which the user waits/thinks</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with a pause added to its actions
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.structure.AbstractStructureBuilder#startGroup" data-isabs="false">
-      <a id="startGroup(String):B"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">startGroup</span>
-        
-        <span class="params">(<span name="groupName">groupName: String</span>)</span><span class="result">: B</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Method used to specify that all succeeding actions will belong to the specified group
-</p><div class="fullcomment"><div class="comment cmt"><p>Method used to specify that all succeeding actions will belong to the specified group
-</p></div><dl class="paramcmts block"><dt class="param">groupName</dt><dd class="cmt"><p>the name of the group</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with a group tag added to its actions
 </p></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>

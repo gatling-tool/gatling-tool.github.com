@@ -24,17 +24,16 @@
       <span class="symbol"> 
         <span class="name">Feeder</span>
         
-        <span class="result"> extends <a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../log/Logging.html">Logging</a></span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Abstract class for all Feeders of the application
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl><div class="toggleContainer block">
+          <div class="fullcommenttop" id="comment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../log/Logging.html">Logging</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="com.excilys.ebi.gatling.core.feeder.CSVFeeder" class="extype" href="CSVFeeder.html">CSVFeeder</a>, <a name="com.excilys.ebi.gatling.core.feeder.SSVFeeder" class="extype" href="SSVFeeder.html">SSVFeeder</a>, <a name="com.excilys.ebi.gatling.core.feeder.SeparatedValuesFeeder" class="extype" href="SeparatedValuesFeeder.html">SeparatedValuesFeeder</a>, <a name="com.excilys.ebi.gatling.core.feeder.TSVFeeder" class="extype" href="TSVFeeder.html">TSVFeeder</a></div>
+          <div class="subClasses hiddenContent"><a name="com.excilys.ebi.gatling.core.feeder.QueueFeeder" class="extype" href="QueueFeeder.html">QueueFeeder</a>, <a name="com.excilys.ebi.gatling.core.feeder.RandomFeeder" class="extype" href="RandomFeeder.html">RandomFeeder</a></div>
         </div></div>
         
 
@@ -50,7 +49,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="com.excilys.ebi.gatling.core.feeder.Feeder" class="in"><span>Feeder</span></li><li name="com.excilys.ebi.gatling.core.log.Logging" class="in"><span>Logging</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="com.excilys.ebi.gatling.core.feeder.Feeder" class="in"><span>Feeder</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -67,11 +66,10 @@
       <span class="symbol"> 
         <span class="name">Feeder</span>
         
-        <span class="params">(<span name="filePath">filePath: String</span>, <span name="mappings">mappings: List[String]</span>)</span>
+        <span class="params">(<span name="feederSource">feederSource: <a name="com.excilys.ebi.gatling.core.feeder.FeederSource" class="extype" href="FeederSource.html">FeederSource</a></span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">filePath</dt><dd class="cmt"><p>file path of the seed file</p></dd><dt class="param">mappings</dt><dd class="cmt"><p>the mappings for the feeder, ie the keys of the values in the context
-</p></dd></dl></div>
+      
     </li></ol>
             </div>
 
@@ -89,10 +87,7 @@
         <span class="result">: Map[String, String]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Gets the next line of the feeder
-</p><div class="fullcomment"><div class="comment cmt"><p>Gets the next line of the feeder
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a map containing the values of the line with the feeder keys as keys
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
     </li></ol>
             </div>
 
@@ -247,17 +242,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.log.Logging#logger" data-isabs="false">
-      <a id="logger:Logger"></a>
-      <h4 class="signature">
-      <span class="kind">lazy val</span>
-      <span class="symbol"> 
-        <span class="name">logger</span>
-        
-        <span class="result">: <span name="org.slf4j.Logger" class="extype">Logger</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../log/Logging.html">Logging</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -360,9 +344,7 @@
 
         
 
-        <div name="com.excilys.ebi.gatling.core.log.Logging" class="parent">
-              <h3>Inherited from <a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../log/Logging.html">Logging</a></h3>
-            </div><div name="scala.AnyRef" class="parent">
+        <div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">
               <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>

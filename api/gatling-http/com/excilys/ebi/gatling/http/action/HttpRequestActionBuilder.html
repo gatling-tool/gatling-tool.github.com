@@ -64,7 +64,7 @@
       <span class="symbol"> 
         <span class="name">HttpRequestActionBuilder</span>
         
-        <span class="params">(<span name="requestName">requestName: String</span>, <span name="request">request: <a name="com.excilys.ebi.gatling.http.request.HttpRequest" class="extype" href="../request/HttpRequest.html">HttpRequest</a></span>, <span name="next">next: <span name="com.excilys.ebi.gatling.core.action.Action" class="extype">Action</span></span>, <span name="processorBuilders">processorBuilders: <span name="scala.Option" class="extype">Option</span>[List[com.excilys.ebi.gatling.http.check.HttpCheckBuilder[_]]]</span>, <span name="groups">groups: <span name="scala.Option" class="extype">Option</span>[List[String]]</span>, <span name="feeder">feeder: <span name="scala.Option" class="extype">Option</span>[<span name="com.excilys.ebi.gatling.core.feeder.Feeder" class="extype">Feeder</span>]</span>)</span>
+        <span class="params">(<span name="requestName">requestName: String</span>, <span name="request">request: <a name="com.excilys.ebi.gatling.http.request.HttpRequest" class="extype" href="../request/HttpRequest.html">HttpRequest</a></span>, <span name="next">next: <span name="com.excilys.ebi.gatling.core.action.Action" class="extype">Action</span></span>, <span name="processorBuilders">processorBuilders: <span name="scala.Option" class="extype">Option</span>[List[com.excilys.ebi.gatling.http.check.HttpCheckBuilder[_]]]</span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt">creates an HttpRequestActionBuilder</p><div class="fullcomment"><div class="comment cmt"><p>creates an HttpRequestActionBuilder</p></div><dl class="paramcmts block"><dt class="param">requestName</dt><dd class="cmt"><p>the name of the request</p></dd><dt class="param">request</dt><dd class="cmt"><p>the actual HTTP request that will be sent</p></dd><dt class="param">next</dt><dd class="cmt"><p>the next action to be executed</p></dd><dt class="param">processorBuilders</dt><dd class="cmt"><p>
@@ -144,17 +144,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#build" data-isabs="false">
-      <a id="build:Action"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">build</span>
-        
-        <span class="result">: <span name="com.excilys.ebi.gatling.core.action.Action" class="extype">Action</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="">HttpRequestActionBuilder</a> → AbstractActionBuilder</dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -170,13 +159,13 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#delete" data-isabs="false">
-      <a id="delete((Context) ⇒ String):DeleteHttpRequestBuilder"></a>
+      <a id="delete((Session) ⇒ String):DeleteHttpRequestBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">delete</span>
         
-        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.DeleteHttpRequestBuilder" class="extype" href="../request/builder/DeleteHttpRequestBuilder.html">DeleteHttpRequestBuilder</a></span>
+        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.DeleteHttpRequestBuilder" class="extype" href="../request/builder/DeleteHttpRequestBuilder.html">DeleteHttpRequestBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Starts the definition of an HTTP request with word DELETE
@@ -184,19 +173,18 @@
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function returning the url of this request
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#delete" data-isabs="false">
-      <a id="delete(String,String*):DeleteHttpRequestBuilder"></a>
+      <a id="delete(String):DeleteHttpRequestBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">delete</span>
         
-        <span class="params">(<span name="url">url: String</span>, <span name="interpolations">interpolations: String*</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.DeleteHttpRequestBuilder" class="extype" href="../request/builder/DeleteHttpRequestBuilder.html">DeleteHttpRequestBuilder</a></span>
+        <span class="params">(<span name="url">url: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.DeleteHttpRequestBuilder" class="extype" href="../request/builder/DeleteHttpRequestBuilder.html">DeleteHttpRequestBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Starts the definition of an HTTP request with word DELETE
 </p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word DELETE
-</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd><dt class="param">interpolations</dt><dd class="cmt"><p>context keys for interpolation
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -219,20 +207,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#feeder" data-isabs="false">
-      <a id="feeder(Feeder):HttpRequestActionBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">feeder</span>
-        
-        <span class="params">(<span name="feeder">feeder: <span name="com.excilys.ebi.gatling.core.feeder.Feeder" class="extype">Feeder</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="">HttpRequestActionBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds a feeder to builder
-</p><div class="fullcomment"><div class="comment cmt"><p>Adds a feeder to builder
-</p></div><dl class="paramcmts block"><dt class="param">feeder</dt><dd class="cmt"><p>the feeder to add</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with feeder set
-</p></dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
@@ -248,13 +222,13 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#get" data-isabs="false">
-      <a id="get((Context) ⇒ String):GetHttpRequestBuilder"></a>
+      <a id="get((Session) ⇒ String):GetHttpRequestBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">get</span>
         
-        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.GetHttpRequestBuilder" class="extype" href="../request/builder/GetHttpRequestBuilder.html">GetHttpRequestBuilder</a></span>
+        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.GetHttpRequestBuilder" class="extype" href="../request/builder/GetHttpRequestBuilder.html">GetHttpRequestBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Starts the definition of an HTTP request with word GET
@@ -262,19 +236,18 @@
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function returning the url of this request
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#get" data-isabs="false">
-      <a id="get(String,String*):GetHttpRequestBuilder"></a>
+      <a id="get(String):GetHttpRequestBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">get</span>
         
-        <span class="params">(<span name="url">url: String</span>, <span name="interpolations">interpolations: String*</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.GetHttpRequestBuilder" class="extype" href="../request/builder/GetHttpRequestBuilder.html">GetHttpRequestBuilder</a></span>
+        <span class="params">(<span name="url">url: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.GetHttpRequestBuilder" class="extype" href="../request/builder/GetHttpRequestBuilder.html">GetHttpRequestBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Starts the definition of an HTTP request with word GET
 </p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word GET
-</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd><dt class="param">interpolations</dt><dd class="cmt"><p>context keys for interpolation
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
       <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">
@@ -297,17 +270,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#inGroups" data-isabs="false">
-      <a id="inGroups(List[String]):HttpRequestActionBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">inGroups</span>
-        
-        <span class="params">(<span name="groups">groups: List[String]</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="">HttpRequestActionBuilder</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="">HttpRequestActionBuilder</a> → AbstractActionBuilder</dd></dl></div>
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
@@ -364,13 +326,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#post" data-isabs="false">
-      <a id="post((Context) ⇒ String):PostHttpRequestBuilder"></a>
+      <a id="post((Session) ⇒ String):PostHttpRequestBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">post</span>
         
-        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PostHttpRequestBuilder" class="extype" href="../request/builder/PostHttpRequestBuilder.html">PostHttpRequestBuilder</a></span>
+        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PostHttpRequestBuilder" class="extype" href="../request/builder/PostHttpRequestBuilder.html">PostHttpRequestBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Starts the definition of an HTTP request with word POST
@@ -378,27 +340,26 @@
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function returning the url of this request
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#post" data-isabs="false">
-      <a id="post(String,String*):PostHttpRequestBuilder"></a>
+      <a id="post(String):PostHttpRequestBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">post</span>
         
-        <span class="params">(<span name="url">url: String</span>, <span name="interpolations">interpolations: String*</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PostHttpRequestBuilder" class="extype" href="../request/builder/PostHttpRequestBuilder.html">PostHttpRequestBuilder</a></span>
+        <span class="params">(<span name="url">url: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PostHttpRequestBuilder" class="extype" href="../request/builder/PostHttpRequestBuilder.html">PostHttpRequestBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Starts the definition of an HTTP request with word POST
 </p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word POST
-</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd><dt class="param">interpolations</dt><dd class="cmt"><p>context keys for interpolation
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#put" data-isabs="false">
-      <a id="put((Context) ⇒ String):PutHttpRequestBuilder"></a>
+      <a id="put((Session) ⇒ String):PutHttpRequestBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">put</span>
         
-        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PutHttpRequestBuilder" class="extype" href="../request/builder/PutHttpRequestBuilder.html">PutHttpRequestBuilder</a></span>
+        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PutHttpRequestBuilder" class="extype" href="../request/builder/PutHttpRequestBuilder.html">PutHttpRequestBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Starts the definition of an HTTP request with word PUT
@@ -406,19 +367,18 @@
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function returning the url of this request
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#put" data-isabs="false">
-      <a id="put(String,String*):PutHttpRequestBuilder"></a>
+      <a id="put(String):PutHttpRequestBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">put</span>
         
-        <span class="params">(<span name="url">url: String</span>, <span name="interpolations">interpolations: String*</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PutHttpRequestBuilder" class="extype" href="../request/builder/PutHttpRequestBuilder.html">PutHttpRequestBuilder</a></span>
+        <span class="params">(<span name="url">url: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PutHttpRequestBuilder" class="extype" href="../request/builder/PutHttpRequestBuilder.html">PutHttpRequestBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Starts the definition of an HTTP request with word PUT
 </p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word PUT
-</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd><dt class="param">interpolations</dt><dd class="cmt"><p>context keys for interpolation
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#requestName" data-isabs="false">
       <a id="requestName:String"></a>
       <h4 class="signature">
@@ -494,28 +454,6 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#withNext" data-isabs="false">
-      <a id="withNext(Action):HttpRequestActionBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">withNext</span>
-        
-        <span class="params">(<span name="next">next: <span name="com.excilys.ebi.gatling.core.action.Action" class="extype">Action</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="">HttpRequestActionBuilder</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="">HttpRequestActionBuilder</a> → AbstractActionBuilder</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#withRequest" data-isabs="false">
-      <a id="withRequest(HttpRequest):HttpRequestActionBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">withRequest</span>
-        
-        <span class="params">(<span name="request">request: <a name="com.excilys.ebi.gatling.http.request.HttpRequest" class="extype" href="../request/HttpRequest.html">HttpRequest</a></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="">HttpRequestActionBuilder</a></span>
-      </span>
-      </h4>
-      
     </li></ol>
             </div>
 

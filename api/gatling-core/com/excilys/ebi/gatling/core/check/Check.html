@@ -64,11 +64,11 @@
       <span class="symbol"> 
         <span class="name">Check</span>
         
-        <span class="params">(<span name="what">what: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../context/Context.html">Context</a>) ⇒ String</span>, <span name="how">how: <a name="com.excilys.ebi.gatling.core.check.extractor.ExtractorFactory" class="extype" href="extractor/ExtractorFactory.html">ExtractorFactory</a>[WHERE]</span>, <span name="to">to: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="strategy">strategy: <a name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype" href="strategy/CheckStrategy.html">CheckStrategy</a></span>, <span name="expected">expected: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
+        <span class="params">(<span name="what">what: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../session/Session.html">Session</a>) ⇒ String</span>, <span name="how">how: <a name="com.excilys.ebi.gatling.core.check.extractor.ExtractorFactory" class="extype" href="extractor/ExtractorFactory.html">ExtractorFactory</a>[WHERE]</span>, <span name="strategy">strategy: <a name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype" href="strategy/CheckStrategy.html">CheckStrategy</a></span>, <span name="expected">expected: List[String]</span>, <span name="saveAs">saveAs: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function that returns the expression representing what the check should look for</p></dd><dt class="param">how</dt><dd class="cmt"><p>the extractor that will be used by the Check</p></dd><dt class="param">to</dt><dd class="cmt"><p>the context attribute that will be used to store the extracted value</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>the strategy used to perform the Check</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value of what has been found
-</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function that returns the expression representing what the check should look for</p></dd><dt class="param">how</dt><dd class="cmt"><p>the extractor that will be used by the Check</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>the strategy used to perform the Check</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value of what has been found
+</p></dd><dt class="param">saveAs</dt><dd class="cmt"><p>the session attribute that will be used to store the extracted value</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -145,13 +145,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.Check#check" data-isabs="false">
-      <a id="check(Option[String]):Boolean"></a>
+      <a id="check(List[String]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">check</span>
         
-        <span class="params">(<span name="value">value: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="value">value: List[String]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">This method performs the check via the strategy used by this Check
@@ -194,6 +194,18 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.Check#expected" data-isabs="false">
+      <a id="expected:List[String]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">expected</span>
+        
+        <span class="result">: List[String]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">the expected value of what has been found
+</p>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
@@ -296,6 +308,28 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.Check#saveAs" data-isabs="false">
+      <a id="saveAs:Option[String]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">saveAs</span>
+        
+        <span class="result">: <span name="scala.Option" class="extype">Option</span>[String]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">the session attribute that will be used to store the extracted value</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.Check#strategy" data-isabs="false">
+      <a id="strategy:CheckStrategy"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">strategy</span>
+        
+        <span class="result">: <a name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype" href="strategy/CheckStrategy.html">CheckStrategy</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">the strategy used to perform the Check</p>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">
@@ -307,17 +341,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.Check#to" data-isabs="false">
-      <a id="to:Option[String]"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">to</span>
-        
-        <span class="result">: <span name="scala.Option" class="extype">Option</span>[String]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">the context attribute that will be used to store the extracted value</p>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.ClassSimpleNameToString#toString" data-isabs="false">
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -372,13 +395,13 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.Check#what" data-isabs="false">
-      <a id="what:(Context) ⇒ String"></a>
+      <a id="what:(Session) ⇒ String"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol"> 
         <span class="name">what</span>
         
-        <span class="result">: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../context/Context.html">Context</a>) ⇒ String</span>
+        <span class="result">: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../session/Session.html">Session</a>) ⇒ String</span>
       </span>
       </h4>
       <p class="shortcomment cmt">the function that returns the expression representing what the check should look for</p>

@@ -64,7 +64,7 @@
       <span class="symbol"> 
         <span class="name">HttpProtocolConfigurationBuilder</span>
         
-        <span class="params">(<span name="baseUrl">baseUrl: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="proxy">proxy: <span name="scala.Option" class="extype">Option</span>[<span name="com.ning.http.client.ProxyServer" class="extype">ProxyServer</span>]</span>)</span>
+        <span class="params">(<span name="baseUrl">baseUrl: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="proxy">proxy: <span name="scala.Option" class="extype">Option</span>[<span name="com.ning.http.client.ProxyServer" class="extype">ProxyServer</span>]</span>, <span name="securedProxy">securedProxy: <span name="scala.Option" class="extype">Option</span>[<span name="com.ning.http.client.ProxyServer" class="extype">ProxyServer</span>]</span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">baseUrl</dt><dd class="cmt"><p>the radix of all the URLs that will be used (eg: http://mywebsite.tld)</p></dd><dt class="param">proxy</dt><dd class="cmt"><p>a proxy through which all the requests must pass to succeed
@@ -158,17 +158,6 @@
 </p><div class="fullcomment"><div class="comment cmt"><p>Sets the baseURL of the future HttpProtocolConfiguration
 </p></div><dl class="paramcmts block"><dt class="param">baseurl</dt><dd class="cmt"><p>the base url that will be set
 </p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.config.HttpProtocolConfigurationBuilder#build" data-isabs="false">
-      <a id="build:HttpProtocolConfiguration"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">build</span>
-        
-        <span class="result">: <a name="com.excilys.ebi.gatling.http.config.HttpProtocolConfiguration" class="extype" href="HttpProtocolConfiguration.html">HttpProtocolConfiguration</a></span>
-      </span>
-      </h4>
-      
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -286,27 +275,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.config.HttpProtocolConfigurationBuilder#proxy" data-isabs="false">
-      <a id="proxy(String,Int,String,String):HttpProtocolConfigurationBuilder"></a>
+      <a id="proxy(String,Int):HttpProxyBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">proxy</span>
         
-        <span class="params">(<span name="host">host: String</span>, <span name="port">port: <span name="scala.Int" class="extype">Int</span></span>, <span name="username">username: String</span>, <span name="password">password: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.config.HttpProtocolConfigurationBuilder" class="extype" href="">HttpProtocolConfigurationBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Sets the proxy of the future HttpProtocolConfiguration
-</p><div class="fullcomment"><div class="comment cmt"><p>Sets the proxy of the future HttpProtocolConfiguration
-</p></div><dl class="paramcmts block"><dt class="param">host</dt><dd class="cmt"><p>the host of the proxy</p></dd><dt class="param">port</dt><dd class="cmt"><p>the port of the proxy</p></dd><dt class="param">username</dt><dd class="cmt"><p>the username used to connect to the proxy</p></dd><dt class="param">password</dt><dd class="cmt"><p>the password used to connect to the proxy
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.config.HttpProtocolConfigurationBuilder#proxy" data-isabs="false">
-      <a id="proxy(String,Int):HttpProtocolConfigurationBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">proxy</span>
-        
-        <span class="params">(<span name="host">host: String</span>, <span name="port">port: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.config.HttpProtocolConfigurationBuilder" class="extype" href="">HttpProtocolConfigurationBuilder</a></span>
+        <span class="params">(<span name="host">host: String</span>, <span name="port">port: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.config.HttpProxyBuilder" class="extype" href="HttpProxyBuilder.html">HttpProxyBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Sets the proxy of the future HttpProtocolConfiguration

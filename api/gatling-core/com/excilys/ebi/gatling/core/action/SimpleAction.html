@@ -29,7 +29,7 @@
       </h4>
       
           <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>This class represents a simple action. That is to say an action responsible for executing
-functions that interacts with the context
+functions that interacts with the session
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="Action.html">Action</a>, <a name="com.excilys.ebi.gatling.core.util.ClassSimpleNameToString" class="extype" href="../util/ClassSimpleNameToString.html">ClassSimpleNameToString</a>, <a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../log/Logging.html">Logging</a>, <span name="akka.actor.TypedActor" class="extype">TypedActor</span>, <span name="akka.actor.Proxyable" class="extype">Proxyable</span>, <span name="akka.actor.Actor" class="extype">Actor</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
@@ -65,7 +65,7 @@ functions that interacts with the context
       <span class="symbol"> 
         <span class="name">SimpleAction</span>
         
-        <span class="params">(<span name="contextFunction">contextFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../context/Context.html">Context</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="Action.html">Action</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>, <span name="next">next: <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="Action.html">Action</a></span>)</span>
+        <span class="params">(<span name="sessionFunction">sessionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../session/Session.html">Session</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="Action.html">Action</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>, <span name="next">next: <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="Action.html">Action</a></span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Constructs a SimpleAction</p><div class="fullcomment"><div class="comment cmt"><p>Constructs a SimpleAction</p></div><dl class="paramcmts block"><dt class="param">next</dt><dd class="cmt"><p>the action to be executed after this one
@@ -229,18 +229,18 @@ functions that interacts with the context
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.SimpleAction#execute" data-isabs="false">
-      <a id="execute(Context):Unit"></a>
+      <a id="execute(Session):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">execute</span>
         
-        <span class="params">(<span name="context">context: <a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../context/Context.html">Context</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="session">session: <a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../session/Session.html">Session</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">This method applies the function to the Context
-</p><div class="fullcomment"><div class="comment cmt"><p>This method applies the function to the Context
-</p></div><dl class="paramcmts block"><dt class="param">context</dt><dd class="cmt"><p>The context of the scenario</p></dd><dt>returns</dt><dd class="cmt"><p>Nothing</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.action.SimpleAction" class="extype" href="">SimpleAction</a> → <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="Action.html">Action</a></dd></dl></div>
+      <p class="shortcomment cmt">This method applies the function to the Session
+</p><div class="fullcomment"><div class="comment cmt"><p>This method applies the function to the Session
+</p></div><dl class="paramcmts block"><dt class="param">session</dt><dd class="cmt"><p>The session of the scenario</p></dd><dt>returns</dt><dd class="cmt"><p>Nothing</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.action.SimpleAction" class="extype" href="">SimpleAction</a> → <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="Action.html">Action</a></dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">

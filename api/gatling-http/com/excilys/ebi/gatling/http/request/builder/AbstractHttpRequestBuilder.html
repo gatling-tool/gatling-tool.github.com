@@ -67,7 +67,7 @@
       <span class="symbol"> 
         <span class="name">AbstractHttpRequestBuilder</span>
         
-        <span class="params">(<span name="httpRequestActionBuilder">httpRequestActionBuilder: <a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="../../action/HttpRequestActionBuilder.html">HttpRequestActionBuilder</a></span>, <span name="urlFunction">urlFunction: <span name="scala.Option" class="extype">Option</span>[(<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String]</span>, <span name="queryParams">queryParams: Map[String, <a name="com.excilys.ebi.gatling.http.request.Param" class="extype" href="../Param.html">Param</a>]</span>, <span name="headers">headers: Map[String, String]</span>, <span name="followsRedirects">followsRedirects: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>, <span name="credentials">credentials: <span name="scala.Option" class="extype">Option</span>[(String, String)]</span>)</span>
+        <span class="params">(<span name="httpRequestActionBuilder">httpRequestActionBuilder: <a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="../../action/HttpRequestActionBuilder.html">HttpRequestActionBuilder</a></span>, <span name="method">method: String</span>, <span name="urlFunction">urlFunction: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>, <span name="queryParams">queryParams: List[((<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String, (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String)]</span>, <span name="headers">headers: Map[String, (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String]</span>, <span name="followsRedirects">followsRedirects: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>, <span name="credentials">credentials: <span name="scala.Option" class="extype">Option</span>[(String, String)]</span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">httpRequestActionBuilder</dt><dd class="cmt"><p>the HttpRequestActionBuilder with which this builder is linked</p></dd><dt class="param">urlFunction</dt><dd class="cmt"><p>the function returning the url</p></dd><dt class="param">queryParams</dt><dd class="cmt"><p>the query parameters that should be added to the request</p></dd><dt class="param">headers</dt><dd class="cmt"><p>the headers that should be added to the request</p></dd><dt class="param">followsRedirects</dt><dd class="cmt"><p>sets the follow redirect option of AHC</p></dd><dt class="param">credentials</dt><dd class="cmt"><p>sets the credentials in case of Basic HTTP Authentication
@@ -77,38 +77,10 @@
 
         
         
-        <div class="values members" id="values">
-              <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder#getMethod" data-isabs="true">
-      <a id="getMethod:String"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">getMethod</span>
         
-        <span class="result">: String</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder#newInstance" data-isabs="true">
-      <a id="newInstance(HttpRequestActionBuilder,Option[(Context) ⇒ String],Map[String, Param],Map[String, String],Option[Boolean],Option[(String, String)]):B"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">newInstance</span>
-        
-        <span class="params">(<span name="httpRequestActionBuilder">httpRequestActionBuilder: <a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="../../action/HttpRequestActionBuilder.html">HttpRequestActionBuilder</a></span>, <span name="urlFunction">urlFunction: <span name="scala.Option" class="extype">Option</span>[(<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String]</span>, <span name="queryParams">queryParams: Map[String, <a name="com.excilys.ebi.gatling.http.request.Param" class="extype" href="../Param.html">Param</a>]</span>, <span name="headers">headers: Map[String, String]</span>, <span name="followsRedirects">followsRedirects: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>, <span name="credentials">credentials: <span name="scala.Option" class="extype">Option</span>[(String, String)]</span>)</span><span class="result">: B</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Method overridden in children to create a new instance of the correct type
-</p><div class="fullcomment"><div class="comment cmt"><p>Method overridden in children to create a new instance of the correct type
-</p></div><dl class="paramcmts block"><dt class="param">httpRequestActionBuilder</dt><dd class="cmt"><p>the HttpRequestActionBuilder with which this builder is linked</p></dd><dt class="param">urlFunction</dt><dd class="cmt"><p>the function returning the url</p></dd><dt class="param">queryParams</dt><dd class="cmt"><p>the query parameters that should be added to the request</p></dd><dt class="param">headers</dt><dd class="cmt"><p>the headers that should be added to the request</p></dd><dt class="param">followsRedirects</dt><dd class="cmt"><p>sets the follow redirect option of AHC</p></dd><dt class="param">credentials</dt><dd class="cmt"><p>sets the credentials in case of Basic HTTP Authentication
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li></ol>
-            </div>
 
         <div class="values members" id="values">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -213,34 +185,6 @@
 </p><div class="fullcomment"><div class="comment cmt"><p>Adds BASIC authentication to the request
 </p></div><dl class="paramcmts block"><dt class="param">username</dt><dd class="cmt"><p>the username needed</p></dd><dt class="param">password</dt><dd class="cmt"><p>the password needed
 </p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder#build" data-isabs="false">
-      <a id="build(Context):Request"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">build</span>
-        
-        <span class="params">(<span name="context">context: <span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span></span>)</span><span class="result">: <span name="com.ning.http.client.Request" class="extype">Request</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">This method builds the request that will be sent
-</p><div class="fullcomment"><div class="comment cmt"><p>This method builds the request that will be sent
-</p></div><dl class="paramcmts block"><dt class="param">context</dt><dd class="cmt"><p>the context of the current scenario
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder#capture" data-isabs="false">
-      <a id="capture(com.excilys.ebi.gatling.http.check.HttpCheckBuilder[_]*):HttpRequestActionBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">capture</span>
-        
-        <span class="params">(<span name="captureBuilders">captureBuilders: com.excilys.ebi.gatling.http.check.HttpCheckBuilder[_]*</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="extype" href="../../action/HttpRequestActionBuilder.html">HttpRequestActionBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Stops defining the request and adds captures on the response
-</p><div class="fullcomment"><div class="comment cmt"><p>Stops defining the request and adds captures on the response
-</p></div><dl class="paramcmts block"><dt class="param">captureBuilders</dt><dd class="cmt"><p>the captures that will be performed on the response
-</p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder#check" data-isabs="false">
       <a id="check(com.excilys.ebi.gatling.http.check.HttpCheckBuilder[_]*):HttpRequestActionBuilder"></a>
       <h4 class="signature">
@@ -330,20 +274,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder#getRequestBuilder" data-isabs="false">
-      <a id="getRequestBuilder(Context):RequestBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">getRequestBuilder</span>
-        
-        <span class="params">(<span name="context">context: <span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span></span>)</span><span class="result">: <span name="com.ning.http.client.RequestBuilder" class="extype">RequestBuilder</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">This method actually fills the request builder to avoid race conditions
-</p><div class="fullcomment"><div class="comment cmt"><p>This method actually fills the request builder to avoid race conditions
-</p></div><dl class="paramcmts block"><dt class="param">context</dt><dd class="cmt"><p>the context of the current scenario
-</p></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
       <a id="hashCode():Int"></a>
       <h4 class="signature">
@@ -459,22 +389,8 @@
         <span class="params">(<span name="paramKey">paramKey: String</span>)</span><span class="result">: B</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Adds a query parameter to the request</p><div class="fullcomment"><div class="comment cmt"><p>Adds a query parameter to the request</p><p>This method is equivalent to queryParam(paramKey, FromContext(paramKey))
+      <p class="shortcomment cmt">Adds a query parameter to the request</p><div class="fullcomment"><div class="comment cmt"><p>Adds a query parameter to the request</p><p>The value is a session attribute with the same key
 </p></div><dl class="paramcmts block"><dt class="param">paramKey</dt><dd class="cmt"><p>the key of the parameter
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder#queryParam" data-isabs="false">
-      <a id="queryParam(String,FromContext):B"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">queryParam</span>
-        
-        <span class="params">(<span name="paramKey">paramKey: String</span>, <span name="paramValue">paramValue: <span name="com.excilys.ebi.gatling.core.context.FromContext" class="extype">FromContext</span></span>)</span><span class="result">: B</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds a query parameter to the request
-</p><div class="fullcomment"><div class="comment cmt"><p>Adds a query parameter to the request
-</p></div><dl class="paramcmts block"><dt class="param">paramKey</dt><dd class="cmt"><p>the key of the parameter</p></dd><dt class="param">paramValue</dt><dd class="cmt"><p>a FromContext(contextKey) that indicates the context key from which the value should be extracted
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder#queryParam" data-isabs="false">
       <a id="queryParam(String,String):B"></a>
@@ -486,9 +402,22 @@
         <span class="params">(<span name="paramKey">paramKey: String</span>, <span name="paramValue">paramValue: String</span>)</span><span class="result">: B</span>
       </span>
       </h4>
+      <p class="shortcomment cmt">Adds a query parameter to the request</p><div class="fullcomment"><div class="comment cmt"><p>Adds a query parameter to the request</p><p>Its key and value are set by the user
+</p></div><dl class="paramcmts block"><dt class="param">paramKey</dt><dd class="cmt"><p>the key of the parameter</p></dd><dt class="param">paramValue</dt><dd class="cmt"><p>the value of the parameter
+</p></dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.builder.AbstractHttpRequestBuilder#queryParam" data-isabs="false">
+      <a id="queryParam((Session) ⇒ String,(Session) ⇒ String):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">queryParam</span>
+        
+        <span class="params">(<span name="paramKeyFunction">paramKeyFunction: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>, <span name="paramValueFunction">paramValueFunction: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
       <p class="shortcomment cmt">Adds a query parameter to the request
 </p><div class="fullcomment"><div class="comment cmt"><p>Adds a query parameter to the request
-</p></div><dl class="paramcmts block"><dt class="param">paramKey</dt><dd class="cmt"><p>the key of the parameter</p></dd><dt class="param">paramValue</dt><dd class="cmt"><p>the value of the parameter
+</p></div><dl class="paramcmts block"><dt class="param">paramKeyFunction</dt><dd class="cmt"><p>a function that returns the key name</p></dd><dt class="param">paramValueFunction</dt><dd class="cmt"><p>a function that returns the value
 </p></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>

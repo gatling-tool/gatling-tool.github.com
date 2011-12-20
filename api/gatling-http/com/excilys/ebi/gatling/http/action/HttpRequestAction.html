@@ -64,11 +64,10 @@
       <span class="symbol"> 
         <span class="name">HttpRequestAction</span>
         
-        <span class="params">(<span name="next">next: <span name="com.excilys.ebi.gatling.core.action.Action" class="extype">Action</span></span>, <span name="request">request: <a name="com.excilys.ebi.gatling.http.request.HttpRequest" class="extype" href="../request/HttpRequest.html">HttpRequest</a></span>, <span name="givenCheckBuilders">givenCheckBuilders: <span name="scala.Option" class="extype">Option</span>[List[com.excilys.ebi.gatling.http.check.HttpCheckBuilder[_]]]</span>, <span name="groups">groups: List[String]</span>, <span name="feeder">feeder: <span name="scala.Option" class="extype">Option</span>[<span name="com.excilys.ebi.gatling.core.feeder.Feeder" class="extype">Feeder</span>]</span>)</span>
+        <span class="params">(<span name="next">next: <span name="com.excilys.ebi.gatling.core.action.Action" class="extype">Action</span></span>, <span name="request">request: <a name="com.excilys.ebi.gatling.http.request.HttpRequest" class="extype" href="../request/HttpRequest.html">HttpRequest</a></span>, <span name="givenCheckBuilders">givenCheckBuilders: <span name="scala.Option" class="extype">Option</span>[List[com.excilys.ebi.gatling.http.check.HttpCheckBuilder[_]]]</span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">constructs an HttpRequestAction</p><div class="fullcomment"><div class="comment cmt"><p>constructs an HttpRequestAction</p></div><dl class="paramcmts block"><dt class="param">next</dt><dd class="cmt"><p>the next action that will be executed</p></dd><dt class="param">givenCheckBuilders</dt><dd class="cmt"><p>all the checks that will be performed on the response</p></dd><dt class="param">groups</dt><dd class="cmt"><p>the groups to which this action belongs</p></dd><dt class="param">feeder</dt><dd class="cmt"><p>the feeder that will be consumed each time the request will be sent
-</p></dd></dl></div>
+      <p class="shortcomment cmt">constructs an HttpRequestAction</p><div class="fullcomment"><div class="comment cmt"><p>constructs an HttpRequestAction</p></div><dl class="paramcmts block"><dt class="param">next</dt><dd class="cmt"><p>the next action that will be executed</p></dd><dt class="param">givenCheckBuilders</dt><dd class="cmt"><p>all the checks that will be performed on the response</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -85,6 +84,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.RequestAction#_$1" data-isabs="true">
+      <a id="_$1:_$1"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">_$1</span>
+        
+        
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd>RequestAction</dd></dl></div>
     </li></ol>
             </div>
         
@@ -180,14 +190,14 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestAction#captures" data-isabs="false">
-      <a id="captures:HashSet[HttpCheck]"></a>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestAction#checks" data-isabs="false">
+      <a id="checks:List[HttpCheck]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
-        <span class="name">captures</span>
+        <span class="name">checks</span>
         
-        <span class="result">: <span name="scala.collection.mutable.HashSet" class="extype">HashSet</span>[<a name="com.excilys.ebi.gatling.http.check.HttpCheck" class="extype" href="../check/HttpCheck.html">HttpCheck</a>]</span>
+        <span class="result">: List[<a name="com.excilys.ebi.gatling.http.check.HttpCheck" class="extype" href="../check/HttpCheck.html">HttpCheck</a>]</span>
       </span>
       </h4>
       
@@ -239,13 +249,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestAction#execute" data-isabs="false">
-      <a id="execute(Context):Unit"></a>
+      <a id="execute(Session):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">execute</span>
         
-        <span class="params">(<span name="context">context: <span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="session">session: <span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.http.action.HttpRequestAction" class="extype" href="">HttpRequestAction</a> → RequestAction → Action</dd></dl></div>

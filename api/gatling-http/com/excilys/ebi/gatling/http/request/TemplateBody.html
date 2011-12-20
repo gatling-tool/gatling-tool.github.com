@@ -24,7 +24,7 @@
       <span class="symbol"> 
         <span class="name">TemplateBody</span>
         
-        <span class="params">(<span name="tplPath">tplPath: String</span>, <span name="values">values: Map[String, <a name="com.excilys.ebi.gatling.http.request.Param" class="extype" href="Param.html">Param</a>]</span>)</span><span class="result"> extends <a name="com.excilys.ebi.gatling.http.request.HttpRequestBody" class="extype" href="HttpRequestBody.html">HttpRequestBody</a> with <span name="scala.Product" class="extype">Product</span> with <span name="scala.Serializable" class="extype">Serializable</span></span>
+        <span class="params">(<span name="tplPath">tplPath: String</span>, <span name="values">values: Map[String, (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String]</span>)</span><span class="result"> extends <a name="com.excilys.ebi.gatling.http.request.HttpRequestBody" class="extype" href="HttpRequestBody.html">HttpRequestBody</a> with <span name="scala.Product" class="extype">Product</span> with <span name="scala.Serializable" class="extype">Serializable</span></span>
       </span>
       </h4>
       
@@ -65,7 +65,7 @@
       <span class="symbol"> 
         <span class="name">TemplateBody</span>
         
-        <span class="params">(<span name="tplPath">tplPath: String</span>, <span name="values">values: Map[String, <a name="com.excilys.ebi.gatling.http.request.Param" class="extype" href="Param.html">Param</a>]</span>)</span>
+        <span class="params">(<span name="tplPath">tplPath: String</span>, <span name="values">values: Map[String, (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String]</span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">tplPath</dt><dd class="cmt"><p>the path to the template</p></dd><dt class="param">values</dt><dd class="cmt"><p>the values that will be merged in the template
@@ -350,13 +350,13 @@
       </h4>
       <p class="shortcomment cmt">the path to the template</p>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.http.request.TemplateBody#values" data-isabs="false">
-      <a id="values:Map[String, Param]"></a>
+      <a id="values:Map[String, (Session) ⇒ String]"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol"> 
         <span class="name">values</span>
         
-        <span class="result">: Map[String, <a name="com.excilys.ebi.gatling.http.request.Param" class="extype" href="Param.html">Param</a>]</span>
+        <span class="result">: Map[String, (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">the values that will be merged in the template

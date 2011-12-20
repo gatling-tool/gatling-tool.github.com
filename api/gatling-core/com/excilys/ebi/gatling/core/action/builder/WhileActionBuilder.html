@@ -64,10 +64,10 @@
       <span class="symbol"> 
         <span class="name">WhileActionBuilder</span>
         
-        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>, <span name="loopNext">loopNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="../../structure/ChainBuilder.html">ChainBuilder</a></span>, <span name="next">next: <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a></span>, <span name="counterName">counterName: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="groups">groups: List[String]</span>)</span>
+        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>, <span name="loopNext">loopNext: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="../../structure/ChainBuilder.html">ChainBuilder</a></span>, <span name="next">next: <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a></span>, <span name="counterName">counterName: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">create a new WhileAction</p><div class="fullcomment"><div class="comment cmt"><p>create a new WhileAction</p></div><dl class="paramcmts block"><dt class="param">conditionFunction</dt><dd class="cmt"><p>the function that determine the condition</p></dd><dt class="param">loopNext</dt><dd class="cmt"><p>chain that will be executed if conditionFunction evaluates to true</p></dd><dt class="param">next</dt><dd class="cmt"><p>action that will be executed if conditionFunction evaluates to false</p></dd><dt class="param">groups</dt><dd class="cmt"><p>groups in which this action and the others inside will be
+      <p class="shortcomment cmt">create a new WhileAction</p><div class="fullcomment"><div class="comment cmt"><p>create a new WhileAction</p></div><dl class="paramcmts block"><dt class="param">conditionFunction</dt><dd class="cmt"><p>the function that determine the condition</p></dd><dt class="param">loopNext</dt><dd class="cmt"><p>chain that will be executed if conditionFunction evaluates to true</p></dd><dt class="param">next</dt><dd class="cmt"><p>action that will be executed if conditionFunction evaluates to false
 </p></dd></dl></div>
     </li></ol>
             </div>
@@ -230,20 +230,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder#inGroups" data-isabs="false">
-      <a id="inGroups(List[String]):WhileActionBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">inGroups</span>
-        
-        <span class="params">(<span name="groups">groups: List[String]</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder" class="extype" href="">WhileActionBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds group information to current action
-</p><div class="fullcomment"><div class="comment cmt"><p>Adds group information to current action
-</p></div><dl class="paramcmts block"><dt class="param">groups</dt><dd class="cmt"><p>The List of groups to which the built action will belong</p></dd><dt>returns</dt><dd class="cmt"><p>A builder of the same type, with groups set
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder" class="extype" href="">WhileActionBuilder</a> → <a name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="extype" href="AbstractActionBuilder.html">AbstractActionBuilder</a></dd></dl></div>
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
@@ -364,13 +350,13 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder#withConditionFunction" data-isabs="false">
-      <a id="withConditionFunction((Context, Action) ⇒ Boolean):WhileActionBuilder"></a>
+      <a id="withConditionFunction((Session, Action) ⇒ Boolean):WhileActionBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">withConditionFunction</span>
         
-        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder" class="extype" href="">WhileActionBuilder</a></span>
+        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a>, <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder" class="extype" href="">WhileActionBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Adds conditionFunction to this builder
@@ -378,13 +364,13 @@
 </p></div><dl class="paramcmts block"><dt class="param">conditionFunction</dt><dd class="cmt"><p>the condition function</p></dd><dt>returns</dt><dd class="cmt"><p>a new builder with conditionFunction set
 </p></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder#withConditionFunction" data-isabs="false">
-      <a id="withConditionFunction((Context) ⇒ Boolean):WhileActionBuilder"></a>
+      <a id="withConditionFunction((Session) ⇒ Boolean):WhileActionBuilder"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">withConditionFunction</span>
         
-        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder" class="extype" href="">WhileActionBuilder</a></span>
+        <span class="params">(<span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder" class="extype" href="">WhileActionBuilder</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Adds conditionFunction to this builder

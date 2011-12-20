@@ -64,10 +64,10 @@
       <span class="symbol"> 
         <span class="name">HttpStatusCheck</span>
         
-        <span class="params">(<span name="to">to: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="expected">expected: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
+        <span class="params">(<span name="expected">expected: List[String]</span>, <span name="saveAs">saveAs: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">to</dt><dd class="cmt"><p>the optional context key in which the status code will be stored</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value against which the extracted value will be checked
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">expected</dt><dd class="cmt"><p>the expected value against which the extracted value will be checked
 </p></dd></dl></div>
     </li></ol>
             </div>
@@ -145,13 +145,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.Check#check" data-isabs="false">
-      <a id="check(Option[String]):Boolean"></a>
+      <a id="check(List[String]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">check</span>
         
-        <span class="params">(<span name="value">value: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="value">value: List[String]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Check</dd></dl></div>
@@ -315,7 +315,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.status.HttpStatusCheck#toString" data-isabs="false">
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.ClassSimpleNameToString#toString" data-isabs="false">
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -325,7 +325,7 @@
         <span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.http.check.status.HttpStatusCheck" class="extype" href="">HttpStatusCheck</a> → ClassSimpleNameToString → AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ClassSimpleNameToString → AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
       <a id="wait():Unit"></a>
       <h4 class="signature">
@@ -369,13 +369,13 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.Check#what" data-isabs="false">
-      <a id="what:(Context) ⇒ String"></a>
+      <a id="what:(Session) ⇒ String"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol"> 
         <span class="name">what</span>
         
-        <span class="result">: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>
+        <span class="result">: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Check</dd></dl></div>

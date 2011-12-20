@@ -64,7 +64,7 @@
       <span class="symbol"> 
         <span class="name">ConditionalLoopHandlerBuilder</span>
         
-        <span class="params">(<span name="structureBuilder">structureBuilder: B</span>, <span name="chain">chain: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="../../ChainBuilder.html">ChainBuilder</a></span>, <span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../../context/Context.html">Context</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>, <span name="counterName">counterName: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
+        <span class="params">(<span name="structureBuilder">structureBuilder: B</span>, <span name="chain">chain: <a name="com.excilys.ebi.gatling.core.structure.ChainBuilder" class="extype" href="../../ChainBuilder.html">ChainBuilder</a></span>, <span name="conditionFunction">conditionFunction: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../../session/Session.html">Session</a>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>, <span name="counterName">counterName: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt">constructs a ConditionalLoopHandlerBuilder</p><div class="fullcomment"><div class="comment cmt"><p>constructs a ConditionalLoopHandlerBuilder</p></div><dl class="paramcmts block"><dt class="param">structureBuilder</dt><dd class="cmt"><p>the structure builder on which loop was called</p></dd><dt class="param">chain</dt><dd class="cmt"><p>the chain of actions that should be repeated</p></dd><dt class="param">conditionFunction</dt><dd class="cmt"><p>the function that determines whether the loop should continue or not</p></dd><dt class="param">counterName</dt><dd class="cmt"><p>the name of the counter for this loop
@@ -144,19 +144,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.structure.loop.handler.ConditionalLoopHandlerBuilder#build" data-isabs="false">
-      <a id="build:B"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">build</span>
-        
-        <span class="result">: B</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Actually adds the current conditional loop to the structure builder
-</p><div class="fullcomment"><div class="comment cmt"><p>Actually adds the current conditional loop to the structure builder
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.structure.loop.handler.ConditionalLoopHandlerBuilder" class="extype" href="">ConditionalLoopHandlerBuilder</a> → <a name="com.excilys.ebi.gatling.core.structure.loop.handler.AbstractLoopHandlerBuilder" class="extype" href="AbstractLoopHandlerBuilder.html">AbstractLoopHandlerBuilder</a></dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -171,20 +158,6 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="prt" name="com.excilys.ebi.gatling.core.structure.loop.handler.AbstractLoopHandlerBuilder#doBuild" data-isabs="false">
-      <a id="doBuild(List[AbstractActionBuilder]):B"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">doBuild</span>
-        
-        <span class="params">(<span name="actionBuilders">actionBuilders: List[<a name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="extype" href="../../../action/builder/AbstractActionBuilder.html">AbstractActionBuilder</a>]</span>)</span><span class="result">: B</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">This method adds the actionBuilders of the loop to the structure builder on which loop was called
-</p><div class="fullcomment"><div class="comment cmt"><p>This method adds the actionBuilders of the loop to the structure builder on which loop was called
-</p></div><dl class="paramcmts block"><dt class="param">actionBuilders</dt><dd class="cmt"><p>the list of actions that form the loop
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.structure.loop.handler.AbstractLoopHandlerBuilder" class="extype" href="AbstractLoopHandlerBuilder.html">AbstractLoopHandlerBuilder</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">

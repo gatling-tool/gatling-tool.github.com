@@ -34,7 +34,7 @@
           <div class="superTypes hiddenContent"><span name="com.excilys.ebi.gatling.core.check.Check" class="extype">Check</span>[<span name="com.ning.http.client.Response" class="extype">Response</span>], <span name="com.excilys.ebi.gatling.core.util.ClassSimpleNameToString" class="extype">ClassSimpleNameToString</span>, <span name="com.excilys.ebi.gatling.core.log.Logging" class="extype">Logging</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="com.excilys.ebi.gatling.http.check.body.HttpBodyRegExpCheck" class="extype" href="body/HttpBodyRegExpCheck.html">HttpBodyRegExpCheck</a>, <a name="com.excilys.ebi.gatling.http.check.body.HttpBodyXPathCheck" class="extype" href="body/HttpBodyXPathCheck.html">HttpBodyXPathCheck</a>, <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheck" class="extype" href="header/HttpHeaderCheck.html">HttpHeaderCheck</a>, <a name="com.excilys.ebi.gatling.http.check.status.HttpStatusCheck" class="extype" href="status/HttpStatusCheck.html">HttpStatusCheck</a></div>
+          <div class="subClasses hiddenContent"><a name="com.excilys.ebi.gatling.http.check.body.HttpBodyRegexCheck" class="extype" href="body/HttpBodyRegexCheck.html">HttpBodyRegexCheck</a>, <a name="com.excilys.ebi.gatling.http.check.body.HttpBodyXPathCheck" class="extype" href="body/HttpBodyXPathCheck.html">HttpBodyXPathCheck</a>, <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheck" class="extype" href="header/HttpHeaderCheck.html">HttpHeaderCheck</a>, <a name="com.excilys.ebi.gatling.http.check.status.HttpStatusCheck" class="extype" href="status/HttpStatusCheck.html">HttpStatusCheck</a></div>
         </div></div>
         
 
@@ -67,10 +67,10 @@
       <span class="symbol"> 
         <span class="name">HttpCheck</span>
         
-        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>, <span name="how">how: <span name="com.excilys.ebi.gatling.core.check.extractor.ExtractorFactory" class="extype">ExtractorFactory</span>[<span name="com.ning.http.client.Response" class="extype">Response</span>]</span>, <span name="to">to: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="strategy">strategy: <span name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype">CheckStrategy</span></span>, <span name="expected">expected: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="when">when: HttpPhase</span>)</span>
+        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>, <span name="how">how: <span name="com.excilys.ebi.gatling.core.check.extractor.ExtractorFactory" class="extype">ExtractorFactory</span>[<span name="com.ning.http.client.Response" class="extype">Response</span>]</span>, <span name="strategy">strategy: <span name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype">CheckStrategy</span></span>, <span name="expected">expected: List[String]</span>, <span name="saveAs">saveAs: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="when">when: HttpPhase</span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function returning the expression representing what is to be checked</p></dd><dt class="param">how</dt><dd class="cmt"><p>the extractor factory that will give the method used to extract the value specified by what</p></dd><dt class="param">to</dt><dd class="cmt"><p>the optional context key in which the extracted value will be stored</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>the strategy used to check</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value against which the extracted value will be checked</p></dd><dt class="param">when</dt><dd class="cmt"><p>the HttpPhase during which the check will be made
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function returning the expression representing what is to be checked</p></dd><dt class="param">how</dt><dd class="cmt"><p>the extractor factory that will give the method used to extract the value specified by what</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>the strategy used to check</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value against which the extracted value will be checked</p></dd><dt class="param">saveAs</dt><dd class="cmt"><p>the optional session key in which the extracted value will be stored</p></dd><dt class="param">when</dt><dd class="cmt"><p>the HttpPhase during which the check will be made
 </p></dd></dl></div>
     </li></ol>
             </div>
@@ -148,13 +148,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.check.Check#check" data-isabs="false">
-      <a id="check(Option[String]):Boolean"></a>
+      <a id="check(List[String]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">check</span>
         
-        <span class="params">(<span name="value">value: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="value">value: List[String]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Check</dd></dl></div>

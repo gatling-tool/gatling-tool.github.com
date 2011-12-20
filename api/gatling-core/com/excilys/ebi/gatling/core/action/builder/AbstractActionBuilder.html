@@ -34,7 +34,7 @@
           <div class="superTypes hiddenContent"><a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../../log/Logging.html">Logging</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="com.excilys.ebi.gatling.core.action.builder.EndActionBuilder" class="extype" href="EndActionBuilder.html">EndActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.GroupActionBuilder" class="extype" href="GroupActionBuilder.html">GroupActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.IfActionBuilder" class="extype" href="IfActionBuilder.html">IfActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.PauseActionBuilder" class="extype" href="PauseActionBuilder.html">PauseActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.StartActionBuilder" class="extype" href="StartActionBuilder.html">StartActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder" class="extype" href="WhileActionBuilder.html">WhileActionBuilder</a></div>
+          <div class="subClasses hiddenContent"><a name="com.excilys.ebi.gatling.core.action.builder.EndActionBuilder" class="extype" href="EndActionBuilder.html">EndActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.IfActionBuilder" class="extype" href="IfActionBuilder.html">IfActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.PauseActionBuilder" class="extype" href="PauseActionBuilder.html">PauseActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.SimpleActionBuilder" class="extype" href="SimpleActionBuilder.html">SimpleActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.StartActionBuilder" class="extype" href="StartActionBuilder.html">StartActionBuilder</a>, <a name="com.excilys.ebi.gatling.core.action.builder.WhileActionBuilder" class="extype" href="WhileActionBuilder.html">WhileActionBuilder</a></div>
         </div></div>
         
 
@@ -62,55 +62,10 @@
 
         
         
-        <div class="values members" id="values">
-              <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder#build" data-isabs="true">
-      <a id="build:Action"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">build</span>
         
-        <span class="result">: <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Builds the Action
-</p><div class="fullcomment"><div class="comment cmt"><p>Builds the Action
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The built Action
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder#inGroups" data-isabs="true">
-      <a id="inGroups(List[String]):AbstractActionBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">inGroups</span>
-        
-        <span class="params">(<span name="groups">groups: List[String]</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="extype" href="">AbstractActionBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds group information to current action
-</p><div class="fullcomment"><div class="comment cmt"><p>Adds group information to current action
-</p></div><dl class="paramcmts block"><dt class="param">groups</dt><dd class="cmt"><p>The List of groups to which the built action will belong</p></dd><dt>returns</dt><dd class="cmt"><p>A builder of the same type, with groups set
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder#withNext" data-isabs="true">
-      <a id="withNext(Action):AbstractActionBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">withNext</span>
-        
-        <span class="params">(<span name="next">next: <a name="com.excilys.ebi.gatling.core.action.Action" class="extype" href="../Action.html">Action</a></span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="extype" href="">AbstractActionBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Adds next action to this builder, to be able to chain the actions
-</p><div class="fullcomment"><div class="comment cmt"><p>Adds next action to this builder, to be able to chain the actions
-</p></div><dl class="paramcmts block"><dt class="param">next</dt><dd class="cmt"><p>Action that will be executed after the one built by this builder</p></dd><dt>returns</dt><dd class="cmt"><p>A builder of the same type, with next set
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li></ol>
-            </div>
 
         <div class="values members" id="values">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">

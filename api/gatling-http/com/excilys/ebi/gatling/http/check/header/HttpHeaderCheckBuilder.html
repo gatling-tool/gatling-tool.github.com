@@ -31,7 +31,7 @@
           <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>This class builds a response header check
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a>[<a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="">HttpHeaderCheckBuilder</a>], <span name="com.excilys.ebi.gatling.core.check.CheckBuilder" class="extype">CheckBuilder</span>[<span name="com.ning.http.client.Response" class="extype">Response</span>], <span name="com.excilys.ebi.gatling.core.log.Logging" class="extype">Logging</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a>[<a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="">HttpHeaderCheckBuilder</a>], <span name="com.excilys.ebi.gatling.core.check.CheckBuilder" class="extype">CheckBuilder</span>[<a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a>[<a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="">HttpHeaderCheckBuilder</a>], <span name="com.ning.http.client.Response" class="extype">Response</span>], <span name="com.excilys.ebi.gatling.core.log.Logging" class="extype">Logging</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -64,10 +64,10 @@
       <span class="symbol"> 
         <span class="name">HttpHeaderCheckBuilder</span>
         
-        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>, <span name="to">to: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="strategy">strategy: <span name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype">CheckStrategy</span></span>, <span name="expected">expected: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
+        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>, <span name="strategy">strategy: <span name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype">CheckStrategy</span></span>, <span name="expected">expected: List[String]</span>, <span name="saveAs">saveAs: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function returning the header name to be checked</p></dd><dt class="param">to</dt><dd class="cmt"><p>the optional context key in which the extracted value will be stored</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>the strategy used to check</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value against which the extracted value will be checked
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function returning the header name to be checked</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>the strategy used to check</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value against which the extracted value will be checked
 </p></dd></dl></div>
     </li></ol>
             </div>
@@ -144,17 +144,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#build" data-isabs="false">
-      <a id="build:HttpCheck"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">build</span>
-        
-        <span class="result">: <a name="com.excilys.ebi.gatling.http.check.HttpCheck" class="extype" href="../HttpCheck.html">HttpCheck</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="">HttpHeaderCheckBuilder</a> → <a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a> → CheckBuilder</dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -227,19 +216,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder#in" data-isabs="false">
-      <a id="in(String):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">in</span>
-        
-        <span class="params">(<span name="to">to: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Method used in the DSL.</p><div class="fullcomment"><div class="comment cmt"><p>Method used in the DSL. It requires the storage of the extracted value in the context
-</p></div><dl class="paramcmts block"><dt class="param">to</dt><dd class="cmt"><p>the attribute name in which the value will be stored
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a></dd></dl></div>
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
@@ -273,19 +249,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder#newInstance" data-isabs="false">
-      <a id="newInstance((Context) ⇒ String,Option[String],CheckStrategy,Option[String],HttpPhase):HttpHeaderCheckBuilder"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">newInstance</span>
-        
-        <span class="params">(<span name="what">what: (<span name="com.excilys.ebi.gatling.core.context.Context" class="extype">Context</span>) ⇒ String</span>, <span name="to">to: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="strategy">strategy: <span name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype">CheckStrategy</span></span>, <span name="expected">expected: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="when">when: HttpPhase</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="">HttpHeaderCheckBuilder</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Method that must be implemented by children classes to get the instance of the child class
-</p><div class="fullcomment"><div class="comment cmt"><p>Method that must be implemented by children classes to get the instance of the child class
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="">HttpHeaderCheckBuilder</a> → <a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
       <a id="notify():Unit"></a>
       <h4 class="signature">
@@ -391,7 +354,7 @@
         <div name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="parent">
               <h3>Inherited from <a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a>[<a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="">HttpHeaderCheckBuilder</a>]</h3>
             </div><div name="com.excilys.ebi.gatling.core.check.CheckBuilder" class="parent">
-              <h3>Inherited from <span name="com.excilys.ebi.gatling.core.check.CheckBuilder" class="extype">CheckBuilder</span>[<span name="com.ning.http.client.Response" class="extype">Response</span>]</h3>
+              <h3>Inherited from <span name="com.excilys.ebi.gatling.core.check.CheckBuilder" class="extype">CheckBuilder</span>[<a name="com.excilys.ebi.gatling.http.check.HttpCheckBuilder" class="extype" href="../HttpCheckBuilder.html">HttpCheckBuilder</a>[<a name="com.excilys.ebi.gatling.http.check.header.HttpHeaderCheckBuilder" class="extype" href="">HttpHeaderCheckBuilder</a>], <span name="com.ning.http.client.Response" class="extype">Response</span>]</h3>
             </div><div name="com.excilys.ebi.gatling.core.log.Logging" class="parent">
               <h3>Inherited from <span name="com.excilys.ebi.gatling.core.log.Logging" class="extype">Logging</span></h3>
             </div><div name="scala.AnyRef" class="parent">

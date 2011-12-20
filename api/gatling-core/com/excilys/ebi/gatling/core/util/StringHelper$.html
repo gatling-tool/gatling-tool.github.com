@@ -118,12 +118,67 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#EL_END" data-isabs="false">
+      <a id="EL_END:String"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">EL_END</span>
+        
+        <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#EL_START" data-isabs="false">
+      <a id="EL_START:String"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">EL_START</span>
+        
+        <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#EMPTY" data-isabs="false">
       <a id="EMPTY:String"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol"> 
         <span class="name">EMPTY</span>
+        
+        <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#END_OF_LINE" data-isabs="false">
+      <a id="END_OF_LINE:String"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">END_OF_LINE</span>
+        
+        <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#INDEX_END" data-isabs="false">
+      <a id="INDEX_END:String"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">INDEX_END</span>
+        
+        <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#INDEX_START" data-isabs="false">
+      <a id="INDEX_START:String"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">INDEX_START</span>
         
         <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
       </span>
@@ -154,6 +209,39 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#elMultivaluedPattern" data-isabs="false">
+      <a id="elMultivaluedPattern:Regex"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">elMultivaluedPattern</span>
+        
+        <span class="result">: <span name="scala.util.matching.Regex" class="extype">Regex</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#elPattern" data-isabs="false">
+      <a id="elPattern:Regex"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">elPattern</span>
+        
+        <span class="result">: <span name="scala.util.matching.Regex" class="extype">Regex</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#elPatternString" data-isabs="false">
+      <a id="elPatternString:String"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">elPatternString</span>
+        
+        <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -213,34 +301,16 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#interpolate" data-isabs="false">
-      <a id="interpolate(String,String*):(Context) ⇒ String"></a>
+      <a id="interpolate(String):(Session) ⇒ String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">interpolate</span>
         
-        <span class="params">(<span name="stringToFormat">stringToFormat: String</span>, <span name="interpolations">interpolations: String*</span>)</span><span class="result">: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../context/Context.html">Context</a>) ⇒ String</span>
+        <span class="params">(<span name="stringToFormat">stringToFormat: String</span>)</span><span class="result">: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../session/Session.html">Session</a>) ⇒ String</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Method used in scenarios to interpolate strings from context
-</p><div class="fullcomment"><div class="comment cmt"><p>Method used in scenarios to interpolate strings from context
-</p></div><dl class="paramcmts block"><dt class="param">stringToFormat</dt><dd class="cmt"><p>the string to be formatted</p></dd><dt class="param">interpolations</dt><dd class="cmt"><p>the keys of the values that will be inserted in stringToFormat</p></dd><dt>returns</dt><dd class="cmt"><p>the completed string
-</p></dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.util.StringHelper#interpolateString" data-isabs="false">
-      <a id="interpolateString(Context,String,Seq[String]):String"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">interpolateString</span>
-        
-        <span class="params">(<span name="context">context: <a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../context/Context.html">Context</a></span>, <span name="stringToFormat">stringToFormat: String</span>, <span name="interpolations">interpolations: Seq[String]</span>)</span><span class="result">: String</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Returns a string with all {} replaced by specified values as in :</p><div class="fullcomment"><div class="comment cmt"><p>Returns a string with all {} replaced by specified values as in :</p><pre>
-//context has attribute &quot;key&quot; set to &quot;interpolation&quot;
-interpolate(&quot;This is an {}&quot;, &quot;key&quot;) =&gt; &quot;This is an interpolation&quot;
-</pre></div><dl class="paramcmts block"><dt class="param">context</dt><dd class="cmt"><p>the context in which values must be taken</p></dd><dt class="param">stringToFormat</dt><dd class="cmt"><p>the string to be formatted</p></dd><dt class="param">interpolations</dt><dd class="cmt"><p>the keys of the values that will be inserted in stringToFormat</p></dd><dt>returns</dt><dd class="cmt"><p>the completed string
-</p></dd></dl></div>
+      
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">

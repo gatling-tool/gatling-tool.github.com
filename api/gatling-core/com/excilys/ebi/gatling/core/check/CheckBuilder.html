@@ -14,16 +14,16 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img src="../../../../../../lib/class_big.png" />
+        <a title="Go to companion" href="CheckBuilder$.html"><img src="../../../../../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a name="com" class="extype" href="../../../../../package.html">com</a>.<a name="com.excilys" class="extype" href="../../../../package.html">excilys</a>.<a name="com.excilys.ebi" class="extype" href="../../../package.html">ebi</a>.<a name="com.excilys.ebi.gatling" class="extype" href="../../package.html">gatling</a>.<a name="com.excilys.ebi.gatling.core" class="extype" href="../package.html">core</a>.<a name="com.excilys.ebi.gatling.core.check" class="extype" href="package.html">check</a></p>
-        <h1>CheckBuilder</h1>
+        <h1><a title="Go to companion" href="CheckBuilder$.html">CheckBuilder</a></h1>
       </div>
 
       <h4 class="signature" id="signature">
       <span class="kind">class</span>
       <span class="symbol"> 
         <span class="name">CheckBuilder</span>
-        <span class="tparams">[<span name="WHERE">WHERE</span>]</span>
+        <span class="tparams">[<span name="B">B &lt;: <a name="com.excilys.ebi.gatling.core.check.CheckBuilder" class="extype" href="">CheckBuilder</a>[B, WHERE]</span>, <span name="WHERE">WHERE</span>]</span>
         <span class="result"> extends <a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../log/Logging.html">Logging</a></span>
       </span>
       </h4>
@@ -58,40 +58,26 @@
         <div class="members" id="constructors">
               <h3>Instance Constructors</h3>
               <ol><li visbl="pub" name="com.excilys.ebi.gatling.core.check.CheckBuilder#this" data-isabs="false">
-      <a id="this:CheckBuilder[WHERE]"></a>
+      <a id="this:CheckBuilder[B, WHERE]"></a>
       <h4 class="signature">
       <span class="kind">new</span>
       <span class="symbol"> 
         <span class="name">CheckBuilder</span>
         
-        <span class="params">(<span name="what">what: (<a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../context/Context.html">Context</a>) ⇒ String</span>, <span name="to">to: <span name="scala.Option" class="extype">Option</span>[String]</span>, <span name="strategy">strategy: <a name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype" href="strategy/CheckStrategy.html">CheckStrategy</a></span>, <span name="expected">expected: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
+        <span class="params">(<span name="what">what: (<a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../session/Session.html">Session</a>) ⇒ String</span>, <span name="occurrence">occurrence: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Int" class="extype">Int</span>]</span>, <span name="strategy">strategy: <a name="com.excilys.ebi.gatling.core.check.strategy.CheckStrategy" class="extype" href="strategy/CheckStrategy.html">CheckStrategy</a></span>, <span name="expected">expected: List[String]</span>, <span name="saveAs">saveAs: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function that returns the expression representing what the check should look for</p></dd><dt class="param">to</dt><dd class="cmt"><p>the context attribute that will be used to store the extracted value</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>the strategy used to perform the Check</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value of what has been found
-</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the function that returns the expression representing what the check should look for</p></dd><dt class="param">strategy</dt><dd class="cmt"><p>the strategy used to perform the Check</p></dd><dt class="param">expected</dt><dd class="cmt"><p>the expected value of what has been found
+</p></dd><dt class="param">saveAs</dt><dd class="cmt"><p>the session attribute that will be used to store the extracted value</p></dd></dl></div>
     </li></ol>
             </div>
 
         
         
-        <div class="values members" id="values">
-              <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="com.excilys.ebi.gatling.core.check.CheckBuilder#build" data-isabs="true">
-      <a id="build:Check[WHERE]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">build</span>
         
-        <span class="result">: <a name="com.excilys.ebi.gatling.core.check.Check" class="extype" href="Check.html">Check</a>[WHERE]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li></ol>
-            </div>
 
         <div class="values members" id="values">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">

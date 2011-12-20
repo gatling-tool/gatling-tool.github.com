@@ -24,7 +24,7 @@
       <span class="symbol"> 
         <span class="name">CountBasedIterationActionBuilder</span>
         
-        <span class="result"> extends <a name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler" class="extype" href="../../context/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a></span>
+        <span class="result"> extends <a name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler" class="extype" href="../../session/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a></span>
       </span>
       </h4>
       
@@ -32,7 +32,7 @@
 will be used to create a times loop.
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler" class="extype" href="../../context/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a>, <a name="com.excilys.ebi.gatling.core.context.handler.IterationHandler" class="extype" href="../../context/handler/IterationHandler.html">IterationHandler</a>, <a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../../log/Logging.html">Logging</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler" class="extype" href="../../session/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a>, <a name="com.excilys.ebi.gatling.core.session.handler.IterationHandler" class="extype" href="../../session/handler/IterationHandler.html">IterationHandler</a>, <a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../../log/Logging.html">Logging</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -48,7 +48,7 @@ will be used to create a times loop.
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="com.excilys.ebi.gatling.core.action.builder.CountBasedIterationActionBuilder" class="in"><span>CountBasedIterationActionBuilder</span></li><li name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler" class="in"><span>CounterBasedIterationHandler</span></li><li name="com.excilys.ebi.gatling.core.context.handler.IterationHandler" class="in"><span>IterationHandler</span></li><li name="com.excilys.ebi.gatling.core.log.Logging" class="in"><span>Logging</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="com.excilys.ebi.gatling.core.action.builder.CountBasedIterationActionBuilder" class="in"><span>CountBasedIterationActionBuilder</span></li><li name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler" class="in"><span>CounterBasedIterationHandler</span></li><li name="com.excilys.ebi.gatling.core.session.handler.IterationHandler" class="in"><span>IterationHandler</span></li><li name="com.excilys.ebi.gatling.core.log.Logging" class="in"><span>Logging</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -166,17 +166,17 @@ will be used to create a times loop.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler#expire" data-isabs="false">
-      <a id="expire(Context,String,Option[String]):Unit"></a>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler#expire" data-isabs="false">
+      <a id="expire(Session,String,Option[String]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">expire</span>
         
-        <span class="params">(<span name="context">context: <a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a></span>, <span name="uuid">uuid: String</span>, <span name="userDefinedName">userDefinedName: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="session">session: <a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a></span>, <span name="uuid">uuid: String</span>, <span name="userDefinedName">userDefinedName: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler" class="extype" href="../../context/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a> → <a name="com.excilys.ebi.gatling.core.context.handler.IterationHandler" class="extype" href="../../context/handler/IterationHandler.html">IterationHandler</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler" class="extype" href="../../session/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a> → <a name="com.excilys.ebi.gatling.core.session.handler.IterationHandler" class="extype" href="../../session/handler/IterationHandler.html">IterationHandler</a></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.CountBasedIterationActionBuilder#expireCounterAction" data-isabs="false">
       <a id="expireCounterAction(String):SimpleActionBuilder"></a>
       <h4 class="signature">
@@ -225,17 +225,17 @@ will be used to create a times loop.
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler#increment" data-isabs="false">
-      <a id="increment(Context,String,Option[String]):Unit"></a>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler#increment" data-isabs="false">
+      <a id="increment(Session,String,Option[String]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">increment</span>
         
-        <span class="params">(<span name="context">context: <a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a></span>, <span name="uuid">uuid: String</span>, <span name="userDefinedName">userDefinedName: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="session">session: <a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a></span>, <span name="uuid">uuid: String</span>, <span name="userDefinedName">userDefinedName: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler" class="extype" href="../../context/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a> → <a name="com.excilys.ebi.gatling.core.context.handler.IterationHandler" class="extype" href="../../context/handler/IterationHandler.html">IterationHandler</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler" class="extype" href="../../session/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a> → <a name="com.excilys.ebi.gatling.core.session.handler.IterationHandler" class="extype" href="../../session/handler/IterationHandler.html">IterationHandler</a></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.CountBasedIterationActionBuilder#incrementCounterAction" data-isabs="false">
       <a id="incrementCounterAction(String):SimpleActionBuilder"></a>
       <h4 class="signature">
@@ -248,17 +248,17 @@ will be used to create a times loop.
       </h4>
       <p class="shortcomment cmt">Creates a builder for a simple action that increments the counter
 </p>
-    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler#init" data-isabs="false">
-      <a id="init(Context,String,Option[String]):Unit"></a>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler#init" data-isabs="false">
+      <a id="init(Session,String,Option[String]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">init</span>
         
-        <span class="params">(<span name="context">context: <a name="com.excilys.ebi.gatling.core.context.Context" class="extype" href="../../context/Context.html">Context</a></span>, <span name="uuid">uuid: String</span>, <span name="userDefinedName">userDefinedName: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="session">session: <a name="com.excilys.ebi.gatling.core.session.Session" class="extype" href="../../session/Session.html">Session</a></span>, <span name="uuid">uuid: String</span>, <span name="userDefinedName">userDefinedName: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler" class="extype" href="../../context/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a> → <a name="com.excilys.ebi.gatling.core.context.handler.IterationHandler" class="extype" href="../../context/handler/IterationHandler.html">IterationHandler</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler" class="extype" href="../../session/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a> → <a name="com.excilys.ebi.gatling.core.session.handler.IterationHandler" class="extype" href="../../session/handler/IterationHandler.html">IterationHandler</a></dd></dl></div>
     </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder.CountBasedIterationActionBuilder#initCounterAction" data-isabs="false">
       <a id="initCounterAction(String):SimpleActionBuilder"></a>
       <h4 class="signature">
@@ -395,10 +395,10 @@ will be used to create a times loop.
 
         
 
-        <div name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler" class="parent">
-              <h3>Inherited from <a name="com.excilys.ebi.gatling.core.context.handler.CounterBasedIterationHandler" class="extype" href="../../context/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a></h3>
-            </div><div name="com.excilys.ebi.gatling.core.context.handler.IterationHandler" class="parent">
-              <h3>Inherited from <a name="com.excilys.ebi.gatling.core.context.handler.IterationHandler" class="extype" href="../../context/handler/IterationHandler.html">IterationHandler</a></h3>
+        <div name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler" class="parent">
+              <h3>Inherited from <a name="com.excilys.ebi.gatling.core.session.handler.CounterBasedIterationHandler" class="extype" href="../../session/handler/CounterBasedIterationHandler.html">CounterBasedIterationHandler</a></h3>
+            </div><div name="com.excilys.ebi.gatling.core.session.handler.IterationHandler" class="parent">
+              <h3>Inherited from <a name="com.excilys.ebi.gatling.core.session.handler.IterationHandler" class="extype" href="../../session/handler/IterationHandler.html">IterationHandler</a></h3>
             </div><div name="com.excilys.ebi.gatling.core.log.Logging" class="parent">
               <h3>Inherited from <a name="com.excilys.ebi.gatling.core.log.Logging" class="extype" href="../../log/Logging.html">Logging</a></h3>
             </div><div name="scala.AnyRef" class="parent">
