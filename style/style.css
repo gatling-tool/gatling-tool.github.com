@@ -71,7 +71,7 @@ top:70px;
 
 
 .sous-menu{border-bottom:2px #E37400 solid;padding:10px 0 5px 0;margin:0 5px;z-index:-1;}
-.sous-menu a{color:#FFF;font-size:14px;font-weight:bold;}
+.sous-menu{color:#FFF;font-size:14px;font-weight:bold;}
 .sous-menu .item{background:#D1D1CE url('sous-menu-fleche.png') 12px 6px no-repeat;display:inline;margin:0 10px 0 0;padding:5px 15px 5px 25px;
 border-top-right-radius:8px;
 border-top-left-radius:8px}
