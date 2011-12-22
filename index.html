@@ -5,11 +5,9 @@
 <!-- <link rel="shortcut icon" type="image/png" href="style/favicon.png"/> -->
 <link rel="shortcut icon" type="image/x-icon" href="style/favicon.ico"/>
 <link href="style/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
-<script type="text/javascript" src="js/highcharts.js"></script>
-<script type="text/javascript" src="js/highstock.js"></script>
-<script type="text/javascript" src="js/theme.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/galleria/galleria-1.2.6.min.js"></script>
+<script src="js/galleria/themes/classic/galleria.classic.min.js"></script>
 <title>Gatling Project - Stress Tool</title>
 </head>
 <body>
@@ -18,7 +16,9 @@
 	<div class="head">
 		<a href="http://github.com/excilys/gatling" target="blank_" title="Accueil"><img alt="Gatling" src="style/logo.png"/></a>
 	</div>
-	
+	<div id="twitter_button">
+	  <a href="https://twitter.com/share" class="twitter-share-button" data-text="Gatling is a really performant stress tool made in #Scala with #Akka." data-via="excilys" data-size="large" data-hashtags="gatling">Tweet</a>
+  </div>
 	
 	<div class="main">
 		<div class="cadre">
@@ -28,11 +28,11 @@
 				</div>
 				<div class="content">
 					<div class="sous-menu">
-						<div class="item ouvert">Links</div>
+						<p class="item ouvert">Links</p>
 					</div>
 					<div class="content-in">
 						<div class="article">
-  							<div class="link_block">
+  							<div class="links block">
   							  <h2>About</h2>
   							  <p>Gatling is an <a href="https://github.com/excilys/gatling/wiki/License">Open Source</a> Stress Tool with:</p>
   							  <ul>
@@ -42,7 +42,7 @@
   							    <li><a href="https://github.com/excilys/gatling/wiki/Gatling-HTTP">HTTP support</a></li>
   							    <li><a href="https://github.com/excilys/gatling/wiki/Gatling-Recorder">A scenario recorder</a></li>
   							</div>
-  							<div class="link_block">
+  							<div class="links block">
   							  <h2>Download</h2>
   							  <p>Gatling's first stable release is available!</p>
   							  <p>You can download it here:</p>
@@ -51,7 +51,7 @@
 							      <li><a href="https://github.com/downloads/excilys/gatling/gatling-charts-highcharts-1.0.0-bundle.zip">gatling-charts-highcharts-1.0.0-bundle.zip</a></li>
 							    </ul>
   							</div>
-  							<div class="link_block">
+  							<div class="links block">
   							  <h2>Documentation</h2>
   							  <p>Gatling comes with a handful <a href="https://github.com/excilys/gatling/wiki">documentation</a></p>
   							  <ul>
@@ -61,7 +61,7 @@
   							    <li><a href="https://github.com/excilys/gatling/wiki/Gatling-Recorder">Using the Recorder</a></li>
   							  </ul>
   							</div>
-  							<div class="link_block">
+  							<div class="links block">
   							  <h2>Scala Doc</h2>
   							  <p>Links to the Scala doc of the project:</p>
   							  <ul>
@@ -71,6 +71,15 @@
    							    <li><a href="api/gatling-http">Gatling HTTP</a></li>
    							    <li><a href="api/gatling-recorder">Gatling Recorder</a></li>
   							  </ul>
+  							</div>
+  							<div class="gallery block">
+  							  <h2>Gatling in Action</h2>
+  							  <div id="gallery">
+  							    <img src="img/dsl.png" alt="Gatling's DSL was created with easy learning and usage in mind" title="A simple yet powerful DSL" />
+  							    <img src="img/requests-per-sec.png" alt="Gatling's report are written in HTML, they are portable and viewable by everyone" title="Gatling's reports" />
+  							    <img src="img/req_details_basic_usage.png" alt="Analyze the behavior of your application thanks to Gatling's meaningful reports" title="Analyze the behavior of your application" />
+  							    <img src="img/recorder-configuration_frame.png" alt="Gatling Recorder is able to create a scenario by recording your actions on a website" title="Gatling Recorder" />
+  							  </div>
   							</div>
 						</div>
 					</div>
@@ -89,5 +98,17 @@
 <div class="foot">
 	<a href="http://github.com/excilys/gatling" title="Accueil"><img alt="Gatling" src="style/logo-gatling.jpg"/></a>
 </div>
+<script type="application/javascript">
+$('#gallery').galleria({
+    width: 860,
+    height: 200,
+    imageCrop: 'width',
+    lightbox: true,
+    thumbnails: false,
+    autoplay: true,
+    transition: 'fade'
+});
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>
