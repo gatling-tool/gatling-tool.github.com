@@ -78,13 +78,18 @@ border-top-right-radius:8px;
 border-top-left-radius:8px}
 .sous-menu .ouvert{background:#E37400 url('sou-menu-fleche-ouvert.png') 10px 7px no-repeat;}
 
-.nav{top:170px;width:200px;background:#C5C3BC;position:absolute;z-index: 9;border-radius:8px;border:1px solid #C5C3BC}
+.nav{width:200px;background:#C5C3BC;position:absolute;z-index: 9;border-radius:8px;border:1px solid #C5C3BC}
 .nav ul{padding:0;margin:3px}
 .nav li{margin:0 auto;padding:3px 0;list-style:none;width:190px;border-bottom:1px #acaba6 solid;border-top:1px #d4d2cc solid;}
 .nav li:first-child{border-top:none;}
 .nav li:last-child{border-bottom:none;}
 .nav p{padding:5px 10px;width:170px;font-size:14px;font-weight:bold;margin: 0 auto;color:#FFF;background-color:#92918C;border-radius:8px}
 .nav img{width: 190px;}
+
+#sponsors{top:170px}
+
+#social{top:450px}
+
 
 .block{background:#EAEAEA;border-radius:8px;float:left;margin-left:20px;margin-bottom:20px;}
 .block h2{color:#FFF;background-color:#92918C;border-top-right-radius:8px;border-bottom-right-radius:8px;padding-left:8px;padding-top:2px;margin:8px 0}
