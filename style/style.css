@@ -94,11 +94,14 @@ border-top-left-radius:8px}
 .block{background:#EAEAEA;border-radius:8px;float:left;margin-left:15px;margin-bottom:10px;}
 .block h2{color:#FFF;background-color:#aeaea8;border-top-right-radius:8px;border-bottom-right-radius:8px;padding-left:8px;padding-top:2px;margin:8px 0}
 .block p, .link_block a{
-   font-size:16px;
+   font-size:14px;
    color: #585755
 }
 .block p {
   padding-left:8px;
+}
+.block a {
+  font-size: 14px
 }
 .links{width:355px;height: 200px}
 .links h2{width:150px}
