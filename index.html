@@ -2,12 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<!-- <link rel="shortcut icon" type="image/png" href="style/favicon.png"/> -->
 <link rel="shortcut icon" type="image/x-icon" href="style/favicon.ico"/>
 <link href="style/style.css" rel="stylesheet" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/galleria/galleria-1.2.6.min.js"></script>
 <script src="js/galleria/themes/classic/galleria.classic.min.js"></script>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <title>Gatling Project - Stress Tool</title>
 </head>
 <body>
@@ -88,30 +88,59 @@
 				</div>
 		</div>
 	</div>
-	<div class="nav" id="sponsors">
+	<div class="nav nav-menu" id="sponsors">
 		<ul>
 		  <li><p>Sponsors</p></li>
 		  <li><a href="http://www.ebusinessinformation.fr" target="_blank"><img alt="eBusiness Information" src="https://github.com/excilys/gatling/wiki/img/ebi_logo.png" /></a></li>
 		  <li><a href="http://www.excilys.com" target="_blank"><img alt="Excilys Group" src="img/excilys-logo.png" /></a></li>
 		  <li><a href="http://www.yourkit.com" target="_blank"><img alt="YourKit" src="https://github.com/excilys/gatling/wiki/img/yourkit_logo.png" /></a></li>
 		  <li><a href="http://www.highsoft.com" target="_blank"><img alt="HighSoft" src="https://github.com/excilys/gatling/wiki/img/highsoft_logo.png" /></a></li>
-<!--		</ul>
+		</ul>
 	</div>
-	<div class="nav" id="social">
-		<ul>-->
+	<div class="nav nav-menu" id="social">
+		<ul>
 		  <li><p>Social</p></li>
 		  <li><a href="https://groups.google.com/forum/#!forum/gatling" target="_blank"><img src="img/google-groups.png" alt="Google Group" /></a></li>
 		  <li><a href="https://twitter.com/GatlingTool" target="_blank"><img src="img/twitter.png" alt="Twitter" /></a></li>
 		  <li><a href="https://plus.google.com/101883104222712053693" target="_blank"><img src="img/google-plus.png" alt="Google+" /></a></li>
 		</ul>
 	</div>
+	<div class="nav-menu" id="twitter-widget">
+	  <script>
+      new TWTR.Widget({
+        version: 2,
+        type: 'profile',
+        rpp: 5,
+        interval: 30000,
+        width: 'auto',
+        height: 150,
+        theme: {
+          shell: {
+            background: '#aeaea8',
+            color: '#000000'
+          },
+          tweets: {
+            background: '#EAEAEA',
+            color: '#000000',
+            links: '#e37500'
+          }
+        },
+        features: {
+          scrollbar: false,
+          loop: false,
+          live: false,
+          behavior: 'all'
+        }
+      }).render().setUser('GatlingTool').start();
+    </script>
+  </div>
 </div>
 <div class="foot">
 	<a href="http://github.com/excilys/gatling" title="Accueil"><img alt="Gatling" src="style/logo-gatling.jpg"/></a>
 </div>
 <script type="application/javascript">
 $('#gallery').galleria({
-    width: 860,
+    width: 725,
     height: 200,
     imageCrop: 'width',
     lightbox: true,
