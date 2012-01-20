@@ -59,7 +59,7 @@ h1 span{color:#D1D1CE;}
 #twitter_button{position: absolute;top:20px;right:105px}
 #___plusone_0 { position: absolute; right: 100px; top: 2px }
 
-.foot{background:#92918C;width:100%;color:#FFF;}
+.foot{background:#92918C;width:100%;min-width:1200px;color:#FFF;}
 .foot a{width:85px;height:27px;margin:3px auto;display:block}
 
 
