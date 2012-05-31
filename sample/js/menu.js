@@ -1,25 +1,20 @@
 
 function setDetailsLinkUrl(){
-    $("#details_link").attr('href', encodeURIComponent('request_authentication_page_before_login.html'));
+    $("#details_link").attr('href', encodeURIComponent('request_home.html'));
 }
 
 function setDetailsMenu(){
     var menu = $(".nav ul");
-    $("<a>").attr({href: encodeURIComponent('request_authentication_page_before_login.html')}).text('Authentication page before login').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_authentication.html')}).text('Authentication').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_authentication_redirect_1.html')}).text('Authentication Redirect 1').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_operations.html')}).text('Operations').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_operations_data.html')}).text('Operations data').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_cards_operations.html')}).text('Cards operations').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_cards_operations_data.html')}).text('Cards operations data').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_perform_transfer.html')}).text('Perform transfer').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_accounts.html')}).text('Accounts').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_logout.html')}).text('Logout').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('request_logout_redirect_1.html')}).text('Logout Redirect 1').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('request_home.html')}).text('Home').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('request_home_redirect_1.html')}).text('Home Redirect 1').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('request_search_apple.html')}).text('Search Apple').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('request_go_to_next_page.html')}).text('Go to next page').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('request_select_apple_network_server.html')}).text('Select Apple Network Server').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('request_cancel.html')}).text('Cancel').wrap("<li>").parent().appendTo(menu);
 }
 
 function setGlobalMenu(){
-    $(".nav ul").append("<li><a href='active_sessions.html'>Active Sessions</a></li><li><a href='requests.html'>Requests / sec</a></li><li><a href='transactions.html'>Transactions / sec</a></li>");
+    $(".nav ul").append("<li><a href='#active_sessions'>Active Sessions</a></li><li><a href='#requests'>Requests / sec</a></li><li><a href='#transactions'>Transactions / sec</a></li>");
 }
 
 function getLink(link){
