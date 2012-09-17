@@ -1,16 +1,16 @@
 
 function setDetailsLinkUrl(){
-    $("#details_link").attr('href', encodeURIComponent('home.html'));
+    $("#details_link").attr('href', encodeURIComponent('req_home.html'));
 }
 
 function setDetailsMenu(){
     var menu = $(".nav ul");
-    $("<a>").attr({href: encodeURIComponent('home.html')}).text('Home').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('home_redirect_1.html')}).text('Home Redirect 1').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('search_apple.html')}).text('Search Apple').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('go_to_next_page.html')}).text('Go to next page').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('select_apple_network_server.html')}).text('Select Apple Network Server').wrap("<li>").parent().appendTo(menu);
-    $("<a>").attr({href: encodeURIComponent('cancel.html')}).text('Cancel').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('req_home.html')}).text('Home').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('req_home_redirect_1.html')}).text('Home Redirect 1').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('req_search_apple.html')}).text('Search Apple').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('req_go_to_next_page.html')}).text('Go to next page').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('req_select_apple_network_server.html')}).text('Select Apple Network Server').wrap("<li>").parent().appendTo(menu);
+    $("<a>").attr({href: encodeURIComponent('req_cancel.html')}).text('Cancel').wrap("<li>").parent().appendTo(menu);
 }
 
 function setGlobalMenu(){

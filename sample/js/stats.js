@@ -1,52 +1,53 @@
 var stats = {
 	global_information: {
+		name: "Global Information",
 		numberOfRequests : {
 			total: "360000",
 			ok: "360000",
 			ko: "0"
 		},
 		minResponseTime : {
-			total: "1",
-			ok: "1",
+			total: "0",
+			ok: "0",
 			ko: "-"
 		},
 		maxResponseTime : {
-			total: "571",
-			ok: "571",
+			total: "193",
+			ok: "193",
 			ko: "-"
 		},
 		meanResponseTime : {
-			total: "26",
-			ok: "26",
+			total: "16",
+			ok: "16",
 			ko: "-"
 		},
 		standardDeviation : {
-			total: "21",
-			ok: "21",
+			total: "11",
+			ok: "11",
 			ko: "-"
 		},
 		percentiles1 : {
-			total: "419",
-			ok: "419",
+			total: "35",
+			ok: "35",
 			ko: "-"
 		},
 		percentiles2 : {
-			total: "461",
-			ok: "461",
+			total: "49",
+			ok: "49",
 			ko: "-"
 		},
 		group1 : {
-			name: "t < 800ms",
+			name: "t < 800 ms",
 			count: 360000,
 			percentage: 100
 		},
 		group2 : {
-			name: "800ms < t < 1200ms",
+			name: "800 ms < t < 1200 ms",
 			count: 0,
 			percentage: 0
 		},
 		group3 : {
-			name: "1200ms < t",
+			name: "t > 1200 ms",
 			count: 0,
 			percentage: 0
 		},
@@ -56,11 +57,74 @@ var stats = {
 			percentage: 0
 		},
 		meanNumberOfRequestsPerSecond: {
-			total: "617",
-			ok: "617",
+			total: "935",
+			ok: "935",
 			ko: "-"
 		}
-	},	search_apple: {
+	},	home: {
+		name: "Home",
+		numberOfRequests : {
+			total: "60000",
+			ok: "60000",
+			ko: "0"
+		},
+		minResponseTime : {
+			total: "0",
+			ok: "0",
+			ko: "-"
+		},
+		maxResponseTime : {
+			total: "161",
+			ok: "161",
+			ko: "-"
+		},
+		meanResponseTime : {
+			total: "10",
+			ok: "10",
+			ko: "-"
+		},
+		standardDeviation : {
+			total: "9",
+			ok: "9",
+			ko: "-"
+		},
+		percentiles1 : {
+			total: "25",
+			ok: "25",
+			ko: "-"
+		},
+		percentiles2 : {
+			total: "40",
+			ok: "40",
+			ko: "-"
+		},
+		group1 : {
+			name: "t < 800 ms",
+			count: 60000,
+			percentage: 100
+		},
+		group2 : {
+			name: "800 ms < t < 1200 ms",
+			count: 0,
+			percentage: 0
+		},
+		group3 : {
+			name: "t > 1200 ms",
+			count: 0,
+			percentage: 0
+		},
+		group4 : {
+			name: "failed",
+			count: 0,
+			percentage: 0
+		},
+		meanNumberOfRequestsPerSecond: {
+			total: "156",
+			ok: "156",
+			ko: "-"
+		}
+	},	home_redirect_1: {
+		name: "Home Redirect 1",
 		numberOfRequests : {
 			total: "60000",
 			ok: "60000",
@@ -72,69 +136,8 @@ var stats = {
 			ko: "-"
 		},
 		maxResponseTime : {
-			total: "459",
-			ok: "459",
-			ko: "-"
-		},
-		meanResponseTime : {
-			total: "33",
-			ok: "33",
-			ko: "-"
-		},
-		standardDeviation : {
-			total: "20",
-			ok: "20",
-			ko: "-"
-		},
-		percentiles1 : {
-			total: "285",
-			ok: "285",
-			ko: "-"
-		},
-		percentiles2 : {
-			total: "395",
-			ok: "395",
-			ko: "-"
-		},
-		group1 : {
-			name: "t < 800ms",
-			count: 60000,
-			percentage: 100
-		},
-		group2 : {
-			name: "800ms < t < 1200ms",
-			count: 0,
-			percentage: 0
-		},
-		group3 : {
-			name: "1200ms < t",
-			count: 0,
-			percentage: 0
-		},
-		group4 : {
-			name: "failed",
-			count: 0,
-			percentage: 0
-		},
-		meanNumberOfRequestsPerSecond: {
-			total: "107",
-			ok: "107",
-			ko: "-"
-		}
-	},	home: {
-		numberOfRequests : {
-			total: "60000",
-			ok: "60000",
-			ko: "0"
-		},
-		minResponseTime : {
-			total: "1",
-			ok: "1",
-			ko: "-"
-		},
-		maxResponseTime : {
-			total: "474",
-			ok: "474",
+			total: "193",
+			ok: "193",
 			ko: "-"
 		},
 		meanResponseTime : {
@@ -143,32 +146,32 @@ var stats = {
 			ko: "-"
 		},
 		standardDeviation : {
-			total: "18",
-			ok: "18",
+			total: "9",
+			ok: "9",
 			ko: "-"
 		},
 		percentiles1 : {
-			total: "234",
-			ok: "234",
+			total: "30",
+			ok: "30",
 			ko: "-"
 		},
 		percentiles2 : {
-			total: "312",
-			ok: "312",
+			total: "47",
+			ok: "47",
 			ko: "-"
 		},
 		group1 : {
-			name: "t < 800ms",
+			name: "t < 800 ms",
 			count: 60000,
 			percentage: 100
 		},
 		group2 : {
-			name: "800ms < t < 1200ms",
+			name: "800 ms < t < 1200 ms",
 			count: 0,
 			percentage: 0
 		},
 		group3 : {
-			name: "1200ms < t",
+			name: "t > 1200 ms",
 			count: 0,
 			percentage: 0
 		},
@@ -178,11 +181,12 @@ var stats = {
 			percentage: 0
 		},
 		meanNumberOfRequestsPerSecond: {
-			total: "107",
-			ok: "107",
+			total: "156",
+			ok: "156",
 			ko: "-"
 		}
-	},	go_to_next_page: {
+	},	search_apple: {
+		name: "Search Apple",
 		numberOfRequests : {
 			total: "60000",
 			ok: "60000",
@@ -194,42 +198,42 @@ var stats = {
 			ko: "-"
 		},
 		maxResponseTime : {
-			total: "444",
-			ok: "444",
+			total: "182",
+			ok: "182",
 			ko: "-"
 		},
 		meanResponseTime : {
-			total: "32",
-			ok: "32",
+			total: "19",
+			ok: "19",
 			ko: "-"
 		},
 		standardDeviation : {
-			total: "20",
-			ok: "20",
+			total: "11",
+			ok: "11",
 			ko: "-"
 		},
 		percentiles1 : {
-			total: "303",
-			ok: "303",
+			total: "38",
+			ok: "38",
 			ko: "-"
 		},
 		percentiles2 : {
-			total: "429",
-			ok: "429",
+			total: "51",
+			ok: "51",
 			ko: "-"
 		},
 		group1 : {
-			name: "t < 800ms",
+			name: "t < 800 ms",
 			count: 60000,
 			percentage: 100
 		},
 		group2 : {
-			name: "800ms < t < 1200ms",
+			name: "800 ms < t < 1200 ms",
 			count: 0,
 			percentage: 0
 		},
 		group3 : {
-			name: "1200ms < t",
+			name: "t > 1200 ms",
 			count: 0,
 			percentage: 0
 		},
@@ -239,11 +243,12 @@ var stats = {
 			percentage: 0
 		},
 		meanNumberOfRequestsPerSecond: {
-			total: "107",
-			ok: "107",
+			total: "156",
+			ok: "156",
 			ko: "-"
 		}
-	},	select_apple_network_server: {
+	},	go_to_next_page: {
+		name: "Go to next page",
 		numberOfRequests : {
 			total: "60000",
 			ok: "60000",
@@ -255,42 +260,42 @@ var stats = {
 			ko: "-"
 		},
 		maxResponseTime : {
-			total: "571",
-			ok: "571",
+			total: "162",
+			ok: "162",
 			ko: "-"
 		},
 		meanResponseTime : {
-			total: "32",
-			ok: "32",
+			total: "15",
+			ok: "15",
 			ko: "-"
 		},
 		standardDeviation : {
-			total: "21",
-			ok: "21",
+			total: "10",
+			ok: "10",
 			ko: "-"
 		},
 		percentiles1 : {
-			total: "319",
-			ok: "319",
+			total: "31",
+			ok: "31",
 			ko: "-"
 		},
 		percentiles2 : {
-			total: "461",
-			ok: "461",
+			total: "45",
+			ok: "45",
 			ko: "-"
 		},
 		group1 : {
-			name: "t < 800ms",
+			name: "t < 800 ms",
 			count: 60000,
 			percentage: 100
 		},
 		group2 : {
-			name: "800ms < t < 1200ms",
+			name: "800 ms < t < 1200 ms",
 			count: 0,
 			percentage: 0
 		},
 		group3 : {
-			name: "1200ms < t",
+			name: "t > 1200 ms",
 			count: 0,
 			percentage: 0
 		},
@@ -300,58 +305,59 @@ var stats = {
 			percentage: 0
 		},
 		meanNumberOfRequestsPerSecond: {
-			total: "107",
-			ok: "107",
+			total: "156",
+			ok: "156",
 			ko: "-"
 		}
-	},	home_redirect_1: {
+	},	select_apple_network_server: {
+		name: "Select Apple Network Server",
 		numberOfRequests : {
 			total: "60000",
 			ok: "60000",
 			ko: "0"
 		},
 		minResponseTime : {
-			total: "4",
-			ok: "4",
+			total: "2",
+			ok: "2",
 			ko: "-"
 		},
 		maxResponseTime : {
-			total: "333",
-			ok: "333",
+			total: "177",
+			ok: "177",
 			ko: "-"
 		},
 		meanResponseTime : {
-			total: "16",
-			ok: "16",
+			total: "17",
+			ok: "17",
 			ko: "-"
 		},
 		standardDeviation : {
-			total: "18",
-			ok: "18",
+			total: "11",
+			ok: "11",
 			ko: "-"
 		},
 		percentiles1 : {
-			total: "248",
-			ok: "248",
+			total: "37",
+			ok: "37",
 			ko: "-"
 		},
 		percentiles2 : {
-			total: "304",
-			ok: "304",
+			total: "50",
+			ok: "50",
 			ko: "-"
 		},
 		group1 : {
-			name: "t < 800ms",
+			name: "t < 800 ms",
 			count: 60000,
 			percentage: 100
 		},
 		group2 : {
-			name: "800ms < t < 1200ms",
+			name: "800 ms < t < 1200 ms",
 			count: 0,
 			percentage: 0
 		},
 		group3 : {
-			name: "1200ms < t",
+			name: "t > 1200 ms",
 			count: 0,
 			percentage: 0
 		},
@@ -361,58 +367,59 @@ var stats = {
 			percentage: 0
 		},
 		meanNumberOfRequestsPerSecond: {
-			total: "107",
-			ok: "107",
+			total: "156",
+			ok: "156",
 			ko: "-"
 		}
 	},	cancel: {
+		name: "Cancel",
 		numberOfRequests : {
 			total: "60000",
 			ok: "60000",
 			ko: "0"
 		},
 		minResponseTime : {
-			total: "4",
-			ok: "4",
+			total: "3",
+			ok: "3",
 			ko: "-"
 		},
 		maxResponseTime : {
-			total: "453",
-			ok: "453",
+			total: "178",
+			ok: "178",
 			ko: "-"
 		},
 		meanResponseTime : {
-			total: "33",
-			ok: "33",
+			total: "19",
+			ok: "19",
 			ko: "-"
 		},
 		standardDeviation : {
-			total: "21",
-			ok: "21",
+			total: "11",
+			ok: "11",
 			ko: "-"
 		},
 		percentiles1 : {
-			total: "285",
-			ok: "285",
+			total: "39",
+			ok: "39",
 			ko: "-"
 		},
 		percentiles2 : {
-			total: "401",
-			ok: "401",
+			total: "53",
+			ok: "53",
 			ko: "-"
 		},
 		group1 : {
-			name: "t < 800ms",
+			name: "t < 800 ms",
 			count: 60000,
 			percentage: 100
 		},
 		group2 : {
-			name: "800ms < t < 1200ms",
+			name: "800 ms < t < 1200 ms",
 			count: 0,
 			percentage: 0
 		},
 		group3 : {
-			name: "1200ms < t",
+			name: "t > 1200 ms",
 			count: 0,
 			percentage: 0
 		},
@@ -422,8 +429,8 @@ var stats = {
 			percentage: 0
 		},
 		meanNumberOfRequestsPerSecond: {
-			total: "107",
-			ok: "107",
+			total: "156",
+			ok: "156",
 			ko: "-"
 		}
 	}}

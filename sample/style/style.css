@@ -16,7 +16,6 @@
 body{font-family:arial;margin:0;padding:0;background:#DCDBD4;color:#000;font-size:12px;}
 .container{width:1200px;margin:0 auto;position:relative;overflow:visible;}
 .frise{background:url('fond-degrade.gif') repeat-x;height:530px;width: 100%;position:absolute;top:60px;z-index:-1;}
-.details{height:2115px;}
 .global{height:650px}
 
 a{text-decoration:none;color:#E37400;}
@@ -32,18 +31,18 @@ h1 span{color:#D1D1CE;}
 
 .sim_desc{float:right;padding:0;margin:0}
 
-.foot{background:#92918C;width:100%;color:#FFF;}
+.foot{background:#92918C;width:100%;color:#FFF;margin-top:78px;}
 .foot a{width:85px;height:27px;margin:3px auto;display:block}
 
 
 .cadre{width:1050px;padding:38px 0 0 100px;
-position:absolute;
+position:relative;
 top:70px;
 }
 
 .onglet{
 	background:#FFF;
-	padding:7px 80px;
+	padding:7px 50px;
 	margin:5px 5px 0 5px;
 	color:#BCBCB5;
 	font-size:18px;
@@ -61,7 +60,7 @@ top:70px;
 	border-color: #D1D1CE}
 .onglet img{position:absolute;top:7px;left:7px;}
 .onglet span{color:#E37400;margin-right:10px;}
-.onglet p{margin:7px 0 10px 0; font-size:22px}
+.onglet p{margin:7px -40px 10px 0; font-size:22px}
 
 .content{
 	margin-right: 5px;
@@ -144,6 +143,14 @@ border-bottom-right-radius:8px;
 .schema{background:#EAEAEA;border-radius:8px;border:1px solid #EAEAEA;margin-bottom:20px}
 .demi{width:630px;height:330px;}
 .geant{width:900px;height:354px;}
+.extensible-geant{width:900px;}
+.polar{
+    width:250px;
+    height:330px;
+    position:absolute;
+    top:0px;
+    right:-17px;
+}
 .chart_title{
 	background:#b0b0a8;
 	padding:2px 10px;
@@ -151,3 +158,75 @@ border-bottom-right-radius:8px;
 	font-weight:bold;
 	border-radius:8px;
 }
+
+.statistics{margin-bottom:20px; color: white;max-height:330px;display:block;overflow-y:auto;}
+.statistics-titre{background:#eaeaea;text-align:center;width:120px;height:15px;font-weight:bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-top:5px;
+}
+.statistics-in{background:#eaeaea;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin:0;
+    height:100%;
+    background:#CF6900 url('stat-fond.png') repeat-x;
+    padding:5px;
+    border-spacing: 4px;
+}
+
+#container_statistics {
+   width:885px;
+}
+
+.statistics-in a {
+    color: white;
+    font-weight: bold;
+}
+
+.statistics-in .header {
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #d16b00;
+}
+
+.sortable {
+    cursor: pointer;
+}
+
+.sortable span {
+    background: url('sortable.png') no-repeat right 3px;
+    padding-right: 15px;
+}
+
+.sorted-up span {
+    background-image: url('sorted-up.png');
+}
+
+.sorted-down span {
+    background-image: url('sorted-down.png');
+}
+
+.executions {
+    background: url('stat-l-roue.png') no-repeat 4px 4px #d16b00;
+    padding: 4px 4px 4px 25px;
+}
+
+.response-time {
+    background: url('stat-l-temps.png') no-repeat 4px 4px #d16b00;
+    padding: 4px 4px 4px 25px;
+}
+
+.statistics-in td {
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.statistics-in .value{text-align: right;}
+.statistics-in .total{background-color:rgba(120,120,120,0.2);}
+.statistics-in .ok{background-color:rgba(160,178,40,0.5);}
+.statistics-in .ko{background-color:rgba(255,0,0,0.5);}
+
