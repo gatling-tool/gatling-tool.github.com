@@ -1,0 +1,165 @@
+<!-- TODO: Checks à ajouter, puis commencer à faire propre ! -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gatling's DSL elements</title>
+	<link rel="stylesheet" type="text/css" href="periodic_table.css">
+</head>
+<body>
+	<div class="table">
+		<div class="element struct">
+			<p class="name">scenario</p>
+			<p class="args">(name)</p>
+		</div>
+		<div class="element struct">
+			<p class="name">exec</p>
+			<p class="args">(action)</p>
+			<p class="args">(chain...)</p>
+			<p class="args">(Session => Session)</p>
+		</div>
+		<div class="element struct">
+			<p class="name">pause</p>
+			<p class="args">(dur unit)</p>
+		</div>
+		<div class="element struct">
+			<p class="name">pauseExp</p>
+			<p class="args">(dur unit)</p>
+		</div>
+		<div class="element struct">
+			<p class="name">pauseCustom</p>
+			<p class="args">(() => Long))</p>
+		</div>
+		<div class="element struct">
+			<p class="name">doIf</p>
+			<p class="args">{chain}</p>
+		</div>
+		<div class="element struct">
+			<p class="name">doIfOrElse</p>
+			<p class="args">{chain}{chain}</p>
+		</div>
+		<div class="element struct">
+			<p class="name">randomSwitch</p>
+			<p class="args">(dur unit)</p>
+		</div>
+		<div class="element struct">
+			<p class="name">roundRobinSwitch</p>
+			<p class="args">(Map[%,Chain])</p>
+		</div>
+		<div class="element struct">
+			<p class="name">repeat</p>
+			<p class="args">(times)</p>
+		</div>
+		<div class="element struct">
+			<p class="name">during</p>
+			<p class="args">(dur unit)</p>
+		</div>
+		<div class="element struct">
+			<p class="name">asLongAs</p>
+			<p class="args">(key, value)</p>
+			<p class="args">(Session => Boolean)</p>
+		</div>
+		<div class="element struct">
+			<p class="name">tryMax</p>
+			<p class="args">(times,counterName){chain}</p>
+		</div>
+		<div class="element struct">
+			<p class="name">exitBlockOnFail</p>
+			<p class="args">{chain}</p>
+		</div>
+		<div class="element struct">
+			<p class="name">exitHereIfFailed</p>
+		</div>
+		<div class="element http">
+			<p class="name">http</p>
+			<p class="args">(chain)</p>
+		</div>
+		<div class="element http-verb">
+			<p class="name">get</p>
+			<p class="args">(url)</p>
+		</div>
+		<div class="element http-verb">
+			<p class="name">post</p>
+			<p class="args">(url)</p>
+		</div>
+		<div class="element http-verb">
+			<p class="name">put</p>
+			<p class="args">(url)</p>
+		</div>
+		<div class="element http-verb">
+			<p class="name">delete</p>
+			<p class="args">(url)</p>
+		</div>
+		<div class="element http-verb">
+			<p class="name">head</p>
+			<p class="args">(url)</p>
+		</div>
+		<div class="element http-opts">
+			<p class="name">queryParam</p>
+			<p class="args">(key, value)</p>
+		</div>
+		<div class="element http-opts">
+			<p class="name">header</p>
+			<p class="args">(key, value)</p>
+		</div>
+		<div class="element http-opts">
+			<p class="name">headers</p>
+			<p class="args">(Map[Key,Value])</p>
+		</div>
+		<div class="element http-opts">
+			<p class="name">basicAuth</p>
+			<p class="args">(user, pass)</p>
+		</div>
+		<div class="element http-body">
+			<p class="name">body</p>
+			<p class="args">(body)</p>
+		</div>
+		<div class="element http-body">
+			<p class="name">fileBody</p>
+			<p class="args">(fileName)</p>
+			<p class="args">(tplName, values)</p>
+		</div>
+		<div class="element http-body">
+			<p class="name">byteArrayBody</p>
+			<p class="args">(Session => Array[Byte])</p>
+		</div>
+		<div class="element http-body">
+			<p class="name">param</p>
+			<p class="args">(key, value)</p>
+		</div>
+		<div class="element http-body">
+			<p class="name">upload</p>
+			<p class="args">(key, fileName)</p>
+		</div>
+		<div class="element feeder">
+			<p class="name">csv</p>
+			<p class="args">(fileName)</p>
+		</div>
+		<div class="element feeder">
+			<p class="name">tsv</p>
+			<p class="args">(fileName)</p>
+		</div>
+		<div class="element feeder">
+			<p class="name">ssv</p>
+			<p class="args">(fileName)</p>
+		</div>
+		<div class="element feeder">
+			<p class="name">&lt;db&gt;Feeder</p>
+			<p class="args">(dbUrl,user,pass,sql)</p>
+		</div>
+		<div class="element feeder">
+			<p class="name">redisFeeder</p>
+			<p class="args">(pool, urls)</p>
+		</div>
+		<div class="element feeder-str">
+			<p class="name">queue</p>
+		</div>
+		<div class="element feeder-str">
+			<p class="name">random</p>
+		</div>
+		<div class="element feeder-str">
+			<p class="name">circular</p>
+		</div>
+	</div>
+</body>
+</html>

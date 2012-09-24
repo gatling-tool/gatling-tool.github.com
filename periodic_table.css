@@ -1,0 +1,57 @@
+body{background-color:#1C1C1C;color:white;}
+
+.table{
+	background-color:black;
+	width: 1162px;
+	padding: 20px;
+	overflow: auto;
+	border-radius: 10px;
+}
+
+.element{
+	float: left;
+	width: 155px;
+	height: 100px;
+	text-align:center;
+	margin:2px;
+	border: 3px solid rgba(0,0,0,0.5);
+	border-radius:7px;
+}
+
+.name{
+	font-weight: bold;
+	font-size: 1.1em;
+	margin:5px;
+}
+
+.args{
+	margin: 0;
+}
+
+.struct{
+	background-color:rgba(0,255,0,0.6);
+}
+
+.http{
+	background-color: rgba(255,0,0,0.6);
+}
+
+.http-verb{
+	background-color: rgba(255,0,75,0.6);
+}
+
+.http-opts{
+	background-color: rgba(255,75,100,0.6);
+}
+
+.http-body{
+	background-color: rgba(255,0,255,0.6);
+}
+
+.feeder{
+	background-color: rgba(0,0,255,0.6);
+}
+
+.feeder-str{
+	background-color: rgba(75,100,255,0.6);
+}
