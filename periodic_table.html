@@ -4,133 +4,214 @@
 <html>
 <head>
 	<title>Gatling's DSL elements</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="periodic_table.css">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="table">
-		<div class="element struct">
+	<div class="table struct">
+		<div class="element">
 			<p class="name">scenario</p>
 			<p class="args">(name)</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">exec</p>
 			<p class="args">(action)</p>
 			<p class="args">(chain...)</p>
 			<p class="args">(Session => Session)</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">pause</p>
 			<p class="args">(dur unit)</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">pauseExp</p>
 			<p class="args">(dur unit)</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">pauseCustom</p>
 			<p class="args">(() => Long))</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">doIf</p>
 			<p class="args">{chain}</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">doIfOrElse</p>
 			<p class="args">{chain}{chain}</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">randomSwitch</p>
 			<p class="args">(dur unit)</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">roundRobinSwitch</p>
 			<p class="args">(Map[%,Chain])</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">repeat</p>
 			<p class="args">(times)</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">during</p>
 			<p class="args">(dur unit)</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">asLongAs</p>
 			<p class="args">(key, value)</p>
 			<p class="args">(Session => Boolean)</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">tryMax</p>
 			<p class="args">(times,counterName){chain}</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">exitBlockOnFail</p>
 			<p class="args">{chain}</p>
 		</div>
-		<div class="element struct">
+		<div class="element">
 			<p class="name">exitHereIfFailed</p>
 		</div>
-		<div class="element http">
-			<p class="name">http</p>
-			<p class="args">(chain)</p>
+	</div>
+	<div class="table action">
+		<div class="table">
+			<a href="#" class="element http" data-content="Declares an HTTP request<dl><dt>(name)</dt><dd><i>name</i> is the request name in the reports</dd></dl>" data-title="<b>http</b>" rel="popover" data-placement="bottom">http</a>
 		</div>
-		<div class="element http-verb">
-			<p class="name">get</p>
-			<p class="args">(url)</p>
+		<div class="table">
+			<a href="#" class="element http-verb" data-content="Sets the HTTP method to GET<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" data-title="<b>get</b>" rel="popover" data-placement="bottom">get</a>
+			<a href="#" class="element http-verb" data-content="Sets the HTTP method to POST<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" data-title="<b>post</b>" rel="popover" data-placement="bottom">post</a>
+			<a href="#" class="element http-verb" data-content="Sets the HTTP method to PUT<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" data-title="<b>put</b>" rel="popover" data-placement="bottom">put</a>
+			<a href="#" class="element http-verb" data-content="Sets the HTTP method to DELETE<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" data-title="<b>delete</b>" rel="popover" data-placement="bottom">delete</a>
+			<a href="#" class="element http-verb" data-content="Sets the HTTP method to HEAD<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" data-title="<b>head</b>" rel="popover" data-placement="bottom">head</a>
 		</div>
-		<div class="element http-verb">
-			<p class="name">post</p>
-			<p class="args">(url)</p>
+		<div class="table">
+			<a href="#" class="element http-opts" data-content="Adds a query parameter to the URL<dl><dt>(key, value)</dt><dd>http://example.tld?key=value</dd></dl>" data-title="<b>queryParam</b>" rel="popover" data-placement="bottom">queryParam</a>
+			<a href="#" class="element http-opts" data-content="Adds a header to the request.<dl><dt>(key, value)</dt><dd>Adds <i>key: value</i> as header</dd></dl>" data-title="<b>header</b>" rel="popover" data-placement="bottom">header</a>
+			<a href="#" class="element http-opts" data-content="Adds several headers to the request.<dl><dt>(Map[key, value])</dt><dd>Adds every tuple <i>key: value</i> of the map as header</dd></dl>" data-title="<b>headers</b>" rel="popover" data-placement="bottom">headers</a>
+			<a href="#" class="element http-opts" data-content="Sets the credentials for BASIC authentication.<dl><dt>(user, password)</dt><dd>Will authenticate as <i>user</i> with <i>password</i></dd></dl>" data-title="<b>basicAuth</b>" rel="popover" data-placement="bottom">basicAuth</a>
 		</div>
-		<div class="element http-verb">
-			<p class="name">put</p>
-			<p class="args">(url)</p>
+		<div class="table">
+			<div class="element http-body">
+				<p class="name">body</p>
+				<p class="args">(body)</p>
+			</div>
+			<div class="element http-body">
+				<p class="name">fileBody</p>
+				<p class="args">(fileName)</p>
+				<p class="args">(tplName, values)</p>
+			</div>
+			<div class="element http-body">
+				<p class="name">byteArrayBody</p>
+				<p class="args">(Session => Array[Byte])</p>
+			</div>
+			<div class="element http-body">
+				<p class="name">param</p>
+				<p class="args">(key, value)</p>
+			</div>
+			<div class="element http-body">
+				<p class="name">upload</p>
+				<p class="args">(key, fileName)</p>
+			</div>
 		</div>
-		<div class="element http-verb">
-			<p class="name">delete</p>
-			<p class="args">(url)</p>
+	</div>
+	<div class="table checks">
+		<div class="table check">
+			<div class="element">
+				<p class="name">check</p>
+				<p class="args">(check...)</p>
+			</div>
 		</div>
-		<div class="element http-verb">
-			<p class="name">head</p>
-			<p class="args">(url)</p>
+		<div class="table">
+			<div class="element check http">
+				<p class="name">status</p>
+			</div>
+			<div class="element check http">
+				<p class="name">currentLocation</p>
+			</div>
+			<div class="element check http">
+				<p class="name">header</p>
+				<p class="args">(headerName)</p>
+				<p class="args">(headerName, pattern)</p>
+			</div>
+			<div class="element check http">
+				<p class="name">repsonseTimeInMillis</p>
+			</div>
+			<div class="element check http">
+				<p class="name">latencyInMillis</p>
+			</div>
+			<div class="element check http">
+				<p class="name">regex</p>
+				<p class="args">(expression)</p>
+			</div>
+			<div class="element check http">
+				<p class="name">xpath</p>
+				<p class="args">(expression, namespaces)</p>
+			</div>
+			<div class="element check http">
+				<p class="name">jsonPath</p>
+				<p class="args">(expression)</p>
+			</div>
+			<div class="element check http">
+				<p class="name">css</p>
+				<p class="args">(expression, attr)</p>
+			</div>
+			<div class="element check http">
+				<p class="name">md5</p>
+			</div>
+			<div class="element check http">
+				<p class="name">sha1</p>
+			</div>
 		</div>
-		<div class="element http-opts">
-			<p class="name">queryParam</p>
-			<p class="args">(key, value)</p>
+		<div class="table">
+			<div class="element check-extractor">
+				<p class="name">find</p>
+				<p class="args">&oslash;</p>
+				<p class="args">(occurrence)</p>
+			</div>
+			<div class="element check-extractor">
+				<p class="name">findAll</p>
+			</div>
+			<div class="element check-extractor">
+				<p class="name">count</p>
+			</div>
 		</div>
-		<div class="element http-opts">
-			<p class="name">header</p>
-			<p class="args">(key, value)</p>
+		<div class="table">
+			<div class="element check-transformer">
+				<p class="name">transform</p>
+				<p class="args">(A => B)</p>
+			</div>
 		</div>
-		<div class="element http-opts">
-			<p class="name">headers</p>
-			<p class="args">(Map[Key,Value])</p>
+		<div class="table">
+			<div class="element check-verifier">
+				<p class="name">is</p>
+				<p class="args">(expected)</p>
+			</div>
+			<div class="element check-verifier">
+				<p class="name">not</p>
+				<p class="args">(expected)</p>
+			</div>
+			<div class="element check-verifier">
+				<p class="name">exists</p>
+			</div>
+			<div class="element check-verifier">
+				<p class="name">notExists</p>
+			</div>
+			<div class="element check-verifier">
+				<p class="name">in</p>
+				<p class="args">(sequence)</p>
+			</div>
+			<div class="element check-verifier">
+				<p class="name">whatever</p>
+			</div>
 		</div>
-		<div class="element http-opts">
-			<p class="name">basicAuth</p>
-			<p class="args">(user, pass)</p>
+		<div class="table">
+			<div class="element check-saver">
+				<p class="name">saveAs(key)</p>
+			</div>
 		</div>
-		<div class="element http-body">
-			<p class="name">body</p>
-			<p class="args">(body)</p>
-		</div>
-		<div class="element http-body">
-			<p class="name">fileBody</p>
-			<p class="args">(fileName)</p>
-			<p class="args">(tplName, values)</p>
-		</div>
-		<div class="element http-body">
-			<p class="name">byteArrayBody</p>
-			<p class="args">(Session => Array[Byte])</p>
-		</div>
-		<div class="element http-body">
-			<p class="name">param</p>
-			<p class="args">(key, value)</p>
-		</div>
-		<div class="element http-body">
-			<p class="name">upload</p>
-			<p class="args">(key, fileName)</p>
-		</div>
+	</div>
+	<div class="table">
 		<div class="element feeder">
 			<p class="name">csv</p>
 			<p class="args">(fileName)</p>
@@ -160,88 +241,9 @@
 		<div class="element feeder-str">
 			<p class="name">circular</p>
 		</div>
-		<div class="element check">
-			<p class="name">check</p>
-			<p class="args">(check...)</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">status</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">currentLocation</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">header</p>
-			<p class="args">(headerName)</p>
-			<p class="args">(headerName, pattern)</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">repsonseTimeInMillis</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">latencyInMillis</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">regex</p>
-			<p class="args">(expression)</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">xpath</p>
-			<p class="args">(expression, namespaces)</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">jsonPath</p>
-			<p class="args">(expression)</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">css</p>
-			<p class="args">(expression, attr)</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">md5</p>
-		</div>
-		<div class="element http-check-type">
-			<p class="name">sha1</p>
-		</div>
-		<div class="element check-extractor">
-			<p class="name">find</p>
-			<p class="args">&oslash;</p>
-			<p class="args">(occurrence)</p>
-		</div>
-		<div class="element check-extractor">
-			<p class="name">findAll</p>
-		</div>
-		<div class="element check-extractor">
-			<p class="name">count</p>
-		</div>
-		<div class="element check-transformer">
-			<p class="name">transform</p>
-			<p class="args">(A => B)</p>
-		</div>
-		<div class="element check-verifier">
-			<p class="name">is</p>
-			<p class="args">(expected)</p>
-		</div>
-		<div class="element check-verifier">
-			<p class="name">not</p>
-			<p class="args">(expected)</p>
-		</div>
-		<div class="element check-verifier">
-			<p class="name">exists</p>
-		</div>
-		<div class="element check-verifier">
-			<p class="name">notExists</p>
-		</div>
-		<div class="element check-verifier">
-			<p class="name">in</p>
-			<p class="args">(sequence)</p>
-		</div>
-		<div class="element check-verifier">
-			<p class="name">whatever</p>
-		</div>
-		<div class="element check-saver">
-			<p class="name">saveAs(key)</p>
-		</div>
 	</div>
+	<script type="text/javascript">
+		$('.element').popover({trigger:'hover'});
+	</script>
 </body>
 </html>

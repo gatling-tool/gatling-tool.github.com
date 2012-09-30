@@ -1,34 +1,43 @@
-body{background-color:#1C1C1C;color:white;}
+body{background-color:#1C1C1C;}
 
 .table{
 	background-color:black;
-	width: 1162px;
-	padding: 20px;
+	padding:3px 5px;
 	overflow: auto;
-	border-radius: 10px;
+	float:left;
+	margin:5px;
+	width: 159px;
 }
 
-.element{
+a.element {
+	color:white;
+	display: block;
 	float: left;
 	width: 155px;
-	height: 100px;
-	text-align:center;
-	margin:2px;
-	border: 3px solid rgba(0,0,0,0.5);
-	border-radius:7px;
-}
-
-.name{
+	text-align: center;
+	margin: 2px 0;
 	font-weight: bold;
-	font-size: 1.1em;
-	margin:5px;
+	padding:5px 0;
+	font-size: 1.5em;
 }
 
-.args{
-	margin: 0;
+.table.action {
+	width:680px;
 }
 
-.struct{
+.table.action > .table {
+	margin:0;
+}
+
+.table.checks {
+	width:1014px;
+}
+
+.table.checks > .table {
+	margin:0;
+}
+
+.struct .element{
 	background-color:rgba(0,255,0,0.6);
 }
 
@@ -56,7 +65,7 @@ body{background-color:#1C1C1C;color:white;}
 	background-color: rgba(75,100,255,0.6);
 }
 
-.check{
+.check > .element{
 	background-color: rgba(75,100,255,0.6);
 }
 
