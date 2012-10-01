@@ -21,41 +21,18 @@ body{background-color:#1C1C1C;}
 	font-size: 1.5em;
 }
 
-.table.action {
-	width:680px;
-}
+.table > .table { margin:0; }
 
-.table.action > .table {
-	margin:0;
-}
+.table.action {	width:680px; }
+.table.checks { width:1014px; }
 
-.table.checks {
-	width:1014px;
-}
+h3.popover-title { font-weight: bold; }
 
-.table.checks > .table {
-	margin:0;
-}
-
-.struct .element{
-	background-color:rgba(0,255,0,0.6);
-}
-
-.http > a {
-	background-color: rgba(255,0,0,0.6);
-}
-
-.http-verb > a{
-	background-color: rgba(255,0,75,0.6);
-}
-
-.http-opts > a{
-	background-color: rgba(255,75,100,0.6);
-}
-
-.http-body > a{
-	background-color: rgba(255,0,255,0.6);
-}
+.struct > a { background-color:rgba(0,255,0,0.6); }
+.http > a { background-color: rgba(255,0,0,0.6); }
+.http-verb > a { background-color: rgba(255,0,75,0.6); }
+.http-opts > a { background-color: rgba(255,75,100,0.6); }
+.http-body > a{ background-color: rgba(255,0,255,0.6); }
 
 .feeder{
 	background-color: rgba(0,0,255,0.6);
