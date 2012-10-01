@@ -9,7 +9,7 @@ body{background-color:#1C1C1C;}
 	width: 159px;
 }
 
-a.element {
+.table a {
 	color:white;
 	display: block;
 	float: left;
@@ -41,19 +41,19 @@ a.element {
 	background-color:rgba(0,255,0,0.6);
 }
 
-.http{
+.http > a {
 	background-color: rgba(255,0,0,0.6);
 }
 
-.http-verb{
+.http-verb > a{
 	background-color: rgba(255,0,75,0.6);
 }
 
-.http-opts{
+.http-opts > a{
 	background-color: rgba(255,75,100,0.6);
 }
 
-.http-body{
+.http-body > a{
 	background-color: rgba(255,0,255,0.6);
 }
 
