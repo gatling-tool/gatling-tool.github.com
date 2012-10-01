@@ -92,27 +92,11 @@
 			<a href="#" class="element http-opts" data-content="Sets the credentials for BASIC authentication.<dl><dt>(user, password)</dt><dd>Will authenticate as <i>user</i> with <i>password</i></dd></dl>" data-title="<b>basicAuth</b>" rel="popover" data-placement="bottom">basicAuth</a>
 		</div>
 		<div class="table">
-			<div class="element http-body">
-				<p class="name">body</p>
-				<p class="args">(body)</p>
-			</div>
-			<div class="element http-body">
-				<p class="name">fileBody</p>
-				<p class="args">(fileName)</p>
-				<p class="args">(tplName, values)</p>
-			</div>
-			<div class="element http-body">
-				<p class="name">byteArrayBody</p>
-				<p class="args">(Session => Array[Byte])</p>
-			</div>
-			<div class="element http-body">
-				<p class="name">param</p>
-				<p class="args">(key, value)</p>
-			</div>
-			<div class="element http-body">
-				<p class="name">upload</p>
-				<p class="args">(key, fileName)</p>
-			</div>
+			<a href="#" class="element http-body" data-content="Adds a body to the request<dl><dt>(body)</dt><dd>Sets the body of the request to <i>body (a String)</i>.</dd></dl>" data-title="<b>body</b>" rel="popover" data-placement="bottom">body</a>
+			<a href="#" class="element http-body" data-content="Adds a body to the request from a file located in the data folder<dl><dt>(fileName)</dt><dd>Sets the contents of <i>fileName</i> as the body of the request.</dd><dt>(tplFileName, values)</dt><dd>Injects the <i>values</i> inside the template located at <i>tplFileName</i> and sets the result as the body of the request</dd></dl>" data-title="<b>fileBody</b>" rel="popover" data-placement="bottom">fileBody</a>
+			<a href="#" class="element http-body" data-content="Adds a body to the request<dl><dt>(Session => Array[Byte])</dt><dd>Sets the body of the request to the result of <i>the function</i>.</dd></dl>" data-title="<b>byteArrayBody</b>" rel="popover" data-placement="bottom">byteArrayBody</a>
+			<a href="#" class="element http-body" data-content="Adds a parameter to the request<dl><dt>(key, value)</dt><dd>Adds a parameter in the body of the request. Eg: <i>key=value</i></dd></dl>" data-title="<b>param</b>" rel="popover" data-placement="bottom">param</a>
+			<a href="#" class="element http-body" data-content="Changes the type of the request to multi-part<dl><dt>(key, fileName)</dt><dd>Adds the contents of <i>fileName</i> to the request, under key <i>key</i></dd></dl>" data-title="<b>upload</b>" rel="popover" data-placement="bottom">upload</a>
 		</div>
 	</div>
 	<div class="table checks">
