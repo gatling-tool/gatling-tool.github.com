@@ -6,7 +6,7 @@ body{background-color:#1C1C1C;}
 	overflow: auto;
 	float:left;
 	margin:5px;
-	width: 159px;
+	width: 155px;
 }
 
 .table a {
@@ -23,8 +23,11 @@ body{background-color:#1C1C1C;}
 
 .table > .table { margin:0; }
 
-.table.action {	width:680px; }
-.table.checks { width:1014px; }
+.table.action {	width:660px; }
+.table.checks { width:990px; }
+.table.feeders { width:330px; clear:left;}
+
+.right-panel { overflow: auto;}
 
 h3.popover-title { font-weight: bold; }
 
@@ -33,35 +36,14 @@ h3.popover-title { font-weight: bold; }
 .http-verb > a { background-color: rgba(255,0,75,0.6); }
 .http-opts > a { background-color: rgba(255,75,100,0.6); }
 .http-body > a{ background-color: rgba(255,0,255,0.6); }
+.http-checks > a { background-color: rgba(75,100,255,0.6); }
+.check-extractors > a { background-color: rgba(75,100,255,0.6); }
+.check > a { background-color: rgba(75,100,255,0.6); }
+.check-transformer > a { background-color: rgba(75,100,255,0.6); }
+.check-verifiers > a { background-color: rgba(75,100,255,0.6); }
+.check-saver > a { background-color: rgba(75,100,255,0.6); }
+.feeder-types > a { background-color: rgba(0,0,255,0.6); }
+.feeder-strategies > a { background-color: rgba(75,100,255,0.6); }
 
-.feeder{
-	background-color: rgba(0,0,255,0.6);
-}
-
-.feeder-str{
-	background-color: rgba(75,100,255,0.6);
-}
-
-.check > .element{
-	background-color: rgba(75,100,255,0.6);
-}
-
-.http-check-type{
-	background-color: rgba(75,100,255,0.6);
-}
-
-.check-extractor{
-	background-color: rgba(75,100,255,0.6);
-}
-
-.check-transformer{
-	background-color: rgba(75,100,255,0.6);
-}
-
-.check-verifier{
-	background-color: rgba(75,100,255,0.6);
-}
-
-.check-saver{
-	background-color: rgba(75,100,255,0.6);
-}
+a.tooLong { font-size:1.2em;}
+a.reallyTooLong{ font-size: 1em;}
