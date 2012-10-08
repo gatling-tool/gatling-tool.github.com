@@ -27,8 +27,6 @@ body{background-color:#1C1C1C;}
 .table.checks { width:990px; }
 .table.feeders { width:330px; clear:left;}
 
-.right-panel { overflow: auto;}
-
 h3.popover-title { font-weight: bold; }
 
 .struct > a { background-color:rgba(0,255,0,0.6); }

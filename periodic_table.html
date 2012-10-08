@@ -27,82 +27,80 @@
 		<a href="#" data-title="exitBlockOnFail" data-content="<dl><dt>{chain}</dt><dd></dd></dl>" rel="popover" class="tooLong">exitBlockOnFail</a>
 		<a href="#" data-title="exitHereIfFailed" data-content="" rel="popover" class="tooLong">exitHereIfFailed</a>
 	</div>
-	<div class="right-panel">
-		<div class="table action">
-			<div class="table http">
-				<a href="#" data-title="http" data-content="Declares an HTTP request<dl><dt>(name)</dt><dd><i>name</i> is the request name in the reports</dd></dl>" rel="popover">http</a>
-			</div>
-			<div class="table http-verb">
-				<a href="#" data-title="get" data-content="Sets the HTTP method to GET<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">get</a>
-				<a href="#" data-title="post" data-content="Sets the HTTP method to POST<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">post</a>
-				<a href="#" data-title="put" data-content="Sets the HTTP method to PUT<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">put</a>
-				<a href="#" data-title="delete" data-content="Sets the HTTP method to DELETE<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">delete</a>
-				<a href="#" data-title="head" data-content="Sets the HTTP method to HEAD<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">head</a>
-			</div>
-			<div class="table http-opts">
-				<a href="#" data-title="queryParam" data-content="Adds a query parameter to the URL<dl><dt>(key, value)</dt><dd>http://example.tld?key=value</dd></dl>" rel="popover">queryParam</a>
-				<a href="#" data-title="header" data-content="Adds a header to the request.<dl><dt>(key, value)</dt><dd>Adds <i>key: value</i> as header</dd></dl>" rel="popover">header</a>
-				<a href="#" data-title="headers" data-content="Adds several headers to the request.<dl><dt>(Map[key, value])</dt><dd>Adds every tuple <i>key: value</i> of the map as header</dd></dl>" rel="popover">headers</a>
-				<a href="#" data-title="basicAuth" data-content="Sets the credentials for BASIC authentication.<dl><dt>(user, password)</dt><dd>Will authenticate as <i>user</i> with <i>password</i></dd></dl>" rel="popover">basicAuth</a>
-			</div>
-			<div class="table http-body">
-				<a href="#" data-title="body" data-content="Adds a body to the request<dl><dt>(body)</dt><dd>Sets the body of the request to <i>body (a String)</i>.</dd></dl>" rel="popover">body</a>
-				<a href="#" data-title="fileBody" data-content="Adds a body to the request from a file located in the data folder<dl><dt>(fileName)</dt><dd>Sets the contents of <i>fileName</i> as the body of the request.</dd><dt>(tplFileName, values)</dt><dd>Injects the <i>values</i> inside the template located at <i>tplFileName</i> and sets the result as the body of the request</dd></dl>" rel="popover">fileBody</a>
-				<a href="#" data-title="byteArrayBody" data-content="Adds a body to the request<dl><dt>(Session => Array[Byte])</dt><dd>Sets the body of the request to the result of <i>the function</i>.</dd></dl>" rel="popover">byteArrayBody</a>
-				<a href="#" data-title="param" data-content="Adds a parameter to the request<dl><dt>(key, value)</dt><dd>Adds a parameter in the body of the request. Eg: <i>key=value</i></dd></dl>" rel="popover">param</a>
-				<a href="#" data-title="upload" data-content="Changes the type of the request to multi-part<dl><dt>(key, fileName)</dt><dd>Adds the contents of <i>fileName</i> to the request, under key <i>key</i></dd></dl>" rel="popover">upload</a>
-			</div>
+	<div class="table action">
+		<div class="table http">
+			<a href="#" data-title="http" data-content="Declares an HTTP request<dl><dt>(name)</dt><dd><i>name</i> is the request name in the reports</dd></dl>" rel="popover">http</a>
 		</div>
-		<div class="table checks">
-			<div class="table check">
-				<a href="#" data-title="check" data-content="Declare every check you want inside this method<dl><dt>(check...)</dt><dd>Every check you need to make on the response from the server</dd></dl>" rel="popover">check</a>
-			</div>
-			<div class="table http-checks">
-				<a href="#" data-title="status" data-content="Check will be applied to the status of the HTTP response" rel="popover">status</a>
-				<a href="#" data-title="currentLocation" data-content="Check will be applied to the current url of the response" rel="popover" class="tooLong">currentLocation</a>
-				<a href="#" data-title="header" data-content="Check will be applied to selected headers of the HTTP response<dl><dt>(headerName)</dt><dd>The check will be applied on the header corresponding to <i>headerName</i></dd><dt>(headerName, pattern)</dt><dd>The check will be applied on the header... ???</dd></dl>" rel="popover">header</a>
-				<a href="#" data-title="responseTimeInMillis" data-content="Check will be applied to the response time of the server" rel="popover" class="reallyTooLong">responseTimeInMillis</a>
-				<a href="#" data-title="latencyInMillis" data-content="Check will be applied to the latency of the request/response round trip" rel="popover">latencyInMillis</a>
-				<a href="#" data-title="regex" data-content="Check will be applied to the body of the HTTP response<dl><dt>(expression)</dt><dd>Extraction will use a regular expression defined by <i>expression</i>.</dd></dl>" rel="popover">regex</a>
-				<a href="#" data-title="xpath" data-content="Check will be applied to the body of the HTTP response<dl><dt>(expression, namespaces)</dt><dd>Extraction will use an XPath expression defined by <i>expression</i></dd></dl>" rel="popover">xpath</a>
-				<a href="#" data-title="jsonPath" data-content="<dl><dt>(expression)</dt><dd></dd></dl>" rel="popover">jsonPath</a>
-				<a href="#" data-title="css" data-content="<dl><dt>(expression, attr)</dt><dd></dd></dl>" rel="popover">css</a>
-				<a href="#" data-title="md5" data-content="" rel="popover">md5</a>
-				<a href="#" data-title="sha1" data-content="" rel="popover">sha1</a>
-			</div>
-			<div class="table check-extractors">
-				<a href="#" data-title="find" data-content="<dl><dt>&oslash;</dt><dd></dd><dt>(occurrence)</dt><dd></dd></dl>" rel="popover">find</a>
-				<a href="#" data-title="findAll" data-content="" rel="popover">findAll</a>
-				<a href="#" data-title="count" data-content="" rel="popover">count</a>
-			</div>
-			<div class="table check-transformer">
-				<a href="#" data-title="transform" data-content="Used to transform data before verification<dl><dt>(A => B)</dt><dd></dd></dl>" rel="popover">transform</a>
-			</div>
-			<div class="table check-verifiers">
-				<a href="#" data-title="is" data-content="<dl><dt>(expected)</dt><dd></dd></dl>" rel="popover">is</a>
-				<a href="#" data-title="not" data-content="<dl><dt>(expected)</dt><dd></dd></dl>" rel="popover">not</a>
-				<a href="#" data-title="exists" data-content="" rel="popover">exists</a>
-				<a href="#" data-title="notExists" data-content="" rel="popover">notExists</a>
-				<a href="#" data-title="in" data-content="<dl><dt>(sequence)</dt><dd></dd></dl>" rel="popover">in</a>
-				<a href="#" data-title="whatever" data-content="" rel="popover">whatever</a>
-			</div>
-			<div class="table check-saver">
-				<a href="#" data-title="saveAs" data-content="<dl><dt>(key)</dt><dd></dd></dl>" rel="popover">saveAs</a>
-			</div>
+		<div class="table http-verb">
+			<a href="#" data-title="get" data-content="Sets the HTTP method to GET<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">get</a>
+			<a href="#" data-title="post" data-content="Sets the HTTP method to POST<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">post</a>
+			<a href="#" data-title="put" data-content="Sets the HTTP method to PUT<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">put</a>
+			<a href="#" data-title="delete" data-content="Sets the HTTP method to DELETE<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">delete</a>
+			<a href="#" data-title="head" data-content="Sets the HTTP method to HEAD<dl><dt>(url)</dt><dd>Sets the <i>url</i> of the HTTP request</dd></dl>" rel="popover">head</a>
 		</div>
-		<div class="table feeders">
-			<div class="table feeder-types">
-				<a href="#" data-title="csv" data-content="<dl><dt>(fileName)</dt><dd></dd></dl>" rel="popover">csv</a>
-				<a href="#" data-title="tsv" data-content="<dl><dt>(fileName)</dt><dd></dd></dl>" rel="popover">tsv</a>
-				<a href="#" data-title="ssv" data-content="<dl><dt>(fileName)</dt><dd></dd></dl>" rel="popover">ssv</a>
-				<a href="#" data-title="&lt;db&gt;Feeder" data-content="<dl><dt>(dbUrl,user,pass,sql)</dt><dd></dd></dl>" rel="popover">&lt;db&gt;Feeder</a>
-				<a href="#" data-title="redisFeeder" data-content="<dl><dt>(pool, urls)</dt><dd></dd></dl>" rel="popover">redisFeeder</a>
-			</div>
-			<div class="table feeder-strategies">
-				<a href="#" data-title="queue" data-content="" rel="popover">queue</a>
-				<a href="#" data-title="random" data-content="" rel="popover">random</a>
-				<a href="#" data-title="circular" data-content="" rel="popover">circular</a>
-			</div>
+		<div class="table http-opts">
+			<a href="#" data-title="queryParam" data-content="Adds a query parameter to the URL<dl><dt>(key, value)</dt><dd>http://example.tld?key=value</dd></dl>" rel="popover">queryParam</a>
+			<a href="#" data-title="header" data-content="Adds a header to the request.<dl><dt>(key, value)</dt><dd>Adds <i>key: value</i> as header</dd></dl>" rel="popover">header</a>
+			<a href="#" data-title="headers" data-content="Adds several headers to the request.<dl><dt>(Map[key, value])</dt><dd>Adds every tuple <i>key: value</i> of the map as header</dd></dl>" rel="popover">headers</a>
+			<a href="#" data-title="basicAuth" data-content="Sets the credentials for BASIC authentication.<dl><dt>(user, password)</dt><dd>Will authenticate as <i>user</i> with <i>password</i></dd></dl>" rel="popover">basicAuth</a>
+		</div>
+		<div class="table http-body">
+			<a href="#" data-title="body" data-content="Adds a body to the request<dl><dt>(body)</dt><dd>Sets the body of the request to <i>body (a String)</i>.</dd></dl>" rel="popover">body</a>
+			<a href="#" data-title="fileBody" data-content="Adds a body to the request from a file located in the data folder<dl><dt>(fileName)</dt><dd>Sets the contents of <i>fileName</i> as the body of the request.</dd><dt>(tplFileName, values)</dt><dd>Injects the <i>values</i> inside the template located at <i>tplFileName</i> and sets the result as the body of the request</dd></dl>" rel="popover">fileBody</a>
+			<a href="#" data-title="byteArrayBody" data-content="Adds a body to the request<dl><dt>(Session => Array[Byte])</dt><dd>Sets the body of the request to the result of <i>the function</i>.</dd></dl>" rel="popover">byteArrayBody</a>
+			<a href="#" data-title="param" data-content="Adds a parameter to the request<dl><dt>(key, value)</dt><dd>Adds a parameter in the body of the request. Eg: <i>key=value</i></dd></dl>" rel="popover">param</a>
+			<a href="#" data-title="upload" data-content="Changes the type of the request to multi-part<dl><dt>(key, fileName)</dt><dd>Adds the contents of <i>fileName</i> to the request, under key <i>key</i></dd></dl>" rel="popover">upload</a>
+		</div>
+	</div>
+	<div class="table checks">
+		<div class="table check">
+			<a href="#" data-title="check" data-content="Declare every check you want inside this method<dl><dt>(check...)</dt><dd>Every check you need to make on the response from the server</dd></dl>" rel="popover">check</a>
+		</div>
+		<div class="table http-checks">
+			<a href="#" data-title="status" data-content="Check will be applied to the status of the HTTP response" rel="popover">status</a>
+			<a href="#" data-title="currentLocation" data-content="Check will be applied to the current url of the response" rel="popover" class="tooLong">currentLocation</a>
+			<a href="#" data-title="header" data-content="Check will be applied to selected headers of the HTTP response<dl><dt>(headerName)</dt><dd>The check will be applied on the header corresponding to <i>headerName</i></dd><dt>(headerName, pattern)</dt><dd>The check will be applied on the header... ???</dd></dl>" rel="popover">header</a>
+			<a href="#" data-title="responseTimeInMillis" data-content="Check will be applied to the response time of the server" rel="popover" class="reallyTooLong">responseTimeInMillis</a>
+			<a href="#" data-title="latencyInMillis" data-content="Check will be applied to the latency of the request/response round trip" rel="popover">latencyInMillis</a>
+			<a href="#" data-title="regex" data-content="Check will be applied to the body of the HTTP response<dl><dt>(expression)</dt><dd>Extraction will use a regular expression defined by <i>expression</i>.</dd></dl>" rel="popover">regex</a>
+			<a href="#" data-title="xpath" data-content="Check will be applied to the body of the HTTP response<dl><dt>(expression, namespaces)</dt><dd>Extraction will use an XPath expression defined by <i>expression</i></dd></dl>" rel="popover">xpath</a>
+			<a href="#" data-title="jsonPath" data-content="<dl><dt>(expression)</dt><dd></dd></dl>" rel="popover">jsonPath</a>
+			<a href="#" data-title="css" data-content="<dl><dt>(expression, attr)</dt><dd></dd></dl>" rel="popover">css</a>
+			<a href="#" data-title="md5" data-content="" rel="popover">md5</a>
+			<a href="#" data-title="sha1" data-content="" rel="popover">sha1</a>
+		</div>
+		<div class="table check-extractors">
+			<a href="#" data-title="find" data-content="<dl><dt>&oslash;</dt><dd></dd><dt>(occurrence)</dt><dd></dd></dl>" rel="popover">find</a>
+			<a href="#" data-title="findAll" data-content="" rel="popover">findAll</a>
+			<a href="#" data-title="count" data-content="" rel="popover">count</a>
+		</div>
+		<div class="table check-transformer">
+			<a href="#" data-title="transform" data-content="Used to transform data before verification<dl><dt>(A => B)</dt><dd></dd></dl>" rel="popover">transform</a>
+		</div>
+		<div class="table check-verifiers">
+			<a href="#" data-title="is" data-content="<dl><dt>(expected)</dt><dd></dd></dl>" rel="popover">is</a>
+			<a href="#" data-title="not" data-content="<dl><dt>(expected)</dt><dd></dd></dl>" rel="popover">not</a>
+			<a href="#" data-title="exists" data-content="" rel="popover">exists</a>
+			<a href="#" data-title="notExists" data-content="" rel="popover">notExists</a>
+			<a href="#" data-title="in" data-content="<dl><dt>(sequence)</dt><dd></dd></dl>" rel="popover">in</a>
+			<a href="#" data-title="whatever" data-content="" rel="popover">whatever</a>
+		</div>
+		<div class="table check-saver">
+			<a href="#" data-title="saveAs" data-content="<dl><dt>(key)</dt><dd></dd></dl>" rel="popover">saveAs</a>
+		</div>
+	</div>
+	<div class="table feeders">
+		<div class="table feeder-types">
+			<a href="#" data-title="csv" data-content="<dl><dt>(fileName)</dt><dd></dd></dl>" rel="popover">csv</a>
+			<a href="#" data-title="tsv" data-content="<dl><dt>(fileName)</dt><dd></dd></dl>" rel="popover">tsv</a>
+			<a href="#" data-title="ssv" data-content="<dl><dt>(fileName)</dt><dd></dd></dl>" rel="popover">ssv</a>
+			<a href="#" data-title="&lt;db&gt;Feeder" data-content="<dl><dt>(dbUrl,user,pass,sql)</dt><dd></dd></dl>" rel="popover">&lt;db&gt;Feeder</a>
+			<a href="#" data-title="redisFeeder" data-content="<dl><dt>(pool, urls)</dt><dd></dd></dl>" rel="popover">redisFeeder</a>
+		</div>
+		<div class="table feeder-strategies">
+			<a href="#" data-title="queue" data-content="" rel="popover">queue</a>
+			<a href="#" data-title="random" data-content="" rel="popover">random</a>
+			<a href="#" data-title="circular" data-content="" rel="popover">circular</a>
 		</div>
 	</div>
 	<script type="text/javascript">
