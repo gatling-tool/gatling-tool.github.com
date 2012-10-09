@@ -18,16 +18,21 @@ body{background-color:#1C1C1C;}
 	margin: 2px 0;
 	font-weight: bold;
 	padding:5px 0;
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 
 .table > .table { margin:0; }
 
 .table.action {	width:660px; }
+.table.http-config { width: 990px; }
+.table.scenario-config { width: 330px;}
 .table.checks { width:990px; }
 .table.feeders { width:330px; clear:left;}
 
 h3.popover-title { font-weight: bold; }
+
+.scenario-config > div > a { background-color: rgba(255,0,0,0.6);}
+.http-config > div > a { background-color: rgba(255,0,0,0.6);}
 
 .struct > a { background-color:rgba(0,255,0,0.6); }
 .http > a { background-color: rgba(255,0,0,0.6); }
@@ -44,4 +49,6 @@ h3.popover-title { font-weight: bold; }
 .feeder-strategies > a { background-color: rgba(75,100,255,0.6); }
 
 a.tooLong { font-size:1.2em;}
-a.reallyTooLong{ font-size: 1em;}
+a.reallyLong{ font-size: 1em;}
+a.reallyTooLong{ font-size:0.85em;}
+a.reallyReallyTooLong{ font-size:0.6em;}

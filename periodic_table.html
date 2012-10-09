@@ -60,7 +60,7 @@
 			<a href="#" data-title="status" data-content="Check will be applied to the status of the HTTP response" rel="popover">status</a>
 			<a href="#" data-title="currentLocation" data-content="Check will be applied to the current url of the response" rel="popover" class="tooLong">currentLocation</a>
 			<a href="#" data-title="header" data-content="Check will be applied to selected headers of the HTTP response<dl><dt>(headerName)</dt><dd>The check will be applied on the header corresponding to <i>headerName</i></dd><dt>(headerName, pattern)</dt><dd>The check will be applied on the header... ???</dd></dl>" rel="popover">header</a>
-			<a href="#" data-title="responseTimeInMillis" data-content="Check will be applied to the response time of the server" rel="popover" class="reallyTooLong">responseTimeInMillis</a>
+			<a href="#" data-title="responseTimeInMillis" data-content="Check will be applied to the response time of the server" rel="popover" class="reallyLong">responseTimeInMillis</a>
 			<a href="#" data-title="latencyInMillis" data-content="Check will be applied to the latency of the request/response round trip" rel="popover">latencyInMillis</a>
 			<a href="#" data-title="regex" data-content="Check will be applied to the body of the HTTP response<dl><dt>(expression)</dt><dd>Extraction will use a regular expression defined by <i>expression</i>.</dd></dl>" rel="popover">regex</a>
 			<a href="#" data-title="xpath" data-content="Check will be applied to the body of the HTTP response<dl><dt>(expression, namespaces)</dt><dd>Extraction will use an XPath expression defined by <i>expression</i></dd></dl>" rel="popover">xpath</a>
@@ -101,6 +101,50 @@
 			<a href="#" data-title="queue" data-content="" rel="popover">queue</a>
 			<a href="#" data-title="random" data-content="" rel="popover">random</a>
 			<a href="#" data-title="circular" data-content="" rel="popover">circular</a>
+		</div>
+	</div>
+	<div class="table http-config">
+		<div class="table">
+			<a href="#" data-title="httpconfig" data-content="" rel="popover">httpconfig</a>
+		</div>
+		<div class="table">
+			<a href="#" data-title="baseURL" data-content="<dl><dt>(url)</dt><dd></dd></dl>" rel="popover">baseURL</a>
+			<a href="#" data-title="baseURLs" data-content="<dl><dt>(url...)</dt><dd></dd></dl>" rel="popover">baseURLs</a>
+		</div>
+		<div class="table">
+			<a href="#" data-title="proxy" data-content="<dl><dt>(host, port)</dt><dd></dd></dl>" rel="popover">proxy</a>
+			<a href="#" data-title="httpsPort" data-content="<dl><dt>(port)</dt><dd></dd></dl>" rel="popover">httpsPort</a>
+			<a href="#" data-title="credentials" data-content="<dl><dt>(username,password)</dt><dd></dd></dl>" rel="popover">credentials</a>
+		</div>
+		<div class="table">
+			<a href="#" data-title="acceptHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover">acceptHeader</a>
+			<a href="#" data-title="acceptCharsetHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="reallyLong">acceptCharsetHeader</a>
+			<a href="#" data-title="acceptEncodingHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="reallyTooLong">acceptEncodingHeader</a>
+			<a href="#" data-title="acceptLanguageHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="reallyTooLong">acceptLanguageHeader</a>
+			<a href="#" data-title="hostHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover">hostHeader</a>
+			<a href="#" data-title="userAgentHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="tooLong">userAgentHeader</a>
+		</div>
+		<div class="table">
+			<a href="#" data-title="disableFollowRedirect" data-content="" rel="popover" class="reallyTooLong">disableFollowRedirect</a>
+			<a href="#" data-title="disableAutomaticReferer" data-content="" rel="popover" class="reallyTooLong">disableAutomaticReferer</a>
+			<a href="#" data-title="disableWarmUp" data-content="" rel="popover" class="tooLong">disableWarmUp</a>
+			<a href="#" data-title="warmUp" data-content="<dl><dt>(url)</dt><dd></dd></dl>" rel="popover">warmUp</a>
+		</div>
+		<div class="table">
+			<a href="#" data-title="requestInfoExtractor" data-content="<dl><dt>(Request => List[String])</dt><dd></dd></dl>" rel="popover" class="reallyLong">requestInfoExtractor</a>
+			<a href="#" data-title="responseInfoExtractor" data-content="<dl><dt>(Response => List[String])</dt><dd></dd></dl>" rel="popover" class="reallyTooLong">responseInfoExtractor</a>
+			<a href="#" data-title="disableResponseChunksDiscarding" data-content="" rel="popover" class="reallyReallyTooLong">disableResponseChunksDiscarding</a>
+		</div>
+	</div>
+	<div class="table scenario-config">
+		<div class="table">
+			<a href="#" data-title="configure" data-content="" rel="popover">configure</a>
+		</div>
+		<div class="table">
+			<a href="#" data-title="users" data-content="<dl><dt>(number)</dt><dd></dd></dl>" rel="popover">users</a>
+			<a href="#" data-title="ramp" data-content="<dl><dt>(duration)</dt><dd></dd><dt>(dur unit)</dt><dd></dd></dl>" rel="popover">ramp</a>
+			<a href="#" data-title="delay" data-content="<dl><dt>(duration)</dt><dd></dd><dt>(dur unit)</dt><dd></dd></dl>" rel="popover">delay</a>
+			<a href="#" data-title="protocolConfig" data-content="<dl><dt>(protocolConfig...)</dt><dd></dd></dl>" rel="popover">protocolConfig</a>
 		</div>
 	</div>
 	<script type="text/javascript">
