@@ -111,23 +111,23 @@
 			<a href="#" data-title="sha1" data-content="Check will be applied on the sha1 checksum of the HTTP response" rel="popover">sha1</a>
 		</div>
 		<div class="table check-extractors">
-			<a href="#" data-title="find" data-content="<dl><dt>&oslash;</dt><dd></dd><dt>(occurrence)</dt><dd></dd></dl>" rel="popover">find!</a>
-			<a href="#" data-title="findAll" data-content="" rel="popover">findAll!</a>
-			<a href="#" data-title="count" data-content="" rel="popover">count!</a>
+			<a href="#" data-title="find" data-content="Specifies that only one value matching the check definition must be extracted<dl><dt>&oslash;</dt><dd>If used as <i>find</i> check will be applied on the first value found. Note that this is the default behaviour, you don't have to specify it.</dd><dt>(occurrence)</dt><dd>Gets the <i>occurrence</i>-th value that matches the check definition.</dd></dl>" rel="popover">find</a>
+			<a href="#" data-title="findAll" data-content="Specifies that every value matching the check definition should be extracted for verification. The resulting type is a list of extracted values." rel="popover">findAll</a>
+			<a href="#" data-title="count" data-content="The check will be applied on the size of the list returned by findall" rel="popover">count</a>
 		</div>
 		<div class="table check-transformer">
-			<a href="#" data-title="transform" data-content="Used to transform data before verification<dl><dt>(A => B)</dt><dd></dd></dl>" rel="popover">transform!</a>
+			<a href="#" data-title="transform" data-content="Used to transform data before verification<dl><dt>(A => B)</dt><dd>This function is optional. It can be useful sometimes to apply a transformation on the extracted values before validating them. In this function, type <i>A</i> is the type of the find operation (either <i>String</i>, <i>List[String]</i> or <i>Int</i>). Type B is whatever you want it to be (could be a case class for example)</dd></dl>" rel="popover">transform</a>
 		</div>
 		<div class="table check-verifiers">
-			<a href="#" data-title="is" data-content="<dl><dt>(expected)</dt><dd></dd></dl>" rel="popover">is!</a>
-			<a href="#" data-title="not" data-content="<dl><dt>(expected)</dt><dd></dd></dl>" rel="popover">not!</a>
-			<a href="#" data-title="exists" data-content="" rel="popover">exists!</a>
-			<a href="#" data-title="notExists" data-content="" rel="popover">notExists!</a>
-			<a href="#" data-title="in" data-content="<dl><dt>(sequence)</dt><dd></dd></dl>" rel="popover">in!</a>
-			<a href="#" data-title="whatever" data-content="" rel="popover">whatever!</a>
+			<a href="#" data-title="is" data-content="Checks for equality<dl><dt>(expected)</dt><dd>if the captured (or transformed) value is equal to <i>expected</i> the check will succeed; it will fail otherwise</dd></dl>" rel="popover">is</a>
+			<a href="#" data-title="not" data-content="Checks for inequality<dl><dt>(expected)</dt><dd>If the captured (or transformed) value is different than <i>expected</i> the check will succeed; it will fail otherwise</dd></dl>" rel="popover">not</a>
+			<a href="#" data-title="exists" data-content="Checks that there's at least one value corresponding to the check definition .This is the default verification (it does not need to be specified)" rel="popover">exists</a>
+			<a href="#" data-title="notExists" data-content="Checks that there are no values corresponding to the check definition" rel="popover">notExists</a>
+			<a href="#" data-title="in" data-content="Checks for belonging to a sequence<dl><dt>(sequence)</dt><dd>If the captured (or transformed) value is included in the <i>sequence</i> the check will succeed; it will fail otherwise</dd></dl>" rel="popover">in</a>
+			<a href="#" data-title="whatever" data-content="Always returns true. Used to capture optional values into the session" rel="popover">whatever</a>
 		</div>
 		<div class="table check-saver">
-			<a href="#" data-title="saveAs" data-content="<dl><dt>(key)</dt><dd></dd></dl>" rel="popover">saveAs!</a>
+			<a href="#" data-title="saveAs" data-content="If the check succeeds, it captures the extracted value(s) into the session<dl><dt>(key)</dt><dd>The value(s) will be stored in the session under key <i>key</i></dd></dl>" rel="popover">saveAs</a>
 		</div>
 	</div>
 	<div class="table http-config">
