@@ -10,14 +10,14 @@ h2 > small {font-size: 85%}
 	overflow: auto;
 	float:left;
 	margin:5px;
-	width: 155px;
+	width: 190px;
 }
 
 .table a {
 	color:white;
 	display: block;
 	float: left;
-	width: 155px;
+	width: 190px;
 	text-align: center;
 	margin: 2px 0;
 	font-weight: bold;
@@ -27,12 +27,12 @@ h2 > small {font-size: 85%}
 
 .table > .table { margin:0; }
 
-.table.action {	width:660px;clear: left; }
-.table.http-config { width: 990px; clear:left;}
-.table.scenario-config { width: 330px; height:200px;}
-.table.checks { width:990px; clear:left;}
-.table.feeders { width:330px;clear:left;}
-.table.struct {width: 825px;clear:left;}
+.table.struct {width: 1005px;clear:left;}
+.table.feeders { width:400px;clear:left;}
+.table.scenario-config { width: 400px; height:200px;}
+.table.action {	width:800px;clear: left; }
+.table.checks { width:1200px; clear:left;}
+.table.http-config { width: 1200px; clear:left;}
 
 h3.popover-title { font-weight: bold; }
 
@@ -53,7 +53,6 @@ h3.popover-title { font-weight: bold; }
 .feeder-types > a { background-color: rgba(0,0,255,0.6); }
 .feeder-strategies > a { background-color: rgba(75,100,255,0.6); }
 
-a.tooLong { font-size:1.2em;}
-a.reallyLong{ font-size: 1em;}
-a.reallyTooLong{ font-size:0.85em;}
-a.reallyReallyTooLong{ font-size:0.6em;}
+a.tooLong{ font-size: 1.2em;}
+a.reallyLong{ font-size:1em;}
+a.reallyTooLong{ font-size:0.73em;}

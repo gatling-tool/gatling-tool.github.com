@@ -25,7 +25,7 @@
 			<a href="#" data-title="doIf" data-content="Executes a chain when a condition is satisfied<dl><dt>(actual, expected){chain}</dt><dd>If the <i>actual</i> value is equal to <i>expected</i>, then, <i>chain</i> is executed.</dd><dt>(Session => Boolean){chain}</dt><dd>If the result of the function <i>Session => Boolean</i> is true, then <i>chain</i> is executed.</dd></dl>" rel="popover">doIf</a>
 			<a href="#" data-title="doIfOrElse" data-content="Executes a chain when a condition is satisfied, another if not<dl><dt>(actual, expected){chain}{otherChain}</dt><dd>If the <i>actual</i> value is equal to <i>expected</i>, then, <i>chain</i> is executed, else, <i>otherChain</i> is executed.</dd><dt>(Session => Boolean){chain}{otherChain}</dt><dd>If the result of the function <i>Session => Boolean</i> is true, then <i>chain</i> is executed, else <i>otherChain</i> is executed.</dd></dl>" rel="popover">doIfOrElse</a>
 			<a href="#" data-title="randomSwitch" data-content="<dl><dt>(dur unit)</dt><dd></dd></dl>" rel="popover">randomSwitch!</a>
-			<a href="#" data-title="roundRobinSwitch" data-content="<dl><dt>(Map[%,Chain])</dt><dd></dd></dl>" rel="popover" class="tooLong">roundRobinSwitch!</a>
+			<a href="#" data-title="roundRobinSwitch" data-content="<dl><dt>(Map[%,Chain])</dt><dd></dd></dl>" rel="popover">roundRobinSwitch!</a>
 		</div>
 		<div class="table loops">
 			<a href="#" data-title="repeat" data-content="Repeats a part of the scenario<dl><dt>(times){chain}</dt><dd>The <i>chain</i> is repeated the specified number of <i>times</i></dd></dl>" rel="popover">repeat</a>
@@ -34,8 +34,8 @@
 		</div>
 		<div class="table failure-handling">
 			<a href="#" data-title="tryMax" data-content="<dl><dt>(times,counterName){chain}</dt><dd></dd></dl>" rel="popover">tryMax!</a>
-			<a href="#" data-title="exitBlockOnFail" data-content="<dl><dt>{chain}</dt><dd></dd></dl>" rel="popover" class="tooLong">exitBlockOnFail!</a>
-			<a href="#" data-title="exitHereIfFailed" data-content="" rel="popover" class="tooLong">exitHereIfFailed!</a>
+			<a href="#" data-title="exitBlockOnFail" data-content="<dl><dt>{chain}</dt><dd></dd></dl>" rel="popover">exitBlockOnFail!</a>
+			<a href="#" data-title="exitHereIfFailed" data-content="" rel="popover">exitHereIfFailed!</a>
 		</div>
 	</div>
 	<div class="table feeders">
@@ -98,10 +98,10 @@
 		</div>
 		<div class="table http-checks">
 			<a href="#" data-title="status" data-content="Check will be applied to the status of the HTTP response" rel="popover">status</a>
-			<a href="#" data-title="currentLocation" data-content="Check will be applied to the current url of the response" rel="popover" class="tooLong">currentLocation</a>
+			<a href="#" data-title="currentLocation" data-content="Check will be applied to the current url of the response" rel="popover">currentLocation</a>
 			<a href="#" data-title="header" data-content="Check will be applied to selected headers of the HTTP response<dl><dt>(headerName)</dt><dd>The check will be applied on the header corresponding to <i>headerName</i></dd><dt>(Session => String)</dt><dd>Same as above, except that the header name is given by the <i>Session => String</i> function.</dd></dl>" rel="popover">header</a>
 			<a href="#" data-title="header" data-content="Check will be applied to selected headers of the HTTP response<dl><dt>(headerName, pattern)</dt><dd>The check will be applied on the headers <i>headerName</i> whose value match the provided <i>pattern</i>.</dd><dt>(Session => String)</dt><dd>Same as above, except that the header name is given by the <i>Session => String</i> function.</dd></dl>" rel="popover">headerRegex</a>
-			<a href="#" data-title="responseTimeInMillis" data-content="Check will be applied to the response time of the server" rel="popover" class="reallyLong">responseTimeInMillis</a>
+			<a href="#" data-title="responseTimeInMillis" data-content="Check will be applied to the response time of the server" rel="popover" class="tooLong">responseTimeInMillis</a>
 			<a href="#" data-title="latencyInMillis" data-content="Check will be applied to the latency of the request/response round trip" rel="popover">latencyInMillis</a>
 			<a href="#" data-title="regex" data-content="Check will be applied to an extract of the HTTP response's body<dl><dt>(expression)</dt><dd>Extraction will use a regular expression defined by <i>expression</i>.</dd></dl>" rel="popover">regex</a>
 			<a href="#" data-title="xpath" data-content="Check will be applied to an extract of the HTTP response's body<dl><dt>(expression)</dt><dd>Extraction will use an XPath expression defined by <i>expression</i></dd><dt>(expression, namespaces)</dt><dd>If you want to use namespaces in your XPATH expression, you should specify them. The <i>namespaces</i> are specified thanks to a List[(prefix,uri)]:<br>List(('c','http://core'), ('f','http://format')).</dd><dt>(Session => String)</dt><dd>The expression can be expressed as a <i>Session => String</i> function (with namespaces also)</dd></dl>" rel="popover">xpath</a>
@@ -146,22 +146,22 @@
 		</div>
 		<div class="table">
 			<a href="#" data-title="acceptHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover">acceptHeader!</a>
-			<a href="#" data-title="acceptCharsetHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="reallyLong">acceptCharsetHeader!</a>
-			<a href="#" data-title="acceptEncodingHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="reallyTooLong">acceptEncodingHeader!</a>
-			<a href="#" data-title="acceptLanguageHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="reallyTooLong">acceptLanguageHeader!</a>
+			<a href="#" data-title="acceptCharsetHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="tooLong">acceptCharsetHeader!</a>
+			<a href="#" data-title="acceptEncodingHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="reallyLong">acceptEncodingHeader!</a>
+			<a href="#" data-title="acceptLanguageHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="reallyLong">acceptLanguageHeader!</a>
 			<a href="#" data-title="hostHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover">hostHeader!</a>
-			<a href="#" data-title="userAgentHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="tooLong poptop">userAgentHeader!</a>
+			<a href="#" data-title="userAgentHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" rel="popover" class="poptop">userAgentHeader!</a>
 		</div>
 		<div class="table">
-			<a href="#" data-title="disableFollowRedirect" data-content="" rel="popover" class="reallyTooLong">disableFollowRedirect!</a>
-			<a href="#" data-title="disableAutomaticReferer" data-content="" rel="popover" class="reallyTooLong">disableAutomaticReferer!</a>
-			<a href="#" data-title="disableWarmUp" data-content="" rel="popover" class="tooLong">disableWarmUp!</a>
+			<a href="#" data-title="disableFollowRedirect" data-content="" rel="popover" class="reallyLong">disableFollowRedirect!</a>
+			<a href="#" data-title="disableAutomaticReferer" data-content="" rel="popover" class="reallyLong">disableAutomaticReferer!</a>
+			<a href="#" data-title="disableWarmUp" data-content="" rel="popover">disableWarmUp!</a>
 			<a href="#" data-title="warmUp" data-content="<dl><dt>(url)</dt><dd></dd></dl>" rel="popover">warmUp!</a>
 		</div>
 		<div class="table">
-			<a href="#" data-title="requestInfoExtractor" data-content="<dl><dt>(Request => List[String])</dt><dd></dd></dl>" rel="popover" class="reallyLong">requestInfoExtractor!</a>
-			<a href="#" data-title="responseInfoExtractor" data-content="<dl><dt>(Response => List[String])</dt><dd></dd></dl>" rel="popover" class="reallyTooLong">responseInfoExtractor!</a>
-			<a href="#" data-title="disableResponseChunksDiscarding" data-content="" rel="popover" class="reallyReallyTooLong">disableResponseChunksDiscarding!</a>
+			<a href="#" data-title="requestInfoExtractor" data-content="<dl><dt>(Request => List[String])</dt><dd></dd></dl>" rel="popover" class="tooLong">requestInfoExtractor!</a>
+			<a href="#" data-title="responseInfoExtractor" data-content="<dl><dt>(Response => List[String])</dt><dd></dd></dl>" rel="popover" class="reallyLong">responseInfoExtractor!</a>
+			<a href="#" data-title="disableResponseChunksDiscarding" data-content="" rel="popover" class="reallyTooLong">disableResponseChunksDiscarding!</a>
 		</div>
 	</div>
 	<script type="text/javascript">
