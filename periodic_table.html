@@ -55,10 +55,10 @@
 	</div>
 	<div class="table scenario-config">
 		<h2>Scenario configuration <small>Tune your simulation</small></h2>
-		<div class="table">
+		<div class="table config">
 			<p data-title="configure" data-content="Use this method to configure a scenario (in the List of scenarios to be executed in the simulation).">configure</p>
 		</div>
-		<div class="table">
+		<div class="table scen-opts">
 			<p data-title="users" data-content="Number of simulated users for this scenario<dl><dt>(number)</dt><dd>Exactly <i>number</i> sessions of this scenario will be started by Gatling.</dd></dl>">users</p>
 			<p data-title="ramp" data-content="Sets a linear ramp for sessions creation<dl><dt>(duration)</dt><dd>Sets the <i>duration</i> (in seconds) needed to start all the user sessions.<br>eg: if you set 10 users with a 10s ramp, then 1 user will start each second.</dd><dt>(dur unit)</dt><dd>Same as above, except that you can specify any time unit as <i>dur unit</i>: 2 minutes</dd></dl>">ramp</p>
 			<p data-title="delay" data-content="Sets the start time of this scenario's first session<dl><dt>(duration)</dt><dd>Sets the <i>duration</i> after which the first user session will be started. This allows you to create various load schemes.</dd><dt>(dur unit)</dt><dd>Same as above, except that you can specify any time unit as <i>dur unit</i>: 2 minutes</dd></dl>">delay</p>
@@ -132,19 +132,19 @@
 	</div>
 	<div class="table http-config">
 		<h2>HTTP Configuration <small>Factorise your scenario's code and tune the behaviour of Gatling's HTTP client</small></h2>
-		<div class="table">
+		<div class="table httpconfig">
 			<p data-title="httpconfig" data-content="">httpconfig!</p>
 		</div>
-		<div class="table">
+		<div class="table urls">
 			<p data-title="baseURL" data-content="<dl><dt>(url)</dt><dd></dd></dl>">baseURL!</p>
 			<p data-title="baseURLs" data-content="<dl><dt>(url...)</dt><dd></dd></dl>">baseURLs!</p>
 		</div>
-		<div class="table">
+		<div class="table proxy">
 			<p data-title="proxy" data-content="<dl><dt>(host, port)</dt><dd></dd></dl>">proxy!</p>
 			<p data-title="httpsPort" data-content="<dl><dt>(port)</dt><dd></dd></dl>">httpsPort!</p>
 			<p data-title="credentials" data-content="<dl><dt>(username,password)</dt><dd></dd></dl>">credentials!</p>
 		</div>
-		<div class="table">
+		<div class="table headers">
 			<p data-title="acceptHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>">acceptHeader!</p>
 			<p href="#" data-title="acceptCharsetHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" class="tooLong">acceptCharsetHeader!</p>
 			<p href="#" data-title="acceptEncodingHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" class="reallyLong">acceptEncodingHeader!</p>
@@ -152,13 +152,13 @@
 			<p href="#" data-title="hostHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>">hostHeader!</p>
 			<p href="#" data-title="userAgentHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" class="poptop">userAgentHeader!</p>
 		</div>
-		<div class="table">
+		<div class="table options">
 			<p data-title="disableFollowRedirect" data-content="" class="reallyLong">disableFollowRedirect!</p>
 			<p data-title="disableAutomaticReferer" data-content="" class="reallyLong">disableAutomaticReferer!</p>
 			<p data-title="disableWarmUp" data-content="">disableWarmUp!</p>
 			<p data-title="warmUp" data-content="<dl><dt>(url)</dt><dd></dd></dl>">warmUp!</p>
 		</div>
-		<div class="table">
+		<div class="table plumbing">
 			<p data-title="requestInfoExtractor" data-content="<dl><dt>(Request => List[String])</dt><dd></dd></dl>" class="tooLong">requestInfoExtractor!</p>
 			<p data-title="responseInfoExtractor" data-content="<dl><dt>(Response => List[String])</dt><dd></dd></dl>" class="reallyLong">responseInfoExtractor!</p>
 			<p data-title="disableResponseChunksDiscarding" data-content="" class="reallyTooLong">disableResponseChunksDiscarding!</p>
