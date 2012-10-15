@@ -43,7 +43,7 @@ h3.popover-title { font-weight: bold; }
 .http > p { background-color: rgba(255,0,0,0.6); }
 .http-verb > p { background-color: rgba(255,0,75,0.6); }
 .http-opts > p { background-color: rgba(255,75,100,0.6); }
-.http-body > a{ background-color: rgba(255,0,255,0.6); }
+.http-body > p { background-color: rgba(255,0,255,0.6); }
 .http-checks > p { background-color: rgba(75,100,255,0.6); }
 .check-extractors > p { background-color: rgba(75,100,255,0.6); }
 .check > p { background-color: rgba(75,100,255,0.6); }
