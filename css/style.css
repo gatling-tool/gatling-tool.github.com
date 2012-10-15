@@ -47,28 +47,33 @@ p.reallyTooLong{ font-size:0.7em; }
 .table.checks { width:1200px; clear:left; }
 .table.http-config { width: 1200px; clear:left; }
 
-.scenario > p { background-color: rgba(255,0,0,0.6); }
-.struct-base > p { background-color: rgba(255,0,0,0.6); }
-.conditions > p { background-color: rgba(255,0,0,0.6); }
-.loops > p { background-color: rgba(255,0,0,0.6); }
-.failure-handling > p { background-color: rgba(255,0,0,0.6); }
-.feeder-types > p { background-color: rgba(0,0,255,0.6); }
-.feeder-strategies > p { background-color: rgba(75,100,255,0.6); }
-.config > p { background-color: rgba(255,0,0,0.6); }
-.scen-opts > p { background-color: rgba(255,0,0,0.6); }
-.http > p { background-color: rgba(255,0,0,0.6); }
-.http-verb > p { background-color: rgba(255,0,75,0.6); }
-.http-opts > p { background-color: rgba(255,75,100,0.6); }
-.http-body > p { background-color: rgba(255,0,255,0.6); }
-.check > p { background-color: rgba(75,100,255,0.6); }
-.http-checks > p { background-color: rgba(75,100,255,0.6); }
-.check-extractors > p { background-color: rgba(75,100,255,0.6); }
-.check-transformer > p { background-color: rgba(75,100,255,0.6); }
-.check-verifiers > p { background-color: rgba(75,100,255,0.6); }
-.check-saver > p { background-color: rgba(75,100,255,0.6); }
-.httpconfig > p { background-color: rgba(255,0,0,0.6); }
-.urls > p { background-color: rgba(255,0,0,0.6); }
-.proxy > p { background-color: rgba(255,0,0,0.6); }
-.headers > p { background-color: rgba(255,0,0,0.6); }
-.options > p { background-color: rgba(255,0,0,0.6); }
-.plumbing > p { background-color: rgba(255,0,0,0.6); }
+.scenario > p { background-color: rgba(80,255,0,0.8); }
+.struct-base > p { background-color: rgba(80,255,0,0.7); }
+.conditions > p { background-color: rgba(80,255,0,0.6); }
+.loops > p { background-color: rgba(80,255,0,0.5); }
+.failure-handling > p { background-color: rgba(80,255,0,0.4); }
+
+.feeder-types > p { background-color: rgba(200,0,255,0.8); }
+.feeder-strategies > p { background-color: rgba(200,0,255,0.7); }
+
+.config > p { background-color: rgba(255,0,0,0.9); }
+.scen-opts > p { background-color: rgba(255,0,0,0.8); }
+
+.http > p { background-color: rgba(255,0,70,0.8); }
+.http-verb > p { background-color: rgba(255,0,70,0.7); }
+.http-opts > p { background-color: rgba(255,0,70,0.6); }
+.http-body > p { background-color: rgba(255,0,70,0.5); }
+
+.check > p { background-color: rgba(0,160,255,0.8); }
+.http-checks > p { background-color: rgba(0,160,255,0.7); }
+.check-extractors > p { background-color: rgba(0,160,255,0.6); }
+.check-transformer > p { background-color: rgba(0,160,255,0.5); }
+.check-verifiers > p { background-color: rgba(0,160,255,0.4); }
+.check-saver > p { background-color: rgba(0,160,255,0.3); }
+
+.httpconfig > p { background-color: rgba(0,255,170,0.8); }
+.urls > p { background-color: rgba(0,255,170,0.7); }
+.proxy > p { background-color: rgba(0,255,170,0.6); }
+.headers > p { background-color: rgba(0,255,170,0.5); }
+.options > p { background-color: rgba(0,255,170,0.4); }
+.plumbing > p { background-color: rgba(0,255,170,0.3); }
