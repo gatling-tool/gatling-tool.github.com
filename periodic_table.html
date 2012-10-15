@@ -44,8 +44,8 @@
 			<a href="#" data-title="csv" data-content="Declares a feeder from a CSV file<dl><dt>(fileName)</dt><dd><i>fileName</i> is the name of the file under the <i>data</i> folder containing the comma separated values to be injected</dd></dl>" rel="popover">csv</a>
 			<a href="#" data-title="tsv" data-content="Declares a feeder from a TSV file<dl><dt>(fileName)</dt><dd><i>fileName</i> is the name of the file under the <i>data</i> folder containing the tabulation separated values to be injected</dd></dl>" rel="popover">tsv</a>
 			<a href="#" data-title="ssv" data-content="Declares a feeder from a SSV file<dl><dt>(fileName)</dt><dd><i>fileName</i> is the name of the file under the <i>data</i> folder containing the semicolon separated values to be injected</dd></dl>" rel="popover">ssv</a>
-			<a href="#" data-title="jdbcFeeder" data-content="Declares a feeder from database records<dl><dt>(user,pass,sql)</dt><dd></dd></dl>" rel="popover">jdbcFeeder!</a>
-			<a href="#" data-title="redisFeeder" data-content="<dl><dt>(pool, urls)</dt><dd></dd></dl>" rel="popover">redisFeeder!</a>
+			<a href="#" data-title="jdbcFeeder" data-content="Declares a feeder from database records<dl><dt>(dbURL,user,pass,sql)</dt><dd>The feeder will load its values thanks to the <i>sql</i> request made on the database located at the JDBC URL <i>dbURL</i> as <i>user</i>/<i>pass</i>.<br>Note that you need to include the right JDBC4 driver in the classpath (lib folder if using the bundle)</dd></dl>" rel="popover">jdbcFeeder</a>
+			<a href="#" data-title="redisFeeder" data-content="<dl><dt>(pool, key)</dt><dd>This feeder loads its values from a Redis <i>pool</i> and stores them under <i>key</i> in the session.</dd></dl>" rel="popover">redisFeeder</a>
 		</div>
 		<div class="table feeder-strategies">
 			<a href="#" data-title="queue" data-content="This is the default strategy (you don't have to specify it). It takes the values in the feeder as in a queue. If the queue is not long enough, you'll get an error at execution." rel="popover">queue</a>
@@ -60,8 +60,8 @@
 		</div>
 		<div class="table">
 			<a href="#" data-title="users" data-content="Number of simulated users for this scenario<dl><dt>(number)</dt><dd>Exactly <i>number</i> sessions of this scenario will be started by Gatling.</dd></dl>" rel="popover">users</a>
-			<a href="#" data-title="ramp" data-content="Sets a linear ramp for sessions creation<dl><dt>(duration)</dt><dd>Sets the <i>duration</i> needed to start all the user sessions.<br>eg: if you set 10 users with a 10s ramp, then 1 user will start each second.</dd><dt>(dur unit)</dt><dd></dd></dl>" rel="popover">ramp!</a>
-			<a href="#" data-title="delay" data-content="Sets the start time of this scenario's first session<dl><dt>(duration)</dt><dd>Sets the <i>duration</i> after which the first user session will be started. This allows you to create various load schemes.</dd><dt>(dur unit)</dt><dd></dd></dl>" rel="popover">delay!</a>
+			<a href="#" data-title="ramp" data-content="Sets a linear ramp for sessions creation<dl><dt>(duration)</dt><dd>Sets the <i>duration</i> (in seconds) needed to start all the user sessions.<br>eg: if you set 10 users with a 10s ramp, then 1 user will start each second.</dd><dt>(dur unit)</dt><dd>Same as above, except that you can specify any time unit as <i>dur unit</i>: 2 minutes</dd></dl>" rel="popover">ramp</a>
+			<a href="#" data-title="delay" data-content="Sets the start time of this scenario's first session<dl><dt>(duration)</dt><dd>Sets the <i>duration</i> after which the first user session will be started. This allows you to create various load schemes.</dd><dt>(dur unit)</dt><dd>Same as above, except that you can specify any time unit as <i>dur unit</i>: 2 minutes</dd></dl>" rel="popover">delay</a>
 			<a href="#" data-title="protocolConfig" data-content="Sets a protocol configuration for this scenario<dl><dt>(protocolConfig...)</dt><dd>The <i>protocolConfig</i> added by this method will apply to all the actions of the concerned protocol.</dd></dl>" rel="popover">protocolConfig</a>
 		</div>
 	</div>
