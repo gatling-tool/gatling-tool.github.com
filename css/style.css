@@ -3,6 +3,7 @@ h1,p{margin-left:10px;}
 h2{margin:5px;font-size: 1em;padding:0; line-height:14px;}
 h2 > small {font-size: 85%}
 .popover { color: #333;}
+h3.popover-title { font-weight: bold; }
 
 .table{
 	background-color:black;
@@ -13,7 +14,7 @@ h2 > small {font-size: 85%}
 	width: 190px;
 }
 
-.table a {
+.table p {
 	color:white;
 	display: block;
 	float: left;
@@ -34,25 +35,24 @@ h2 > small {font-size: 85%}
 .table.checks { width:1200px; clear:left;}
 .table.http-config { width: 1200px; clear:left;}
 
-h3.popover-title { font-weight: bold; }
 
-.scenario-config > div > a { background-color: rgba(255,0,0,0.6);}
-.http-config > div > a { background-color: rgba(255,0,0,0.6);}
-.struct > div > a { background-color:rgba(0,255,0,0.6); }
+.scenario-config > div > p { background-color: rgba(255,0,0,0.6);}
+.http-config > div > p { background-color: rgba(255,0,0,0.6);}
+.struct > div > p { background-color:rgba(0,255,0,0.6); }
 
-.http > a { background-color: rgba(255,0,0,0.6); }
-.http-verb > a { background-color: rgba(255,0,75,0.6); }
-.http-opts > a { background-color: rgba(255,75,100,0.6); }
+.http > p { background-color: rgba(255,0,0,0.6); }
+.http-verb > p { background-color: rgba(255,0,75,0.6); }
+.http-opts > p { background-color: rgba(255,75,100,0.6); }
 .http-body > a{ background-color: rgba(255,0,255,0.6); }
-.http-checks > a { background-color: rgba(75,100,255,0.6); }
-.check-extractors > a { background-color: rgba(75,100,255,0.6); }
-.check > a { background-color: rgba(75,100,255,0.6); }
-.check-transformer > a { background-color: rgba(75,100,255,0.6); }
-.check-verifiers > a { background-color: rgba(75,100,255,0.6); }
-.check-saver > a { background-color: rgba(75,100,255,0.6); }
-.feeder-types > a { background-color: rgba(0,0,255,0.6); }
-.feeder-strategies > a { background-color: rgba(75,100,255,0.6); }
+.http-checks > p { background-color: rgba(75,100,255,0.6); }
+.check-extractors > p { background-color: rgba(75,100,255,0.6); }
+.check > p { background-color: rgba(75,100,255,0.6); }
+.check-transformer > p { background-color: rgba(75,100,255,0.6); }
+.check-verifiers > p { background-color: rgba(75,100,255,0.6); }
+.check-saver > p { background-color: rgba(75,100,255,0.6); }
+.feeder-types > p { background-color: rgba(0,0,255,0.6); }
+.feeder-strategies > p { background-color: rgba(75,100,255,0.6); }
 
-a.tooLong{ font-size: 1.2em;}
-a.reallyLong{ font-size:1em;}
-a.reallyTooLong{ font-size:0.73em;}
+p.tooLong{ font-size: 1.2em;}
+p.reallyLong{ font-size:1em;}
+p.reallyTooLong{ font-size:0.73em;}
