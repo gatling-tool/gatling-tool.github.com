@@ -40,10 +40,10 @@ p.reallyTooLong{ font-size:0.7em; }
 
 .table > .table { margin:0; }
 
-.table.struct {width:1005px; clear:left; }
-.table.feeders { width:400px; clear:left; }
-.table.scenario-config { width:400px; height:200px; }
-.table.action {	width:800px;clear: left; }
+.table.struct {width:1005px; clear:left;margin-left:102px; }
+.table.feeders { width:400px; clear:left;margin-left:153px; }
+.table.scenario-config { width:400px; height:200px;margin-left:93px; }
+.table.action {	width:800px;clear: left;margin-left:205px; }
 .table.checks { width:1200px; clear:left; }
 .table.http-config { width: 1200px; clear:left; }
 
