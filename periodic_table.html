@@ -99,15 +99,16 @@
 		<div class="table http-checks">
 			<a href="#" data-title="status" data-content="Check will be applied to the status of the HTTP response" rel="popover">status</a>
 			<a href="#" data-title="currentLocation" data-content="Check will be applied to the current url of the response" rel="popover" class="tooLong">currentLocation</a>
-			<a href="#" data-title="header" data-content="Check will be applied to selected headers of the HTTP response<dl><dt>(headerName)</dt><dd>The check will be applied on the header corresponding to <i>headerName</i></dd><dt>(headerName, pattern)</dt><dd>The check will be applied on the header... ???</dd></dl>" rel="popover">header!</a>
+			<a href="#" data-title="header" data-content="Check will be applied to selected headers of the HTTP response<dl><dt>(headerName)</dt><dd>The check will be applied on the header corresponding to <i>headerName</i></dd><dt>(Session => String)</dt><dd>Same as above, except that the header name is given by the <i>Session => String</i> function.</dd></dl>" rel="popover">header</a>
+			<a href="#" data-title="header" data-content="Check will be applied to selected headers of the HTTP response<dl><dt>(headerName, pattern)</dt><dd>The check will be applied on the headers <i>headerName</i> whose value match the provided <i>pattern</i>.</dd><dt>(Session => String)</dt><dd>Same as above, except that the header name is given by the <i>Session => String</i> function.</dd></dl>" rel="popover">headerRegex</a>
 			<a href="#" data-title="responseTimeInMillis" data-content="Check will be applied to the response time of the server" rel="popover" class="reallyLong">responseTimeInMillis</a>
 			<a href="#" data-title="latencyInMillis" data-content="Check will be applied to the latency of the request/response round trip" rel="popover">latencyInMillis</a>
 			<a href="#" data-title="regex" data-content="Check will be applied to an extract of the HTTP response's body<dl><dt>(expression)</dt><dd>Extraction will use a regular expression defined by <i>expression</i>.</dd></dl>" rel="popover">regex</a>
-			<a href="#" data-title="xpath" data-content="Check will be applied to an extract of the HTTP response's body<dl><dt>(expression, namespaces)</dt><dd>Extraction will use an XPath expression defined by <i>expression</i></dd></dl>" rel="popover">xpath!</a>
-			<a href="#" data-title="jsonPath" data-content="<dl><dt>(expression)</dt><dd></dd></dl>" rel="popover">jsonPath!</a>
-			<a href="#" data-title="css" data-content="<dl><dt>(expression, attr)</dt><dd></dd></dl>" rel="popover">css!</a>
-			<a href="#" data-title="md5" data-content="" rel="popover">md5!</a>
-			<a href="#" data-title="sha1" data-content="" rel="popover">sha1!</a>
+			<a href="#" data-title="xpath" data-content="Check will be applied to an extract of the HTTP response's body<dl><dt>(expression)</dt><dd>Extraction will use an XPath expression defined by <i>expression</i></dd><dt>(expression, namespaces)</dt><dd>If you want to use namespaces in your XPATH expression, you should specify them. The <i>namespaces</i> are specified thanks to a List[(prefix,uri)]:<br>List(('c','http://core'), ('f','http://format')).</dd><dt>(Session => String)</dt><dd>The expression can be expressed as a <i>Session => String</i> function (with namespaces also)</dd></dl>" rel="popover">xpath</a>
+			<a href="#" data-title="jsonPath" data-content="Check will be applied to an extract of the HTTP response's body<dl><dt>(expression)</dt><dd>jsonPath is similar to XPATH, but for JSON encoded data.</dd><dt>(Session => String)</dt><dd>The expression can be expressed as a <i>Session => String</i> function</dd></dl>" rel="popover">jsonPath</a>
+			<a href="#" data-title="css" data-content="Check will be applied to an extract of the HTTP response's body<dl><dt>(expression)</dt><dd>Uses the <i>css</i> selector to extract the value to be checked.</dd><dt>(expression, attr)</dt><dd>Same as above, except that the extracted value is the <i>attr</i> of the selected node.</dd></dl>" rel="popover">css</a>
+			<a href="#" data-title="md5" data-content="Check will be applied on the md5 checksum of the HTTP response" rel="popover">md5</a>
+			<a href="#" data-title="sha1" data-content="Check will be applied on the sha1 checksum of the HTTP response" rel="popover">sha1</a>
 		</div>
 		<div class="table check-extractors">
 			<a href="#" data-title="find" data-content="<dl><dt>&oslash;</dt><dd></dd><dt>(occurrence)</dt><dd></dd></dl>" rel="popover">find!</a>
