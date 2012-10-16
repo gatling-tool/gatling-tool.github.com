@@ -34,12 +34,12 @@
 				<p data-title="randomSwitch" data-content="<dl><dt>(dur unit)</dt><dd></dd></dl>">randomSwitch!</p>
 				<p data-title="roundRobinSwitch" data-content="<dl><dt>(Map[%,Chain])</dt><dd></dd></dl>">roundRobinSwitch!</p>
 			</div>
-			<div class="table loops">
+			<div class="table loops left">
 				<p data-title="repeat" data-content="Repeats a part of the scenario<dl><dt>(times){chain}</dt><dd>The <i>chain</i> is repeated the specified number of <i>times</i></dd></dl>">repeat</p>
 				<p data-title="during" data-content="Repeats a part of the scenario<dl><dt>(dur unit)</dt><dd>The <i>chain</i> is repeated for at least <i>dur unit</i>.</dd></dl>">during</p>
 				<p data-title="asLongAs" data-content="Reapeats a part of the scenario<dl><dt>(key, value)</dt><dd>The <i>chain</i> is repeated as long as the session value stored at <i>key</i> equals <i>value</i></dd><dt>(Session => Boolean)</dt><dd>The <i>chain</i> is repeated as long as the <i>(Session => Boolean</i> evaluates as <i>true</i></dd></dl>">asLongAs</p>
 			</div>
-			<div class="table failure-handling">
+			<div class="table failure-handling left">
 				<p data-title="tryMax" data-content="<dl><dt>(times,counterName){chain}</dt><dd></dd></dl>">tryMax!</p>
 				<p data-title="exitBlockOnFail" data-content="<dl><dt>{chain}</dt><dd></dd></dl>">exitBlockOnFail!</p>
 				<p data-title="exitHereIfFailed" data-content="">exitHereIfFailed!</p>
@@ -62,10 +62,10 @@
 		</div>
 		<div class="table scenario-config">
 			<h2>Scenario configuration <small>Tune your simulation</small></h2>
-			<div class="table config">
+			<div class="table config left">
 				<p data-title="configure" data-content="Use this method to configure a scenario (in the List of scenarios to be executed in the simulation).">configure</p>
 			</div>
-			<div class="table scen-opts">
+			<div class="table scen-opts left">
 				<p data-title="users" data-content="Number of simulated users for this scenario<dl><dt>(number)</dt><dd>Exactly <i>number</i> sessions of this scenario will be started by Gatling.</dd></dl>">users</p>
 				<p data-title="ramp" data-content="Sets a linear ramp for sessions creation<dl><dt>(duration)</dt><dd>Sets the <i>duration</i> (in seconds) needed to start all the user sessions.<br>eg: if you set 10 users with a 10s ramp, then 1 user will start each second.</dd><dt>(dur unit)</dt><dd>Same as above, except that you can specify any time unit as <i>dur unit</i>: 2 minutes</dd></dl>">ramp</p>
 				<p data-title="delay" data-content="Sets the start time of this scenario's first session<dl><dt>(duration)</dt><dd>Sets the <i>duration</i> after which the first user session will be started. This allows you to create various load schemes.</dd><dt>(dur unit)</dt><dd>Same as above, except that you can specify any time unit as <i>dur unit</i>: 2 minutes</dd></dl>">delay</p>
@@ -90,7 +90,7 @@
 				<p data-title="headers" data-content="Adds several headers to the request.<dl><dt>(Map[key, value])</dt><dd>Adds every tuple <i>key: value</i> of the map as header</dd></dl>">headers</p>
 				<p data-title="basicAuth" data-content="Sets the credentials for BASIC authentication.<dl><dt>(user, password)</dt><dd>Will authenticate as <i>user</i> with <i>password</i></dd></dl>">basicAuth</p>
 			</div>
-			<div class="table http-body">
+			<div class="table http-body left">
 				<p data-title="body" data-content="Adds a body to the request<dl><dt>(body)</dt><dd>Sets the body of the request to <i>body (a String)</i>.</dd></dl>">body</p>
 				<p data-title="fileBody" data-content="Adds a body to the request from a file located in the data folder<dl><dt>(fileName)</dt><dd>Sets the contents of <i>fileName</i> as the body of the request.</dd><dt>(tplFileName, values)</dt><dd>Injects the <i>values</i> inside the template located at <i>tplFileName</i> and sets the result as the body of the request</dd></dl>">fileBody</p>
 				<p data-title="byteArrayBody" data-content="Adds a body to the request<dl><dt>(Session => Array[Byte])</dt><dd>Sets the body of the request to the result of <i>the function</i>.</dd></dl>">byteArrayBody</p>
@@ -125,7 +125,7 @@
 			<div class="table check-transformer">
 				<p data-title="transform" data-content="Used to transform data before verification<dl><dt>(A => B)</dt><dd>This function is optional. It can be useful sometimes to apply a transformation on the extracted values before validating them. In this function, type <i>A</i> is the type of the find operation (either <i>String</i>, <i>List[String]</i> or <i>Int</i>). Type B is whatever you want it to be (could be a case class for example)</dd></dl>">transform</p>
 			</div>
-			<div class="table check-verifiers">
+			<div class="table check-verifiers left">
 				<p data-title="is" data-content="Checks for equality<dl><dt>(expected)</dt><dd>if the captured (or transformed) value is equal to <i>expected</i> the check will succeed; it will fail otherwise</dd></dl>">is</p>
 				<p data-title="not" data-content="Checks for inequality<dl><dt>(expected)</dt><dd>If the captured (or transformed) value is different than <i>expected</i> the check will succeed; it will fail otherwise</dd></dl>">not</p>
 				<p data-title="exists" data-content="Checks that there's at least one value corresponding to the check definition .This is the default verification (it does not need to be specified)">exists</p>
@@ -133,7 +133,7 @@
 				<p data-title="in" data-content="Checks for belonging to a sequence<dl><dt>(sequence)</dt><dd>If the captured (or transformed) value is included in the <i>sequence</i> the check will succeed; it will fail otherwise</dd></dl>">in</p>
 				<p data-title="whatever" data-content="Always returns true. Used to capture optional values into the session">whatever</p>
 			</div>
-			<div class="table check-saver">
+			<div class="table check-saver left">
 				<p data-title="saveAs" data-content="If the check succeeds, it captures the extracted value(s) into the session<dl><dt>(key)</dt><dd>The value(s) will be stored in the session under key <i>key</i></dd></dl>">saveAs</p>
 			</div>
 		</div>
@@ -159,13 +159,13 @@
 				<p href="#" data-title="hostHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>">hostHeader!</p>
 				<p href="#" data-title="userAgentHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" class="poptop">userAgentHeader!</p>
 			</div>
-			<div class="table options">
+			<div class="table options left">
 				<p data-title="disableFollowRedirect" data-content="" class="reallyLong">disableFollowRedirect!</p>
 				<p data-title="disableAutomaticReferer" data-content="" class="reallyLong">disableAutomaticReferer!</p>
 				<p data-title="disableWarmUp" data-content="">disableWarmUp!</p>
 				<p data-title="warmUp" data-content="<dl><dt>(url)</dt><dd></dd></dl>">warmUp!</p>
 			</div>
-			<div class="table plumbing">
+			<div class="table plumbing left">
 				<p data-title="requestInfoExtractor" data-content="<dl><dt>(Request => List[String])</dt><dd></dd></dl>" class="tooLong">requestInfoExtractor!</p>
 				<p data-title="responseInfoExtractor" data-content="<dl><dt>(Response => List[String])</dt><dd></dd></dl>" class="reallyLong">responseInfoExtractor!</p>
 				<p data-title="disableResponseChunksDiscarding" data-content="" class="reallyTooLong">disableResponseChunksDiscarding!</p>
@@ -173,7 +173,10 @@
 		</div>
 	</div>
 	<script type="text/javascript">
+	
+	$('.table.left p').popover({trigger:'hover', placement:'left'});
 	$('.table p').popover({trigger:'hover', placement:'right'});
+
 	$(document).ready(function(){
 		$('#switchtheme li a').click(function(){
 			$('link.theme').attr('href', $(this).attr('rel'));

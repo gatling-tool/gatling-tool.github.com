@@ -12,6 +12,7 @@ h2 > small {font-size: 85%; }
 	margin:0 auto;
 	overflow: auto;
 	position: relative;
+	padding-bottom: 100px;
 }
 
 #switchtheme{
