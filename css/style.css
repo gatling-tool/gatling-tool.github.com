@@ -6,8 +6,30 @@ h2 {
 	line-height:14px;
 }
 h2 > small {font-size: 85%; }
+
+#content {
+	width:1220px;
+	margin:0 auto;
+	overflow: auto;
+	position: relative;
+}
+
+#switchtheme{
+	list-style: none;
+	padding:0;
+	margin:0;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+#switchtheme li {
+	float: left;
+	margin: 0 10px;
+}
+
 h3.popover-title { font-weight: bold; }
 .popover { width: 300px; }
+
 .table{
 	padding:3px 5px;
 	overflow: auto;
@@ -30,12 +52,6 @@ h3.popover-title { font-weight: bold; }
 p.tooLong{ font-size: 1.2em; }
 p.reallyLong{ font-size:1em; }
 p.reallyTooLong{ font-size:0.7em; }
-
-#content {
-	width:1220px;
-	margin:0 auto;
-	overflow: auto;
-}
 
 .table > .table { margin:0; }
 

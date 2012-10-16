@@ -4,7 +4,7 @@
 	<title>Gatling's DSL elements</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/light.css">
+	<link class="theme" rel="stylesheet" type="text/css" href="css/light.css">
 	<script src="js/jquery.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 </head>
@@ -12,6 +12,11 @@
 	<div id="content">
 		<h1>Gatling's Cheat sheet</h1>
 		<p>Hover over a DSL element to know how to use it and what it does</p>
+		<ul id="switchtheme">
+			<p>Theme</p>
+			<li><a href="#" rel="css/dark.css" class="btn btn-info">Dark</a></li>
+			<li><a href="#" rel="css/light.css" class="btn btn-info">Light</a></li>
+		</ul>
 		<div class="table struct">
 			<h2>Scenario definition <small>Describe your users behaviour</small></h2>
 			<div class="table scenario">
@@ -169,6 +174,12 @@
 	</div>
 	<script type="text/javascript">
 	$('.table p').popover({trigger:'hover', placement:'right'});
+	$(document).ready(function(){
+		$('#switchtheme li a').click(function(){
+			$('link.theme').attr('href', $(this).attr('rel'));
+			return false;
+		})
+	});
 	</script>
 </body>
 </html>
