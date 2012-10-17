@@ -31,8 +31,8 @@
 			<div class="table conditions">
 				<p data-title="doIf" data-content="Executes a chain when a condition is satisfied<dl><dt>(actual, expected){chain}</dt><dd>If the <i>actual</i> value is equal to <i>expected</i>, then, <i>chain</i> is executed.</dd><dt>(Session => Boolean){chain}</dt><dd>If the result of the function <i>Session => Boolean</i> is true, then <i>chain</i> is executed.</dd></dl>">doIf</p>
 				<p data-title="doIfOrElse" data-content="Executes a chain when a condition is satisfied, another if not<dl><dt>(actual, expected){chain}{otherChain}</dt><dd>If the <i>actual</i> value is equal to <i>expected</i>, then, <i>chain</i> is executed, else, <i>otherChain</i> is executed.</dd><dt>(Session => Boolean){chain}{otherChain}</dt><dd>If the result of the function <i>Session => Boolean</i> is true, then <i>chain</i> is executed, else <i>otherChain</i> is executed.</dd></dl>">doIfOrElse</p>
-				<p data-title="randomSwitch" data-content="<dl><dt>(dur unit)</dt><dd></dd></dl>">randomSwitch!</p>
-				<p data-title="roundRobinSwitch" data-content="<dl><dt>(Map[%,Chain])</dt><dd></dd></dl>">roundRobinSwitch!</p>
+				<p data-title="randomSwitch" data-content="Current user will continue in one the specified weighted chains. Can be used to simulate simple Markov chains<dl><dt>(Map[%,Chain])</dt><dd>The <i>Map</i> contains the distribution of the randomSwitch. Each chain is weighted with a percentage. Make sure the sum of weights does not exceed 100.</dd><dt>(chains...)</dt><dd>If no percentage is specified, each chain will have the same weight.</dd></dl>">randomSwitch</p>
+				<p data-title="roundRobinSwitch" data-content="A round-robin strategy is used to determine the chain to be executed.<dl><dt>(chains...)</dt><dd>The list of <i>chains</i>.</dd></dl>">roundRobinSwitch</p>
 			</div>
 			<div class="table loops left">
 				<p data-title="repeat" data-content="Repeats a part of the scenario<dl><dt>(times){chain}</dt><dd>The <i>chain</i> is repeated the specified number of <i>times</i></dd></dl>">repeat</p>
@@ -40,9 +40,9 @@
 				<p data-title="asLongAs" data-content="Reapeats a part of the scenario<dl><dt>(key, value)</dt><dd>The <i>chain</i> is repeated as long as the session value stored at <i>key</i> equals <i>value</i></dd><dt>(Session => Boolean)</dt><dd>The <i>chain</i> is repeated as long as the <i>(Session => Boolean</i> evaluates as <i>true</i></dd></dl>">asLongAs</p>
 			</div>
 			<div class="table failure-handling left">
-				<p data-title="tryMax" data-content="<dl><dt>(times,counterName){chain}</dt><dd></dd></dl>">tryMax!</p>
-				<p data-title="exitBlockOnFail" data-content="<dl><dt>{chain}</dt><dd></dd></dl>">exitBlockOnFail!</p>
-				<p data-title="exitHereIfFailed" data-content="">exitHereIfFailed!</p>
+				<p data-title="tryMax" data-content="Retries a chain until it succeeds<dl><dt>(times){chain}</dt><dd><i>chain</i> will be repeated until either all checks in it are OK; or the chain has been reapeated <i>times</i> times.</dd></dl>">tryMax</p>
+				<p data-title="exitBlockOnFail" data-content="Stops block execution if a check fails<dl><dt>{chain}</dt><dd>If a check in <i>chain</i> fails, its execution is stopped and the scenario continues.</dd></dl>">exitBlockOnFail</p>
+				<p data-title="exitHereIfFailed" data-content="If there were an error during execution, the scenario should stop at this point.">exitHereIfFailed</p>
 			</div>
 		</div>
 		<div class="table feeders">
