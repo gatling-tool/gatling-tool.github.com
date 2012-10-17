@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="style/favicon.ico"/>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/galleria/galleria-1.2.6.min.js"></script>
+<script src="js/galleria/themes/classic/galleria.classic.min.js"></script>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<title>Gatling Project - Stress Tool</title>
+</head>
+<body>
+<div class="frise"></div>
+<div class="container global">
+	<div class="head">
+		<a href="http://github.com/excilys/gatling" target="blank_" title="Accueil"><img alt="Gatling" src="style/logo.png"/></a>
+	</div>
+	<div id="twitter_button">
+          <g:plusone></g:plusone>
+	  <a href="https://twitter.com/share" class="twitter-share-button" data-text="Gatling is a really performant stress tool made in #Scala with #Akka." data-via="excilys" data-size="large" data-hashtags="gatling">Tweet</a>
+  </div>
+	
+	<div class="main">
+		<div class="cadre">
+				<div class="onglet">
+						<img src="style/cible.png" alt="" />
+						<p><span>Efficient Load Testing</span></p>
+				</div>
+				<div class="content">
+					<div class="sous-menu">
+						<p class="item ouvert">Links</p>
+					</div>
+					<div class="content-in">
+						<div class="article">
+  							<div class="links block">
+  							  <h2>About</h2>
+  							  <p>Gatling is an <a href="https://github.com/excilys/gatling/wiki/License">Open Source</a> Stress Tool with:</p>
+  							  <ul>
+  							    <li><a href="https://github.com/excilys/gatling/wiki/Benchmarks">High performances</a></li>
+  							    <li><a href="https://github.com/excilys/gatling/wiki/Concepts">Simple concepts</a></li>
+  							    <li><a href="https://github.com/excilys/gatling/wiki/Structure-Elements">A DSL to describe scenarios</a></li>
+  							    <li><a href="https://github.com/excilys/gatling/wiki/HTTP">HTTP support</a></li>
+  							    <li><a href="https://github.com/excilys/gatling/wiki/Recorder">A scenario recorder</a></li>
+  							    <li><a href="https://github.com/excilys/gatling/wiki/First-Steps-with-Gatling#wiki-analyze-simulation">Meaningful reports</a></li>
+  							</div>
+  							<div class="links block">
+  							  <h2>Download</h2>
+  							  <p>10/15/2012: Gatling 1.3.3 is out! (<a href="https://github.com/excilys/gatling/wiki/Changelog#wiki-1.3.3">Changelog</a>)</p>
+  							  <p>You can download it here:</p>
+							    <ul>
+							      <li><a href="https://github.com/downloads/excilys/gatling/gatling-charts-highcharts-1.3.3-bundle.tar.gz">gatling-charts-highcharts-1.3.3-bundle.tar.gz</a></li>
+							      <li><a href="https://github.com/downloads/excilys/gatling/gatling-charts-highcharts-1.3.3-bundle.zip">gatling-charts-highcharts-1.3.3-bundle.zip</a></li>
+							      <li><a href="https://github.com/downloads/excilys/gatling/gatling-charts-highcharts-1.3.3.deb">gatling-charts-highcharts-1.3.3.deb</a></li>
+							    </ul>
+  							</div>
+  							<div class="links block">
+  							  <h2>Documentation</h2>
+  							  <p>Gatling comes with helpful <a href="https://github.com/excilys/gatling/wiki">User Documentation</a>...</p>
+  							  <ul>
+  							    <li><a href="https://github.com/excilys/gatling/wiki/Getting-Started">Getting Started</a></li>
+  							    <li><a href="https://github.com/excilys/gatling/wiki/First-Steps-with-Gatling">First Steps With Gatling</a></li>
+  							    <li><a href="https://github.com/excilys/gatling/wiki/Advanced-Usage">Advanced Usage</a></li>
+							    </ul>
+							    <!--<p>... And comprehensive <a href="api/">API Documentation</a></p> need to update uploaded scaladoc -->
+  							</div>
+  							<div class="links block">
+  							  <h2>Examples</h2>
+  							  <p>Check these examples out!</p>
+  							  <ul>
+  							    <li><a href="https://gist.github.com/3870509">Gatling's DSL</a> vs <a href="https://gist.github.com/3870492">JMeter's</a></li>
+  							    <li><a href="sample/index.html">HTML Reports</a></li>
+  							  </ul>
+  							</div>
+  							<div class="gallery block">
+  							  <h2>Gatling in Action</h2>
+  							  <div id="gallery">
+  							    <img src="img/dsl.png" alt="Gatling's DSL was created with easy learning and usage in mind" title="A simple yet powerful DSL" />
+  							    <img src="img/requests-per-sec.png" alt="Gatling's report are written in HTML, they are portable and viewable by everyone" title="Gatling's reports" />
+  							    <img src="img/req_details_basic_usage.png" alt="Analyze the behavior of your application thanks to Gatling's meaningful reports" title="Analyze the behavior of your application" />
+  							    <img src="img/recorder-configuration_frame.png" alt="Gatling Recorder is able to create a scenario by recording your actions on a website" title="Gatling Recorder" />
+  							  </div>
+  							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="nav nav-menu" id="sponsors">
+		<ul>
+		  <li><p>Sponsors</p></li>
+		  <li><a href="http://www.ebusinessinformation.fr" target="_blank"><img alt="eBusiness Information" src="https://github.com/excilys/gatling/wiki/img/ebi_logo.png" /></a></li>
+		  <li><a href="http://www.excilys.com" target="_blank"><img alt="Excilys Group" src="img/excilys-logo.png" /></a></li>
+		  <li><a href="http://www.yourkit.com" target="_blank"><img alt="YourKit" src="https://github.com/excilys/gatling/wiki/img/yourkit_logo.png" /></a></li>
+		  <li><a href="http://www.highsoft.com" target="_blank"><img alt="HighSoft" src="https://github.com/excilys/gatling/wiki/img/highsoft_logo.png" /></a></li>
+		  <li><a href="http://www.cloudbees.com" target="_blank"><img alt="Cloudbees" src="https://github.com/excilys/gatling/wiki/img/devcloud-logo.png" /></a></li>
+		</ul>
+	</div>
+	<div class="nav nav-menu" id="social">
+		<ul>
+		  <li><p>Social</p></li>
+		  <li><a href="https://groups.google.com/forum/#!forum/gatling" target="_blank"><img src="img/google-groups.png" alt="Google Group" /></a></li>
+		  <li><a href="https://twitter.com/GatlingTool" target="_blank"><img src="img/twitter.png" alt="Twitter" /></a></li>
+		  <li><a href="https://plus.google.com/101883104222712053693" target="_blank"><img src="img/google-plus.png" alt="Google+" /></a></li>
+		</ul>
+	</div>
+	<div class="nav-menu" id="twitter-widget">
+	  <script>
+      new TWTR.Widget({
+        version: 2,
+        type: 'profile',
+        rpp: 5,
+        interval: 30000,
+        width: 'auto',
+        height: 150,
+        theme: {
+          shell: {
+            background: '#aeaea8',
+            color: '#000000'
+          },
+          tweets: {
+            background: '#EAEAEA',
+            color: '#000000',
+            links: '#e37500'
+          }
+        },
+        features: {
+          scrollbar: false,
+          loop: false,
+          live: false,
+          behavior: 'all'
+        }
+      }).render().setUser('GatlingTool').start();
+    </script>
+  </div>
+</div>
+<div class="foot">
+	<a href="http://github.com/excilys/gatling" title="Accueil"><img alt="Gatling" src="style/logo-gatling.jpg"/></a>
+</div>
+<script type="application/javascript">
+$('#gallery').galleria({
+    width: 725,
+    height: 200,
+    imageCrop: 'width',
+    lightbox: true,
+    thumbnails: false,
+    autoplay: true,
+    transition: 'fade'
+});
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<a href="https://github.com/excilys/gatling"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+</body>
+</html>

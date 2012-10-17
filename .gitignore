@@ -1,0 +1,5 @@
+.project
+.settings
+/gatling-*
+.DS_Store
+

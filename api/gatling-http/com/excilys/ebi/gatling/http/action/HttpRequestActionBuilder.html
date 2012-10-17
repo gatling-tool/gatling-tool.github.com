@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a title="Go to companion" href="HttpRequestActionBuilder$.html"><img src="../../../../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a name="com" class="extype" href="../../../../../package.html">com</a>.<a name="com.excilys" class="extype" href="../../../../package.html">excilys</a>.<a name="com.excilys.ebi" class="extype" href="../../../package.html">ebi</a>.<a name="com.excilys.ebi.gatling" class="extype" href="../../package.html">gatling</a>.<a name="com.excilys.ebi.gatling.http" class="extype" href="../package.html">http</a>.<a name="com.excilys.ebi.gatling.http.action" class="extype" href="package.html">action</a></p>
+        <h1><a title="Go to companion" href="HttpRequestActionBuilder$.html">HttpRequestActionBuilder</a></h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <span class="name">HttpRequestActionBuilder</span>
+        
+        <span class="result"> extends <span name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="extype">AbstractActionBuilder</span></span>
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Builder for HttpRequestActionBuilder
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="extype">AbstractActionBuilder</span>, <span name="com.excilys.ebi.gatling.core.log.Logging" class="extype">Logging</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              </div>
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show all</span></li></ol>
+                <ol id="linearization"><li name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder" class="in"><span>HttpRequestActionBuilder</span></li><li name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="in"><span>AbstractActionBuilder</span></li><li name="com.excilys.ebi.gatling.core.log.Logging" class="in"><span>Logging</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+              </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        <div class="members" id="constructors">
+              <h3>Instance Constructors</h3>
+              <ol><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#this" data-isabs="false">
+      <a id="this:HttpRequestActionBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">new</span>
+      <span class="symbol"> 
+        <span class="name">HttpRequestActionBuilder</span>
+        
+        <span class="params">(<span name="requestName">requestName: String</span>, <span name="request">request: <a name="com.excilys.ebi.gatling.http.request.HttpRequest" class="extype" href="../request/HttpRequest.html">HttpRequest</a></span>, <span name="next">next: <span name="com.excilys.ebi.gatling.core.action.Action" class="extype">Action</span></span>, <span name="processorBuilders">processorBuilders: <span name="scala.Option" class="extype">Option</span>[List[com.excilys.ebi.gatling.http.check.HttpCheckBuilder[_]]]</span>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">creates an HttpRequestActionBuilder</p><div class="fullcomment"><div class="comment cmt"><p>creates an HttpRequestActionBuilder</p></div><dl class="paramcmts block"><dt class="param">requestName</dt><dd class="cmt"><p>the name of the request</p></dd><dt class="param">request</dt><dd class="cmt"><p>the actual HTTP request that will be sent</p></dd><dt class="param">next</dt><dd class="cmt"><p>the next action to be executed</p></dd><dt class="param">processorBuilders</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">##</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">clone</span>
+        
+        <span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#delete" data-isabs="false">
+      <a id="delete((Session) ⇒ String):DeleteHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">delete</span>
+        
+        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.DeleteHttpRequestBuilder" class="extype" href="../request/builder/DeleteHttpRequestBuilder.html">DeleteHttpRequestBuilder</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Starts the definition of an HTTP request with word DELETE
+</p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word DELETE
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function returning the url of this request
+</p></dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#delete" data-isabs="false">
+      <a id="delete(String):DeleteHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">delete</span>
+        
+        <span class="params">(<span name="url">url: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.DeleteHttpRequestBuilder" class="extype" href="../request/builder/DeleteHttpRequestBuilder.html">DeleteHttpRequestBuilder</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Starts the definition of an HTTP request with word DELETE
+</p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word DELETE
+</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#get" data-isabs="false">
+      <a id="get((Session) ⇒ String):GetHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">get</span>
+        
+        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.GetHttpRequestBuilder" class="extype" href="../request/builder/GetHttpRequestBuilder.html">GetHttpRequestBuilder</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Starts the definition of an HTTP request with word GET
+</p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word GET
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function returning the url of this request
+</p></dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#get" data-isabs="false">
+      <a id="get(String):GetHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">get</span>
+        
+        <span class="params">(<span name="url">url: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.GetHttpRequestBuilder" class="extype" href="../request/builder/GetHttpRequestBuilder.html">GetHttpRequestBuilder</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Starts the definition of an HTTP request with word GET
+</p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word GET
+</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.log.Logging#logger" data-isabs="false">
+      <a id="logger:Logger"></a>
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol"> 
+        <span class="name">logger</span>
+        
+        <span class="result">: <span name="org.slf4j.Logger" class="extype">Logger</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Logging</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notify</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#post" data-isabs="false">
+      <a id="post((Session) ⇒ String):PostHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">post</span>
+        
+        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PostHttpRequestBuilder" class="extype" href="../request/builder/PostHttpRequestBuilder.html">PostHttpRequestBuilder</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Starts the definition of an HTTP request with word POST
+</p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word POST
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function returning the url of this request
+</p></dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#post" data-isabs="false">
+      <a id="post(String):PostHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">post</span>
+        
+        <span class="params">(<span name="url">url: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PostHttpRequestBuilder" class="extype" href="../request/builder/PostHttpRequestBuilder.html">PostHttpRequestBuilder</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Starts the definition of an HTTP request with word POST
+</p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word POST
+</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#put" data-isabs="false">
+      <a id="put((Session) ⇒ String):PutHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">put</span>
+        
+        <span class="params">(<span name="f">f: (<span name="com.excilys.ebi.gatling.core.session.Session" class="extype">Session</span>) ⇒ String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PutHttpRequestBuilder" class="extype" href="../request/builder/PutHttpRequestBuilder.html">PutHttpRequestBuilder</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Starts the definition of an HTTP request with word PUT
+</p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word PUT
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function returning the url of this request
+</p></dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#put" data-isabs="false">
+      <a id="put(String):PutHttpRequestBuilder"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">put</span>
+        
+        <span class="params">(<span name="url">url: String</span>)</span><span class="result">: <a name="com.excilys.ebi.gatling.http.request.builder.PutHttpRequestBuilder" class="extype" href="../request/builder/PutHttpRequestBuilder.html">PutHttpRequestBuilder</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Starts the definition of an HTTP request with word PUT
+</p><div class="fullcomment"><div class="comment cmt"><p>Starts the definition of an HTTP request with word PUT
+</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the url on which this request will be made</p></dd></dl></div>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.http.action.HttpRequestActionBuilder#requestName" data-isabs="false">
+      <a id="requestName:String"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">requestName</span>
+        
+        <span class="result">: String</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">the name of the request</p>
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">toString</span>
+        
+        <span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="parent">
+              <h3>Inherited from <span name="com.excilys.ebi.gatling.core.action.builder.AbstractActionBuilder" class="extype">AbstractActionBuilder</span></h3>
+            </div><div name="com.excilys.ebi.gatling.core.log.Logging" class="parent">
+              <h3>Inherited from <span name="com.excilys.ebi.gatling.core.log.Logging" class="extype">Logging</span></h3>
+            </div><div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

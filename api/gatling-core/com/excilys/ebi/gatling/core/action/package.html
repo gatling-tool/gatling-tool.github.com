@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.excilys.ebi.gatling.core.action</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../../lib/package_big.png" />
+        <p id="owner"><a name="com" class="extype" href="../../../../../package.html">com</a>.<a name="com.excilys" class="extype" href="../../../../package.html">excilys</a>.<a name="com.excilys.ebi" class="extype" href="../../../package.html">ebi</a>.<a name="com.excilys.ebi.gatling" class="extype" href="../../package.html">gatling</a>.<a name="com.excilys.ebi.gatling.core" class="extype" href="../package.html">core</a></p>
+        <h1>action</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <span class="name">action</span>
+        
+        
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.excilys.ebi.gatling.core.action.Action" data-isabs="true">
+      <a id="Action:Action"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Action.html"><span class="name">Action</span></a>
+        
+        <span class="result"> extends TypedActor with Logging with ClassSimpleNameToString</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This trait represents an Action in Gatling terms.</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.EndAction" data-isabs="false">
+      <a id="EndAction:EndAction"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="EndAction.html"><span class="name">EndAction</span></a>
+        
+        <span class="result"> extends TypedActor with Action</span>
+      </span>
+      </h4>
+      <p class="comment cmt">EndAction class represents the last action of the scenario.</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.IfAction" data-isabs="false">
+      <a id="IfAction:IfAction"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="IfAction.html"><span class="name">IfAction</span></a>
+        
+        <span class="result"> extends TypedActor with Action</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class represents a conditional Action
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.PauseAction" data-isabs="false">
+      <a id="PauseAction:PauseAction"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="PauseAction.html"><span class="name">PauseAction</span></a>
+        
+        <span class="result"> extends TypedActor with Action</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This action represents a pause in the scenario (ie: think time)
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.RequestAction" data-isabs="true">
+      <a id="RequestAction:RequestAction[P]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="RequestAction.html"><span class="name">RequestAction</span></a>
+        <span class="tparams">[<span name="P">P</span>]</span>
+        <span class="result"> extends TypedActor with Action</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Abstract class for all request actions.</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.SimpleAction" data-isabs="false">
+      <a id="SimpleAction:SimpleAction"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="SimpleAction.html"><span class="name">SimpleAction</span></a>
+        
+        <span class="result"> extends TypedActor with Action</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class represents a simple action.</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.StartAction" data-isabs="false">
+      <a id="StartAction:StartAction"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="StartAction.html"><span class="name">StartAction</span></a>
+        
+        <span class="result"> extends TypedActor with Action</span>
+      </span>
+      </h4>
+      <p class="comment cmt">StartAction class represents the first action of the scenario, ie: its beginning.</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.WhileAction" data-isabs="false">
+      <a id="WhileAction:WhileAction"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="WhileAction.html"><span class="name">WhileAction</span></a>
+        
+        <span class="result"> extends TypedActor with Action with TimerBasedIterationHandler with CounterBasedIterationHandler</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Represents a While in the scenario.</p>
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.excilys.ebi.gatling.core.action.EndAction" data-isabs="false">
+      <a id="EndAction:EndAction"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="EndAction$.html"><span class="name">EndAction</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">EndAction class companion
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.PauseAction" data-isabs="false">
+      <a id="PauseAction:PauseAction"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="PauseAction$.html"><span class="name">PauseAction</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">PauseAction class companion
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.StartAction" data-isabs="false">
+      <a id="StartAction:StartAction"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="StartAction$.html"><span class="name">StartAction</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">StartAction class companion
+</p>
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.builder" data-isabs="false">
+      <a id="builder:builder"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="builder/package.html"><span class="name">builder</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.excilys.ebi.gatling.core.action.request" data-isabs="false">
+      <a id="request:request"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="request/package.html"><span class="name">request</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
