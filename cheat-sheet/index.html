@@ -140,35 +140,35 @@
 		<div class="table http-config">
 			<h2>HTTP Configuration <small>Factorise your scenario's code and tune the behaviour of Gatling's HTTP client</small></h2>
 			<div class="table httpconfig">
-				<p data-title="httpconfig" data-content="">httpconfig!</p>
+				<p data-title="httpconfig" data-content="Used to start the definition of an HTTP configuration">httpconfig</p>
 			</div>
 			<div class="table urls">
-				<p data-title="baseURL" data-content="<dl><dt>(url)</dt><dd></dd></dl>">baseURL!</p>
-				<p data-title="baseURLs" data-content="<dl><dt>(url...)</dt><dd></dd></dl>">baseURLs!</p>
+				<p data-title="baseURL" data-content="Sets the base URL of all relative URLs of the scenario on which the configuration is applied<dl><dt>(url)</dt><dd>The <i>url</i> that will be appended to all relative URLs (ie: not starting with http)</dd></dl>">baseURL</p>
+				<p data-title="baseURLs" data-content="Same as <i>baseURL</i> with client-based load balancing.<dl><dt>(url...)</dt><dd>Each <i>url</i> will be used randomly to implement client load-balancing.</dd></dl>">baseURLs</p>
 			</div>
 			<div class="table proxy">
-				<p data-title="proxy" data-content="<dl><dt>(host, port)</dt><dd></dd></dl>">proxy!</p>
-				<p data-title="httpsPort" data-content="<dl><dt>(port)</dt><dd></dd></dl>">httpsPort!</p>
-				<p data-title="credentials" data-content="<dl><dt>(username,password)</dt><dd></dd></dl>">credentials!</p>
+				<p data-title="proxy" data-content="Declares a proxy for all HTTP requetes of the scenario on which the configuration is applied<dl><dt>(host, port)</dt><dd>The requests will pass throught the proxy located at <i>host:port</i></dd></dl>">proxy</p>
+				<p data-title="httpsPort" data-content="Use this if Gatling should use the proxy for HTTPS also<dl><dt>(port)</dt><dd>The HTTPS <i>port</i> of the proxy</dd></dl>">httpsPort</p>
+				<p data-title="credentials" data-content="If your proxy requires BASIC authentication you can set the credentials with this method<dl><dt>(username,password)</dt><dd>The requests will be sent as the user <i>username/password</i></dd></dl>">credentials</p>
 			</div>
 			<div class="table headers">
-				<p data-title="acceptHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>">acceptHeader!</p>
-				<p href="#" data-title="acceptCharsetHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" class="tooLong">acceptCharsetHeader!</p>
-				<p href="#" data-title="acceptEncodingHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" class="reallyLong">acceptEncodingHeader!</p>
-				<p href="#" data-title="acceptLanguageHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" class="reallyLong">acceptLanguageHeader!</p>
-				<p href="#" data-title="hostHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>">hostHeader!</p>
-				<p href="#" data-title="userAgentHeader" data-content="<dl><dt>(value)</dt><dd></dd></dl>" class="poptop">userAgentHeader!</p>
+				<p data-title="acceptHeader" data-content="Sets the Accept header for all requests<dl><dt>(value)</dt><dd>The <i>value</i> of the header.</dd></dl>">acceptHeader</p>
+				<p href="#" data-title="acceptCharsetHeader" data-content="Sets the Charset header for all requests<dl><dt>(value)</dt><dd>The <i>value</i> of the header.</dd></dl>" class="tooLong">acceptCharsetHeader</p>
+				<p href="#" data-title="acceptEncodingHeader" data-content="Sets the Accept-Encoding header for all requests<dl><dt>(value)</dt><dd>The <i>value</i> of the header.</dd></dl>" class="reallyLong">acceptEncodingHeader</p>
+				<p href="#" data-title="acceptLanguageHeader" data-content="Sets the Accept-Language header for all requests<dl><dt>(value)</dt><dd>The <i>value</i> of the header.</dd></dl>" class="reallyLong">acceptLanguageHeader</p>
+				<p href="#" data-title="hostHeader" data-content="Sets the Host header for all requests<dl><dt>(value)</dt><dd>The <i>value</i> of the header.</dd></dl>">hostHeader</p>
+				<p href="#" data-title="userAgentHeader" data-content="Sets the User-Agent header for all requests<dl><dt>(value)</dt><dd>The <i>value</i> of the header.</dd></dl>" class="poptop">userAgentHeader</p>
 			</div>
 			<div class="table options left">
-				<p data-title="disableFollowRedirect" data-content="" class="reallyLong">disableFollowRedirect!</p>
-				<p data-title="disableAutomaticReferer" data-content="" class="reallyLong">disableAutomaticReferer!</p>
-				<p data-title="disableWarmUp" data-content="">disableWarmUp!</p>
-				<p data-title="warmUp" data-content="<dl><dt>(url)</dt><dd></dd></dl>">warmUp!</p>
+				<p data-title="disableFollowRedirect" data-content="Forces the HTTP engine not to follow the redirects." class="reallyLong">disableFollowRedirect</p>
+				<p data-title="disableAutomaticReferer" data-content="Forces Gatling not to set the referer of the requests" class="reallyLong">disableAutomaticReferer</p>
+				<p data-title="disableWarmUp" data-content="Disables the warm up request">disableWarmUp</p>
+				<p data-title="warmUp" data-content="Sets the URL used by Gatling to warm up the HTTP engine<dl><dt>(url)</dt><dd>A valid and accessible <i>url</i></dd></dl>">warmUp</p>
 			</div>
 			<div class="table plumbing left">
-				<p data-title="requestInfoExtractor" data-content="<dl><dt>(Request => List[String])</dt><dd></dd></dl>" class="tooLong">requestInfoExtractor!</p>
-				<p data-title="responseInfoExtractor" data-content="<dl><dt>(Response => List[String])</dt><dd></dd></dl>" class="reallyLong">responseInfoExtractor!</p>
-				<p data-title="disableResponseChunksDiscarding" data-content="" class="reallyTooLong">disableResponseChunksDiscarding!</p>
+				<p data-title="requestInfoExtractor" data-content="Dumps additional request data into simulation.log during the simulation<dl><dt>(Request => List[String])</dt><dd>The function is used by Gatling to add several columns containing request info to the simulation log file.</dd></dl>" class="tooLong">requestInfoExtractor</p>
+				<p data-title="responseInfoExtractor" data-content="Dumps additional response data into simulation.log during the simulation<dl><dt>(Response => List[String])</dt><dd>The function is used by Gatling to add several columns containing response info to the simulation log file.</dd></dl>" class="tooLong" class="reallyLong">responseInfoExtractor</p>
+				<p data-title="disableResponseChunksDiscarding" data-content="If you want the body of the repsonse to be kept to use it with <i>responseInfoExctractor</i>, you'll have to disable response chunk discard (which is a performance optimization)" class="reallyTooLong">disableResponseChunksDiscarding</p>
 			</div>
 		</div>
 	</div>
