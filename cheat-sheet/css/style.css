@@ -1,5 +1,5 @@
 h1, p { margin-left:10px; }
-h2 { 
+h2 {
 	margin:5px;
 	font-size: 1em;
 	padding:0;
@@ -58,10 +58,11 @@ p.reallyTooLong{ font-size:0.7em; }
 
 .table.struct {width:1005px; clear:left;margin-left:102px; }
 .table.feeders { width:400px; clear:left;margin-left:153px; }
-.table.scenario-config { width:400px; height:200px;margin-left:93px; }
+.table.scenario-config { width:300px; height:200px;margin-left:193px; }
 .table.action {	width:800px;clear: left;margin-left:205px; }
 .table.checks { width:1200px; clear:left; }
 .table.http-config { width: 1200px; clear:left; }
+.table.assertions { width: 1200px; clear: left; }
 
 .scenario > p { background-color: rgba(80,255,0,0.8); }
 .struct-base > p { background-color: rgba(80,255,0,0.7); }
@@ -93,3 +94,10 @@ p.reallyTooLong{ font-size:0.7em; }
 .headers > p { background-color: rgba(0,255,170,0.5); }
 .options > p { background-color: rgba(0,255,170,0.4); }
 .plumbing > p { background-color: rgba(0,255,170,0.3); }
+
+.assertion > p { background-color: rgba(255,187,51,0.9); }
+.scopes > p { background-color: rgba(255,187,51,0.8); }
+.statistics > p { background-color: rgba(255,187,51,0.7); }
+.response-time-selectors > p {background-color: rgba(255,187,51,0.6); }
+.count-selectors > p {background-color: rgba(255,187,51,0.5); }
+.assertions-conditions > p {background-color: rgba(255,187,51,0.4); }
