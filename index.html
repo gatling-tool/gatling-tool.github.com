@@ -6,7 +6,6 @@
 <link href="style/style.css" rel="stylesheet" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/galleria/galleria-1.2.9.min.js"></script>
-<script src="js/galleria/themes/classic/galleria.classic.min.js"></script>
 <title>Gatling Project - Stress Tool</title>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -122,7 +121,8 @@
 	<a href="http://github.com/excilys/gatling" title="Accueil"><img alt="Gatling" src="style/logo-gatling.jpg"/></a>
 </div>
 <script type="application/javascript">
-$('#gallery').galleria({
+Galleria.loadTheme("js/galleria/themes/classic/galleria.classic.min.js");
+Galleria.run('#gallery', {
     width: 725,
     height: 200,
     imageCrop: 'width',
